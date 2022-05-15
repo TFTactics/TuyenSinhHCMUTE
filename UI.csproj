@@ -159,9 +159,10 @@
   <ItemGroup>
     <None Include="Resource\lamp.png" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="BS_Layer\" />
-    <Folder Include="Model_Layer\" />
+    <Content Include="BS_Layer\Describe.txt" />
+    <Content Include="Model_Layer\Describe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
