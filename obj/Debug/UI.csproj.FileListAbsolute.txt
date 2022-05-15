@@ -1,0 +1,12 @@
+E:\Data\WinForm\UI\bin\Debug\UI.exe.config
+E:\Data\WinForm\UI\bin\Debug\UI.exe
+E:\Data\WinForm\UI\bin\Debug\UI.pdb
+E:\Data\WinForm\UI\bin\Debug\Guna.UI2.dll
+E:\Data\WinForm\UI\obj\Debug\UI.csproj.AssemblyReference.cache
+E:\Data\WinForm\UI\obj\Debug\UI.Form1.resources
+E:\Data\WinForm\UI\obj\Debug\UI.Properties.Resources.resources
+E:\Data\WinForm\UI\obj\Debug\UI.csproj.GenerateResource.cache
+E:\Data\WinForm\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+E:\Data\WinForm\UI\obj\Debug\UI.csproj.CopyComplete
+E:\Data\WinForm\UI\obj\Debug\UI.exe
+E:\Data\WinForm\UI\obj\Debug\UI.pdb
