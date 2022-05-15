@@ -10,3 +10,22 @@ E:\Data\WinForm\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
 E:\Data\WinForm\UI\obj\Debug\UI.csproj.CopyComplete
 E:\Data\WinForm\UI\obj\Debug\UI.exe
 E:\Data\WinForm\UI\obj\Debug\UI.pdb
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\bin\Debug\UI.exe.config
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\bin\Debug\UI.exe
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\bin\Debug\UI.pdb
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\bin\Debug\Guna.UI2.dll
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.csproj.AssemblyReference.cache
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.csproj.SuggestedBindingRedirects.cache
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.Form1.resources
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.Properties.Resources.resources
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.csproj.GenerateResource.cache
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.csproj.CoreCompileInputs.cache
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.csproj.CopyComplete
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.exe
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.pdb
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCTimeLine.resources
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCQuanLyDanhSachUngTuyen.resources
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCDanhSachNguoiDung.resources
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCQLThongTinTruong.resources
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCQLBangTinTuyenSinh.resources
+D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCHome.resources

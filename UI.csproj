@@ -57,6 +57,42 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View_Layer\UCDanhSachNguoiDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View_Layer\UCDanhSachNguoiDung.Designer.cs">
+      <DependentUpon>UCDanhSachNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Layer\UCHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View_Layer\UCHome.Designer.cs">
+      <DependentUpon>UCHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Layer\UCQLBangTinTuyenSinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View_Layer\UCQLBangTinTuyenSinh.Designer.cs">
+      <DependentUpon>UCQLBangTinTuyenSinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Layer\UCQLThongTinTruong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View_Layer\UCQLThongTinTruong.Designer.cs">
+      <DependentUpon>UCQLThongTinTruong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Layer\UCQuanLyDanhSachUngTuyen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View_Layer\UCQuanLyDanhSachUngTuyen.Designer.cs">
+      <DependentUpon>UCQuanLyDanhSachUngTuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Layer\UCTimeLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View_Layer\UCTimeLine.Designer.cs">
+      <DependentUpon>UCTimeLine.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -64,6 +100,24 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Layer\UCDanhSachNguoiDung.resx">
+      <DependentUpon>UCDanhSachNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Layer\UCHome.resx">
+      <DependentUpon>UCHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Layer\UCQLBangTinTuyenSinh.resx">
+      <DependentUpon>UCQLBangTinTuyenSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Layer\UCQLThongTinTruong.resx">
+      <DependentUpon>UCQLThongTinTruong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Layer\UCQuanLyDanhSachUngTuyen.resx">
+      <DependentUpon>UCQuanLyDanhSachUngTuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Layer\UCTimeLine.resx">
+      <DependentUpon>UCTimeLine.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -104,6 +158,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resource\lamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BS_Layer\" />
+    <Folder Include="Model_Layer\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
