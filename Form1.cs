@@ -15,7 +15,6 @@ namespace UI
     {
         public bool mode = true;
         static Form1 _obj;
-
         public static Form1 Instance
         {
             get
@@ -35,7 +34,6 @@ namespace UI
         public Form1()
         {
             InitializeComponent();
-            
         }
 
         private void DarkMode_Click(object sender, EventArgs e)
@@ -50,6 +48,20 @@ namespace UI
                 DarkMode.BackgroundImage = Properties.Resources.LightMode;
                 mode = true;
             }
+        }
+        #region UserControl
+
+        /// <summary>
+        /// Load Trang Chủ
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            _obj = this;
+            UCHome uch = new UCHome();
+            pnlContainer.Controls.Add(uch);
+
         }
         /// <summary>
         /// Mở menu TimeLine
@@ -74,6 +86,12 @@ namespace UI
         /// <param name="e"></param>
         private void btnHome_Click(object sender, EventArgs e)
         {
+            if (!Form1.Instance.PnlContainer.Controls.ContainsKey("UCHome"))
+            {
+                UCHome uc = new UCHome();
+                uc.Dock = DockStyle.Fill;
+                Form1.Instance.PnlContainer.Controls.Add(uc);
+            }
             Form1.Instance.PnlContainer.Controls["UCHome"].BringToFront();
         }
 
@@ -125,14 +143,7 @@ namespace UI
             }
             Form1.Instance.PnlContainer.Controls["UCQLBangTinTuyenSinh"].BringToFront();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            _obj = this;
-            UCHome uch = new UCHome();
-            pnlContainer.Controls.Add(uch);
-
-        }
+        #endregion
     }
 
 }

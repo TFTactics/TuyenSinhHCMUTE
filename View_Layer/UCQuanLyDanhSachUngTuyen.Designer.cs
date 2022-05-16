@@ -46,35 +46,35 @@
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CheckBox2 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2CustomGradientPanel6 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2HtmlLabel25 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CheckBox7 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2CustomGradientPanel7 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel5 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2HtmlLabel24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ComboBox5 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel20 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CheckBox6 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2HtmlLabel21 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ComboBox4 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CheckBox5 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CheckBox3 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2CustomGradientPanel7 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel21 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel25 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CustomGradientPanel6.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2CustomGradientPanel5.SuspendLayout();
@@ -120,7 +120,7 @@
             "Đăng sự kiện",
             "Xóa sự kiện",
             "Ẩn sự kiện"});
-            this.guna2ComboBox6.Location = new System.Drawing.Point(977, 16);
+            this.guna2ComboBox6.Location = new System.Drawing.Point(980, 16);
             this.guna2ComboBox6.Name = "guna2ComboBox6";
             this.guna2ComboBox6.Size = new System.Drawing.Size(113, 36);
             this.guna2ComboBox6.TabIndex = 13;
@@ -131,7 +131,7 @@
             this.guna2HtmlLabel22.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel22.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel22.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel22.Location = new System.Drawing.Point(774, 25);
+            this.guna2HtmlLabel22.Location = new System.Drawing.Point(775, 25);
             this.guna2HtmlLabel22.Name = "guna2HtmlLabel22";
             this.guna2HtmlLabel22.Size = new System.Drawing.Size(411, 21);
             this.guna2HtmlLabel22.TabIndex = 12;
@@ -143,7 +143,7 @@
             this.guna2HtmlLabel23.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel23.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel23.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel23.Location = new System.Drawing.Point(582, 25);
+            this.guna2HtmlLabel23.Location = new System.Drawing.Point(580, 25);
             this.guna2HtmlLabel23.Name = "guna2HtmlLabel23";
             this.guna2HtmlLabel23.Size = new System.Drawing.Size(411, 21);
             this.guna2HtmlLabel23.TabIndex = 11;
@@ -152,48 +152,44 @@
             // guna2HtmlLabel6
             // 
             this.guna2HtmlLabel6.AutoSize = false;
-            this.guna2HtmlLabel6.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Roboto Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(977, 69);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(980, 72);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(244, 19);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(500, 30);
             this.guna2HtmlLabel6.TabIndex = 8;
             this.guna2HtmlLabel6.Text = "THAO TÁC";
             // 
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.AutoSize = false;
-            this.guna2HtmlLabel5.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Roboto Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(774, 69);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(775, 72);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(334, 19);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(500, 30);
             this.guna2HtmlLabel5.TabIndex = 7;
             this.guna2HtmlLabel5.Text = "SỐ NGUYỆN VỌNG";
             // 
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.AutoSize = false;
-            this.guna2HtmlLabel4.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Roboto Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(582, 69);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(580, 72);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(389, 19);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(500, 30);
             this.guna2HtmlLabel4.TabIndex = 6;
             this.guna2HtmlLabel4.Text = "NGÀY ỨNG TUYỂN";
             // 
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.AutoSize = false;
-            this.guna2HtmlLabel3.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Roboto Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(319, 67);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(320, 72);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(460, 19);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(500, 30);
             this.guna2HtmlLabel3.TabIndex = 5;
             this.guna2HtmlLabel3.Text = "PHƯƠNG THỨC XÉT TUYỂN";
             // 
@@ -205,7 +201,7 @@
             this.guna2CheckBox1.CheckedState.BorderThickness = 1;
             this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2CheckBox1.Font = new System.Drawing.Font("Roboto Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2CheckBox1.Location = new System.Drawing.Point(15, 69);
+            this.guna2CheckBox1.Location = new System.Drawing.Point(15, 72);
             this.guna2CheckBox1.Name = "guna2CheckBox1";
             this.guna2CheckBox1.Size = new System.Drawing.Size(18, 17);
             this.guna2CheckBox1.TabIndex = 4;
@@ -244,7 +240,7 @@
             "Đăng sự kiện",
             "Xóa sự kiện",
             "Ẩn sự kiện"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(977, 16);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(980, 16);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.Size = new System.Drawing.Size(113, 36);
             this.guna2ComboBox1.TabIndex = 13;
@@ -267,7 +263,7 @@
             "Đăng sự kiện",
             "Xóa sự kiện",
             "Ẩn sự kiện"});
-            this.guna2ComboBox2.Location = new System.Drawing.Point(977, 16);
+            this.guna2ComboBox2.Location = new System.Drawing.Point(980, 16);
             this.guna2ComboBox2.Name = "guna2ComboBox2";
             this.guna2ComboBox2.Size = new System.Drawing.Size(113, 36);
             this.guna2ComboBox2.TabIndex = 13;
@@ -278,7 +274,7 @@
             this.guna2HtmlLabel7.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(774, 25);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(775, 25);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(411, 21);
             this.guna2HtmlLabel7.TabIndex = 12;
@@ -290,7 +286,7 @@
             this.guna2HtmlLabel11.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel11.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(582, 25);
+            this.guna2HtmlLabel11.Location = new System.Drawing.Point(580, 25);
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
             this.guna2HtmlLabel11.Size = new System.Drawing.Size(411, 21);
             this.guna2HtmlLabel11.TabIndex = 11;
@@ -302,7 +298,7 @@
             this.guna2HtmlLabel8.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(774, 25);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(775, 25);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(411, 21);
             this.guna2HtmlLabel8.TabIndex = 12;
@@ -314,7 +310,7 @@
             this.guna2HtmlLabel9.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(582, 25);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(580, 25);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(411, 21);
             this.guna2HtmlLabel9.TabIndex = 11;
@@ -348,10 +344,21 @@
             this.guna2CustomGradientPanel6.Controls.Add(this.guna2HtmlLabel23);
             this.guna2CustomGradientPanel6.Controls.Add(this.guna2CheckBox7);
             this.guna2CustomGradientPanel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2CustomGradientPanel6.Location = new System.Drawing.Point(0, 441);
+            this.guna2CustomGradientPanel6.Location = new System.Drawing.Point(0, 455);
             this.guna2CustomGradientPanel6.Name = "guna2CustomGradientPanel6";
             this.guna2CustomGradientPanel6.Size = new System.Drawing.Size(1108, 70);
             this.guna2CustomGradientPanel6.TabIndex = 6;
+            // 
+            // guna2HtmlLabel25
+            // 
+            this.guna2HtmlLabel25.AutoSize = false;
+            this.guna2HtmlLabel25.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel25.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel25.Location = new System.Drawing.Point(65, 25);
+            this.guna2HtmlLabel25.Name = "guna2HtmlLabel25";
+            this.guna2HtmlLabel25.Size = new System.Drawing.Size(411, 46);
+            this.guna2HtmlLabel25.TabIndex = 15;
+            this.guna2HtmlLabel25.Text = "Hồ Quang Hiếu";
             // 
             // guna2CheckBox7
             // 
@@ -405,6 +412,18 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1108, 582);
             this.guna2Panel1.TabIndex = 7;
             // 
+            // guna2CustomGradientPanel7
+            // 
+            this.guna2CustomGradientPanel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel7.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel7.BorderRadius = 15;
+            this.guna2CustomGradientPanel7.BorderThickness = 1;
+            this.guna2CustomGradientPanel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2CustomGradientPanel7.Location = new System.Drawing.Point(0, 524);
+            this.guna2CustomGradientPanel7.Name = "guna2CustomGradientPanel7";
+            this.guna2CustomGradientPanel7.Size = new System.Drawing.Size(1108, 58);
+            this.guna2CustomGradientPanel7.TabIndex = 7;
+            // 
             // guna2CustomGradientPanel5
             // 
             this.guna2CustomGradientPanel5.BackColor = System.Drawing.Color.Transparent;
@@ -416,10 +435,21 @@
             this.guna2CustomGradientPanel5.Controls.Add(this.guna2HtmlLabel20);
             this.guna2CustomGradientPanel5.Controls.Add(this.guna2CheckBox6);
             this.guna2CustomGradientPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2CustomGradientPanel5.Location = new System.Drawing.Point(0, 371);
+            this.guna2CustomGradientPanel5.Location = new System.Drawing.Point(0, 385);
             this.guna2CustomGradientPanel5.Name = "guna2CustomGradientPanel5";
             this.guna2CustomGradientPanel5.Size = new System.Drawing.Size(1108, 70);
             this.guna2CustomGradientPanel5.TabIndex = 5;
+            // 
+            // guna2HtmlLabel24
+            // 
+            this.guna2HtmlLabel24.AutoSize = false;
+            this.guna2HtmlLabel24.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel24.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel24.Location = new System.Drawing.Point(65, 25);
+            this.guna2HtmlLabel24.Name = "guna2HtmlLabel24";
+            this.guna2HtmlLabel24.Size = new System.Drawing.Size(411, 46);
+            this.guna2HtmlLabel24.TabIndex = 15;
+            this.guna2HtmlLabel24.Text = "Phạm Trung Nghĩa";
             // 
             // guna2ComboBox5
             // 
@@ -439,7 +469,7 @@
             "Đăng sự kiện",
             "Xóa sự kiện",
             "Ẩn sự kiện"});
-            this.guna2ComboBox5.Location = new System.Drawing.Point(977, 16);
+            this.guna2ComboBox5.Location = new System.Drawing.Point(980, 16);
             this.guna2ComboBox5.Name = "guna2ComboBox5";
             this.guna2ComboBox5.Size = new System.Drawing.Size(113, 36);
             this.guna2ComboBox5.TabIndex = 13;
@@ -450,7 +480,7 @@
             this.guna2HtmlLabel19.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel19.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel19.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel19.Location = new System.Drawing.Point(774, 25);
+            this.guna2HtmlLabel19.Location = new System.Drawing.Point(775, 25);
             this.guna2HtmlLabel19.Name = "guna2HtmlLabel19";
             this.guna2HtmlLabel19.Size = new System.Drawing.Size(411, 21);
             this.guna2HtmlLabel19.TabIndex = 12;
@@ -462,7 +492,7 @@
             this.guna2HtmlLabel20.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel20.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel20.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel20.Location = new System.Drawing.Point(582, 25);
+            this.guna2HtmlLabel20.Location = new System.Drawing.Point(580, 25);
             this.guna2HtmlLabel20.Name = "guna2HtmlLabel20";
             this.guna2HtmlLabel20.Size = new System.Drawing.Size(411, 21);
             this.guna2HtmlLabel20.TabIndex = 11;
@@ -496,10 +526,21 @@
             this.guna2CustomGradientPanel4.Controls.Add(this.guna2HtmlLabel17);
             this.guna2CustomGradientPanel4.Controls.Add(this.guna2CheckBox5);
             this.guna2CustomGradientPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(0, 301);
+            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(0, 315);
             this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
             this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(1108, 70);
             this.guna2CustomGradientPanel4.TabIndex = 4;
+            // 
+            // guna2HtmlLabel21
+            // 
+            this.guna2HtmlLabel21.AutoSize = false;
+            this.guna2HtmlLabel21.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel21.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel21.Location = new System.Drawing.Point(65, 25);
+            this.guna2HtmlLabel21.Name = "guna2HtmlLabel21";
+            this.guna2HtmlLabel21.Size = new System.Drawing.Size(411, 46);
+            this.guna2HtmlLabel21.TabIndex = 15;
+            this.guna2HtmlLabel21.Text = "Huỳnh Xuân Tường Vy";
             // 
             // guna2ComboBox4
             // 
@@ -519,7 +560,7 @@
             "Đăng sự kiện",
             "Xóa sự kiện",
             "Ẩn sự kiện"});
-            this.guna2ComboBox4.Location = new System.Drawing.Point(977, 16);
+            this.guna2ComboBox4.Location = new System.Drawing.Point(980, 16);
             this.guna2ComboBox4.Name = "guna2ComboBox4";
             this.guna2ComboBox4.Size = new System.Drawing.Size(113, 36);
             this.guna2ComboBox4.TabIndex = 13;
@@ -530,7 +571,7 @@
             this.guna2HtmlLabel16.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel16.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel16.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel16.Location = new System.Drawing.Point(774, 25);
+            this.guna2HtmlLabel16.Location = new System.Drawing.Point(775, 25);
             this.guna2HtmlLabel16.Name = "guna2HtmlLabel16";
             this.guna2HtmlLabel16.Size = new System.Drawing.Size(411, 21);
             this.guna2HtmlLabel16.TabIndex = 12;
@@ -542,7 +583,7 @@
             this.guna2HtmlLabel17.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel17.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel17.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel17.Location = new System.Drawing.Point(582, 25);
+            this.guna2HtmlLabel17.Location = new System.Drawing.Point(580, 25);
             this.guna2HtmlLabel17.Name = "guna2HtmlLabel17";
             this.guna2HtmlLabel17.Size = new System.Drawing.Size(411, 21);
             this.guna2HtmlLabel17.TabIndex = 11;
@@ -576,10 +617,21 @@
             this.guna2CustomGradientPanel3.Controls.Add(this.guna2HtmlLabel14);
             this.guna2CustomGradientPanel3.Controls.Add(this.guna2CheckBox4);
             this.guna2CustomGradientPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(0, 231);
+            this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(0, 245);
             this.guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3";
             this.guna2CustomGradientPanel3.Size = new System.Drawing.Size(1108, 70);
             this.guna2CustomGradientPanel3.TabIndex = 3;
+            // 
+            // guna2HtmlLabel18
+            // 
+            this.guna2HtmlLabel18.AutoSize = false;
+            this.guna2HtmlLabel18.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel18.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel18.Location = new System.Drawing.Point(65, 25);
+            this.guna2HtmlLabel18.Name = "guna2HtmlLabel18";
+            this.guna2HtmlLabel18.Size = new System.Drawing.Size(411, 46);
+            this.guna2HtmlLabel18.TabIndex = 15;
+            this.guna2HtmlLabel18.Text = "Nguyễn Minh Chiến";
             // 
             // guna2ComboBox3
             // 
@@ -599,7 +651,7 @@
             "Đăng sự kiện",
             "Xóa sự kiện",
             "Ẩn sự kiện"});
-            this.guna2ComboBox3.Location = new System.Drawing.Point(977, 16);
+            this.guna2ComboBox3.Location = new System.Drawing.Point(980, 16);
             this.guna2ComboBox3.Name = "guna2ComboBox3";
             this.guna2ComboBox3.Size = new System.Drawing.Size(113, 36);
             this.guna2ComboBox3.TabIndex = 13;
@@ -610,7 +662,7 @@
             this.guna2HtmlLabel13.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel13.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel13.Location = new System.Drawing.Point(774, 25);
+            this.guna2HtmlLabel13.Location = new System.Drawing.Point(775, 25);
             this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
             this.guna2HtmlLabel13.Size = new System.Drawing.Size(411, 21);
             this.guna2HtmlLabel13.TabIndex = 12;
@@ -622,7 +674,7 @@
             this.guna2HtmlLabel14.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel14.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel14.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel14.Location = new System.Drawing.Point(582, 25);
+            this.guna2HtmlLabel14.Location = new System.Drawing.Point(580, 25);
             this.guna2HtmlLabel14.Name = "guna2HtmlLabel14";
             this.guna2HtmlLabel14.Size = new System.Drawing.Size(411, 21);
             this.guna2HtmlLabel14.TabIndex = 11;
@@ -639,10 +691,21 @@
             this.guna2CustomGradientPanel2.Controls.Add(this.guna2HtmlLabel11);
             this.guna2CustomGradientPanel2.Controls.Add(this.guna2CheckBox3);
             this.guna2CustomGradientPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(0, 161);
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(0, 175);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1108, 70);
             this.guna2CustomGradientPanel2.TabIndex = 2;
+            // 
+            // guna2HtmlLabel15
+            // 
+            this.guna2HtmlLabel15.AutoSize = false;
+            this.guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel15.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel15.Location = new System.Drawing.Point(65, 25);
+            this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
+            this.guna2HtmlLabel15.Size = new System.Drawing.Size(411, 46);
+            this.guna2HtmlLabel15.TabIndex = 15;
+            this.guna2HtmlLabel15.Text = "Lê Đình Trường";
             // 
             // guna2CheckBox3
             // 
@@ -672,10 +735,21 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel9);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2CheckBox2);
             this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 91);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 105);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1108, 70);
             this.guna2CustomGradientPanel1.TabIndex = 1;
+            // 
+            // guna2HtmlLabel12
+            // 
+            this.guna2HtmlLabel12.AutoSize = false;
+            this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel12.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel12.Location = new System.Drawing.Point(65, 25);
+            this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
+            this.guna2HtmlLabel12.Size = new System.Drawing.Size(411, 46);
+            this.guna2HtmlLabel12.TabIndex = 14;
+            this.guna2HtmlLabel12.Text = "Trần Huỳnh Tấn Phát";
             // 
             // guna2Panel2
             // 
@@ -685,116 +759,31 @@
             this.guna2Panel2.BorderRadius = 15;
             this.guna2Panel2.BorderThickness = 1;
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel6);
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel10);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel5);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel4);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel3);
             this.guna2Panel2.Controls.Add(this.guna2CheckBox1);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
+            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel10);
             this.guna2Panel2.CustomBorderColor = System.Drawing.Color.Transparent;
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.FillColor = System.Drawing.Color.White;
             this.guna2Panel2.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1108, 91);
+            this.guna2Panel2.Size = new System.Drawing.Size(1108, 105);
             this.guna2Panel2.TabIndex = 0;
-            // 
-            // guna2CustomGradientPanel7
-            // 
-            this.guna2CustomGradientPanel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel7.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel7.BorderRadius = 15;
-            this.guna2CustomGradientPanel7.BorderThickness = 1;
-            this.guna2CustomGradientPanel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2CustomGradientPanel7.Location = new System.Drawing.Point(0, 512);
-            this.guna2CustomGradientPanel7.Name = "guna2CustomGradientPanel7";
-            this.guna2CustomGradientPanel7.Size = new System.Drawing.Size(1108, 70);
-            this.guna2CustomGradientPanel7.TabIndex = 7;
             // 
             // guna2HtmlLabel10
             // 
             this.guna2HtmlLabel10.AutoSize = false;
-            this.guna2HtmlLabel10.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel10.Font = new System.Drawing.Font("Roboto Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(55, 67);
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(65, 72);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(249, 19);
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(500, 30);
             this.guna2HtmlLabel10.TabIndex = 9;
             this.guna2HtmlLabel10.Text = "HỌ VÀ TÊN";
-            // 
-            // guna2HtmlLabel12
-            // 
-            this.guna2HtmlLabel12.AutoSize = false;
-            this.guna2HtmlLabel12.AutoSizeHeightOnly = true;
-            this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel12.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel12.Location = new System.Drawing.Point(55, 21);
-            this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            this.guna2HtmlLabel12.Size = new System.Drawing.Size(411, 21);
-            this.guna2HtmlLabel12.TabIndex = 14;
-            this.guna2HtmlLabel12.Text = "Trần Huỳnh Tấn Phát";
-            // 
-            // guna2HtmlLabel15
-            // 
-            this.guna2HtmlLabel15.AutoSize = false;
-            this.guna2HtmlLabel15.AutoSizeHeightOnly = true;
-            this.guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel15.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel15.Location = new System.Drawing.Point(55, 21);
-            this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
-            this.guna2HtmlLabel15.Size = new System.Drawing.Size(411, 21);
-            this.guna2HtmlLabel15.TabIndex = 15;
-            this.guna2HtmlLabel15.Text = "Lê Đình Trường";
-            // 
-            // guna2HtmlLabel18
-            // 
-            this.guna2HtmlLabel18.AutoSize = false;
-            this.guna2HtmlLabel18.AutoSizeHeightOnly = true;
-            this.guna2HtmlLabel18.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel18.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel18.Location = new System.Drawing.Point(55, 21);
-            this.guna2HtmlLabel18.Name = "guna2HtmlLabel18";
-            this.guna2HtmlLabel18.Size = new System.Drawing.Size(411, 21);
-            this.guna2HtmlLabel18.TabIndex = 15;
-            this.guna2HtmlLabel18.Text = "Nguyễn Minh Chiến";
-            // 
-            // guna2HtmlLabel21
-            // 
-            this.guna2HtmlLabel21.AutoSize = false;
-            this.guna2HtmlLabel21.AutoSizeHeightOnly = true;
-            this.guna2HtmlLabel21.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel21.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel21.Location = new System.Drawing.Point(55, 21);
-            this.guna2HtmlLabel21.Name = "guna2HtmlLabel21";
-            this.guna2HtmlLabel21.Size = new System.Drawing.Size(411, 21);
-            this.guna2HtmlLabel21.TabIndex = 15;
-            this.guna2HtmlLabel21.Text = "Huỳnh Xuân Tường Vy";
-            // 
-            // guna2HtmlLabel24
-            // 
-            this.guna2HtmlLabel24.AutoSize = false;
-            this.guna2HtmlLabel24.AutoSizeHeightOnly = true;
-            this.guna2HtmlLabel24.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel24.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel24.Location = new System.Drawing.Point(55, 21);
-            this.guna2HtmlLabel24.Name = "guna2HtmlLabel24";
-            this.guna2HtmlLabel24.Size = new System.Drawing.Size(411, 21);
-            this.guna2HtmlLabel24.TabIndex = 15;
-            this.guna2HtmlLabel24.Text = "Phạm Trung Nghĩa";
-            // 
-            // guna2HtmlLabel25
-            // 
-            this.guna2HtmlLabel25.AutoSize = false;
-            this.guna2HtmlLabel25.AutoSizeHeightOnly = true;
-            this.guna2HtmlLabel25.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel25.Font = new System.Drawing.Font("Roboto Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel25.Location = new System.Drawing.Point(55, 21);
-            this.guna2HtmlLabel25.Name = "guna2HtmlLabel25";
-            this.guna2HtmlLabel25.Size = new System.Drawing.Size(411, 21);
-            this.guna2HtmlLabel25.TabIndex = 15;
-            this.guna2HtmlLabel25.Text = "Hồ Quang Hiếu";
             // 
             // UCQuanLyDanhSachUngTuyen
             // 

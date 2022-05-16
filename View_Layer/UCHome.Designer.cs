@@ -66,6 +66,11 @@
             this.guna2Panel6.FillColor = System.Drawing.Color.White;
             this.guna2Panel6.Location = new System.Drawing.Point(853, 136);
             this.guna2Panel6.Name = "guna2Panel6";
+            this.guna2Panel6.ShadowDecoration.BorderRadius = 15;
+            this.guna2Panel6.ShadowDecoration.Color = System.Drawing.Color.DimGray;
+            this.guna2Panel6.ShadowDecoration.Depth = 10;
+            this.guna2Panel6.ShadowDecoration.Enabled = true;
+            this.guna2Panel6.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(10);
             this.guna2Panel6.Size = new System.Drawing.Size(270, 177);
             this.guna2Panel6.TabIndex = 25;
             // 
@@ -78,6 +83,11 @@
             this.guna2Panel3.FillColor = System.Drawing.Color.White;
             this.guna2Panel3.Location = new System.Drawing.Point(576, 136);
             this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.ShadowDecoration.BorderRadius = 15;
+            this.guna2Panel3.ShadowDecoration.Color = System.Drawing.Color.DimGray;
+            this.guna2Panel3.ShadowDecoration.Depth = 10;
+            this.guna2Panel3.ShadowDecoration.Enabled = true;
+            this.guna2Panel3.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(10);
             this.guna2Panel3.Size = new System.Drawing.Size(270, 177);
             this.guna2Panel3.TabIndex = 24;
             // 
@@ -102,6 +112,11 @@
             this.guna2Panel2.FillColor = System.Drawing.Color.White;
             this.guna2Panel2.Location = new System.Drawing.Point(298, 136);
             this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.BorderRadius = 15;
+            this.guna2Panel2.ShadowDecoration.Color = System.Drawing.Color.DimGray;
+            this.guna2Panel2.ShadowDecoration.Depth = 10;
+            this.guna2Panel2.ShadowDecoration.Enabled = true;
+            this.guna2Panel2.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(10);
             this.guna2Panel2.Size = new System.Drawing.Size(270, 177);
             this.guna2Panel2.TabIndex = 23;
             // 
@@ -126,6 +141,11 @@
             this.guna2Panel1.FillColor = System.Drawing.Color.White;
             this.guna2Panel1.Location = new System.Drawing.Point(20, 136);
             this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.BorderRadius = 15;
+            this.guna2Panel1.ShadowDecoration.Color = System.Drawing.Color.DimGray;
+            this.guna2Panel1.ShadowDecoration.Depth = 10;
+            this.guna2Panel1.ShadowDecoration.Enabled = true;
+            this.guna2Panel1.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(10);
             this.guna2Panel1.Size = new System.Drawing.Size(270, 177);
             this.guna2Panel1.TabIndex = 22;
             // 
@@ -178,6 +198,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.guna2Panel4);
             this.Controls.Add(this.guna2Panel6);
@@ -185,6 +206,7 @@
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2HtmlLabel1);
+            this.DoubleBuffered = true;
             this.Name = "UCHome";
             this.Size = new System.Drawing.Size(1150, 1150);
             this.guna2Panel6.ResumeLayout(false);
