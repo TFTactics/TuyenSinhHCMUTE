@@ -16,6 +16,7 @@ namespace UI.View_Layer
     {
         DataTable dtCTDT = null;
         BLChuongTrinhDaoTao dbCTDT = new BLChuongTrinhDaoTao();
+
         public UCCTDaoTao()
         {
             InitializeComponent();
