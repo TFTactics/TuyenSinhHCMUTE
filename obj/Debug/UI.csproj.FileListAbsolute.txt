@@ -29,3 +29,34 @@ D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.View_
 D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCQLThongTinTruong.resources
 D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCQLBangTinTuyenSinh.resources
 D:\Code HK2 - 2022\Lập trình window\CuoiKi\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCHome.resources
+D:\TuyenSinhHCMUTE\bin\Debug\UI.exe.config
+D:\TuyenSinhHCMUTE\bin\Debug\UI.exe
+D:\TuyenSinhHCMUTE\bin\Debug\UI.pdb
+D:\TuyenSinhHCMUTE\bin\Debug\Guna.UI2.dll
+D:\TuyenSinhHCMUTE\obj\Debug\UI.csproj.AssemblyReference.cache
+D:\TuyenSinhHCMUTE\obj\Debug\UI.csproj.SuggestedBindingRedirects.cache
+D:\TuyenSinhHCMUTE\obj\Debug\UI.Form1.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.Properties.Resources.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCDanhSachNguoiDung.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCHome.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCQLBangTinTuyenSinh.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCQuanLyDanhSachUngTuyen.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCTimeLine.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.csproj.GenerateResource.cache
+D:\TuyenSinhHCMUTE\obj\Debug\UI.csproj.CoreCompileInputs.cache
+D:\TuyenSinhHCMUTE\obj\Debug\UI.csproj.CopyComplete
+D:\TuyenSinhHCMUTE\obj\Debug\UI.exe
+D:\TuyenSinhHCMUTE\obj\Debug\UI.pdb
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCGioiThieuChung.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCQLThongTinTruong.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCCacVanBanLienQuan.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCCauHoiThuongGap.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCCTDaoTao.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCDanhSachKhoa.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCDiemChuanHangNam.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCHeDaoTao.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCHocPhiHocBong.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCLienHe.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCNganhDaoTao.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCPhuongThucTS.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCThongTinNhapHoc.resources

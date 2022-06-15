@@ -31,5 +31,10 @@ namespace UI.View_Layer
         {
 
         }
+
+        private void btnAddEvent_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -47,11 +47,13 @@ namespace UI
             this.DarkMode = new Guna.UI2.WinForms.Guna2CircleButton();
             this.txbSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.pnlContainer = new System.Windows.Forms.Panel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel3.SuspendLayout();
+            this.pnlContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -368,11 +370,21 @@ namespace UI
             // 
             // pnlContainer
             // 
+            this.pnlContainer.AutoSize = true;
+            this.pnlContainer.Controls.Add(this.guna2Panel2);
             this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContainer.Location = new System.Drawing.Point(394, 99);
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(1150, 730);
             this.pnlContainer.TabIndex = 2;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.guna2Panel2.Location = new System.Drawing.Point(590, 170);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(560, 100);
+            this.guna2Panel2.TabIndex = 0;
             // 
             // Form1
             // 
@@ -387,6 +399,7 @@ namespace UI
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -394,7 +407,9 @@ namespace UI
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
+            this.pnlContainer.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -418,6 +433,7 @@ namespace UI
         private Guna.UI2.WinForms.Guna2Button btnQLTuyenSinh;
         private System.Windows.Forms.Panel pnlContainer;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
     }
 }
 

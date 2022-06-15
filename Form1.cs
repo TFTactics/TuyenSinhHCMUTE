@@ -34,6 +34,8 @@ namespace UI
         public Form1()
         {
             InitializeComponent();
+
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void DarkMode_Click(object sender, EventArgs e)
@@ -130,6 +132,7 @@ namespace UI
                 ucql.Dock = DockStyle.Fill;
                 Form1.Instance.PnlContainer.Controls.Add(ucql);
             }
+            
             Form1.Instance.PnlContainer.Controls["UCQLThongTinTruong"].BringToFront();
         }
 
@@ -144,6 +147,7 @@ namespace UI
             Form1.Instance.PnlContainer.Controls["UCQLBangTinTuyenSinh"].BringToFront();
         }
         #endregion
+
     }
 
 }
