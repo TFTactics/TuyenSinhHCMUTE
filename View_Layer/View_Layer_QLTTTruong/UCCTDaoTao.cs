@@ -31,15 +31,30 @@ namespace UI.View_Layer
 
                 DataSet ds = dbCTDT.LayChuongTrinhDaoTao();
                 dtCTDT = ds.Tables[0];
-                dgvCacVanBanLienQuan.DataSource = dtCTDT;
+                dgvCTDaoTao.DataSource = dtCTDT;
 
-                dgvCacVanBanLienQuan.AutoResizeColumns();
+                dgvCTDaoTao.AutoResizeColumns();
             }
 
             catch (SqlException)
             {
                 MessageBox.Show("Không lấy được nội dung trong Time Line");
             }
+        }
+
+        private void pnlContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

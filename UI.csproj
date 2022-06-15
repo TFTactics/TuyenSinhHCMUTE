@@ -70,18 +70,6 @@
     <Compile Include="View_Layer\View_Layer_QLBangTinTuyenSinh\UCThemTin.Designer.cs">
       <DependentUpon>UCThemTin.cs</DependentUpon>
     </Compile>
-    <Compile Include="View_Layer\View_Layer_QLTTTruong\UCCacVanBanLienQuan.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View_Layer\View_Layer_QLTTTruong\UCCacVanBanLienQuan.Designer.cs">
-      <DependentUpon>UCCacVanBanLienQuan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View_Layer\View_Layer_QLTTTruong\UCCauHoiThuongGap.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View_Layer\View_Layer_QLTTTruong\UCCauHoiThuongGap.Designer.cs">
-      <DependentUpon>UCCauHoiThuongGap.cs</DependentUpon>
-    </Compile>
     <Compile Include="View_Layer\View_Layer_QLTTTruong\UCCTDaoTao.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -99,12 +87,6 @@
     </Compile>
     <Compile Include="View_Layer\UCDanhSachNguoiDung.Designer.cs">
       <DependentUpon>UCDanhSachNguoiDung.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View_Layer\View_Layer_QLTTTruong\UCDiemChuanHangNam.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View_Layer\View_Layer_QLTTTruong\UCDiemChuanHangNam.Designer.cs">
-      <DependentUpon>UCDiemChuanHangNam.cs</DependentUpon>
     </Compile>
     <Compile Include="View_Layer\View_Layer_QLTTTruong\UCGioiThieuChung.cs">
       <SubType>UserControl</SubType>
@@ -189,12 +171,6 @@
     <EmbeddedResource Include="View_Layer\View_Layer_QLBangTinTuyenSinh\UCThemTin.resx">
       <DependentUpon>UCThemTin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View_Layer\View_Layer_QLTTTruong\UCCacVanBanLienQuan.resx">
-      <DependentUpon>UCCacVanBanLienQuan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View_Layer\View_Layer_QLTTTruong\UCCauHoiThuongGap.resx">
-      <DependentUpon>UCCauHoiThuongGap.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View_Layer\View_Layer_QLTTTruong\UCCTDaoTao.resx">
       <DependentUpon>UCCTDaoTao.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,9 +179,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View_Layer\UCDanhSachNguoiDung.resx">
       <DependentUpon>UCDanhSachNguoiDung.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View_Layer\View_Layer_QLTTTruong\UCDiemChuanHangNam.resx">
-      <DependentUpon>UCDiemChuanHangNam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View_Layer\View_Layer_QLTTTruong\UCGioiThieuChung.resx">
       <DependentUpon>UCGioiThieuChung.cs</DependentUpon>

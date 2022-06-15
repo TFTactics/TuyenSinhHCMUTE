@@ -41,29 +41,12 @@ namespace UI.View_Layer
             ucHocPhiHocBong1.BringToFront();
         }
 
-        private void guna2Panel5_Click(object sender, EventArgs e)
-        {
-            ucCacVanBanLienQuan1.Dock = DockStyle.Fill;
-            ucCacVanBanLienQuan1.BringToFront();
-        }
-
-        private void guna2Panel4_Click(object sender, EventArgs e)
-        {
-            ucDiemChuanHangNam1.Dock = DockStyle.Fill;
-            ucDiemChuanHangNam1.BringToFront();
-        }
-
         private void pnlTTNhapHoc_Click(object sender, EventArgs e)
         {
             ucThongTinNhapHoc1.Dock = DockStyle.Fill;
             ucThongTinNhapHoc1.BringToFront();
         }
 
-        private void pnlCauHoiTG_Click(object sender, EventArgs e)
-        {
-            ucCauHoiThuongGap1.Dock = DockStyle.Fill;
-            ucCauHoiThuongGap1.BringToFront();
-        }
 
         private void pnlDSKhoa_Click(object sender, EventArgs e)
         {

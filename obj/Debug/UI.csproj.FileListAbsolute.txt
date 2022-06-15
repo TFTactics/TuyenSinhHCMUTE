@@ -49,11 +49,8 @@ D:\TuyenSinhHCMUTE\obj\Debug\UI.exe
 D:\TuyenSinhHCMUTE\obj\Debug\UI.pdb
 D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCGioiThieuChung.resources
 D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCQLThongTinTruong.resources
-D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCCacVanBanLienQuan.resources
-D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCCauHoiThuongGap.resources
 D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCCTDaoTao.resources
 D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCDanhSachKhoa.resources
-D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCDiemChuanHangNam.resources
 D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCHeDaoTao.resources
 D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCHocPhiHocBong.resources
 D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCLienHe.resources

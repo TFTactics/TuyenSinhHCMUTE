@@ -32,12 +32,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
-            this.dgvCacVanBanLienQuan = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dgvCTDaoTao = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCacVanBanLienQuan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCTDaoTao)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +47,7 @@
             this.pnlContainer.BorderColor = System.Drawing.Color.Transparent;
             this.pnlContainer.BorderRadius = 15;
             this.pnlContainer.BorderThickness = 1;
-            this.pnlContainer.Controls.Add(this.dgvCacVanBanLienQuan);
+            this.pnlContainer.Controls.Add(this.dgvCTDaoTao);
             this.pnlContainer.Controls.Add(this.guna2Panel2);
             this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContainer.FillColor = System.Drawing.Color.White;
@@ -55,16 +55,17 @@
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(1113, 1133);
             this.pnlContainer.TabIndex = 9;
+            this.pnlContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContainer_Paint);
             // 
-            // dgvCacVanBanLienQuan
+            // dgvCTDaoTao
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvCacVanBanLienQuan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvCacVanBanLienQuan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvCacVanBanLienQuan.BackgroundColor = System.Drawing.Color.White;
-            this.dgvCacVanBanLienQuan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvCacVanBanLienQuan.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvCacVanBanLienQuan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvCTDaoTao.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvCTDaoTao.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvCTDaoTao.BackgroundColor = System.Drawing.Color.White;
+            this.dgvCTDaoTao.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvCTDaoTao.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvCTDaoTao.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -72,9 +73,9 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCacVanBanLienQuan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvCacVanBanLienQuan.ColumnHeadersHeight = 27;
-            this.dgvCacVanBanLienQuan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvCTDaoTao.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvCTDaoTao.ColumnHeadersHeight = 27;
+            this.dgvCTDaoTao.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Choose});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -83,39 +84,39 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCacVanBanLienQuan.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvCacVanBanLienQuan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvCacVanBanLienQuan.EnableHeadersVisualStyles = false;
-            this.dgvCacVanBanLienQuan.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvCacVanBanLienQuan.Location = new System.Drawing.Point(0, 46);
-            this.dgvCacVanBanLienQuan.Name = "dgvCacVanBanLienQuan";
-            this.dgvCacVanBanLienQuan.RowHeadersVisible = false;
-            this.dgvCacVanBanLienQuan.RowHeadersWidth = 51;
-            this.dgvCacVanBanLienQuan.RowTemplate.Height = 24;
-            this.dgvCacVanBanLienQuan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCacVanBanLienQuan.Size = new System.Drawing.Size(1113, 1087);
-            this.dgvCacVanBanLienQuan.TabIndex = 16;
-            this.dgvCacVanBanLienQuan.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvCacVanBanLienQuan.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgvCacVanBanLienQuan.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgvCacVanBanLienQuan.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgvCacVanBanLienQuan.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvCacVanBanLienQuan.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgvCacVanBanLienQuan.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvCacVanBanLienQuan.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dgvCacVanBanLienQuan.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvCacVanBanLienQuan.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgvCacVanBanLienQuan.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvCacVanBanLienQuan.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvCacVanBanLienQuan.ThemeStyle.HeaderStyle.Height = 27;
-            this.dgvCacVanBanLienQuan.ThemeStyle.ReadOnly = false;
-            this.dgvCacVanBanLienQuan.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvCacVanBanLienQuan.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvCacVanBanLienQuan.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgvCacVanBanLienQuan.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvCacVanBanLienQuan.ThemeStyle.RowsStyle.Height = 24;
-            this.dgvCacVanBanLienQuan.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvCacVanBanLienQuan.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvCTDaoTao.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvCTDaoTao.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvCTDaoTao.EnableHeadersVisualStyles = false;
+            this.dgvCTDaoTao.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvCTDaoTao.Location = new System.Drawing.Point(0, 46);
+            this.dgvCTDaoTao.Name = "dgvCTDaoTao";
+            this.dgvCTDaoTao.RowHeadersVisible = false;
+            this.dgvCTDaoTao.RowHeadersWidth = 51;
+            this.dgvCTDaoTao.RowTemplate.Height = 24;
+            this.dgvCTDaoTao.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvCTDaoTao.Size = new System.Drawing.Size(1113, 1087);
+            this.dgvCTDaoTao.TabIndex = 16;
+            this.dgvCTDaoTao.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvCTDaoTao.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvCTDaoTao.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvCTDaoTao.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvCTDaoTao.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvCTDaoTao.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgvCTDaoTao.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvCTDaoTao.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgvCTDaoTao.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvCTDaoTao.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgvCTDaoTao.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvCTDaoTao.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvCTDaoTao.ThemeStyle.HeaderStyle.Height = 27;
+            this.dgvCTDaoTao.ThemeStyle.ReadOnly = false;
+            this.dgvCTDaoTao.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvCTDaoTao.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvCTDaoTao.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgvCTDaoTao.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvCTDaoTao.ThemeStyle.RowsStyle.Height = 24;
+            this.dgvCTDaoTao.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvCTDaoTao.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // Choose
             // 
@@ -139,6 +140,7 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1113, 46);
             this.guna2Panel2.TabIndex = 15;
+            this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
             // guna2HtmlLabel2
             // 
@@ -151,6 +153,7 @@
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(803, 30);
             this.guna2HtmlLabel2.TabIndex = 3;
             this.guna2HtmlLabel2.Text = "Quản Lý Chương Trình Đào Tạo";
+            this.guna2HtmlLabel2.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
             // 
             // UCCTDaoTao
             // 
@@ -162,7 +165,7 @@
             this.Load += new System.EventHandler(this.UCCTDaoTao_Load);
             this.pnlContainer.ResumeLayout(false);
             this.pnlContainer.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCacVanBanLienQuan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCTDaoTao)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -171,7 +174,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel pnlContainer;
-        private Guna.UI2.WinForms.Guna2DataGridView dgvCacVanBanLienQuan;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvCTDaoTao;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Choose;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
