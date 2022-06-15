@@ -159,6 +159,7 @@
             this.Controls.Add(this.pnlContainer);
             this.Name = "UCCTDaoTao";
             this.Size = new System.Drawing.Size(1113, 1133);
+            this.Load += new System.EventHandler(this.UCCTDaoTao_Load);
             this.pnlContainer.ResumeLayout(false);
             this.pnlContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCacVanBanLienQuan)).EndInit();

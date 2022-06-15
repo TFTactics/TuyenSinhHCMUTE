@@ -16,5 +16,10 @@ namespace UI.View_Layer
         {
             InitializeComponent();
         }
+
+        private void UCCauHoiThuongGap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

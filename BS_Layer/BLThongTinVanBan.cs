@@ -9,16 +9,16 @@ using UI.BD_Layer;
 
 namespace UI.BS_Layer
 {
-    internal class BLTimeLine
+    internal class BLThongTinVanBan
     {
         DBMain db = null;
-        public BLTimeLine()
+        public BLThongTinVanBan()
         {
             db=new DBMain();
         }
-        public DataSet LayTimeLine()
+        public DataSet LayThongTinVanBan()
         {
-            return db.ExecuteQueryDataSet("select * from TimeLine", CommandType.Text);
+            return db.ExecuteQueryDataSet("select * from ThongTinVanBan", CommandType.Text);
         }
         public bool ThemBangTin(string TieuDe, string NoiDung,string HeDaoTao, string TrangThai, ref string err)
         {

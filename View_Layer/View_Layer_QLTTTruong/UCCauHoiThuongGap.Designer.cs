@@ -159,6 +159,7 @@
             this.Controls.Add(this.pnlContainer);
             this.Name = "UCCauHoiThuongGap";
             this.Size = new System.Drawing.Size(1113, 1133);
+            this.Load += new System.EventHandler(this.UCCauHoiThuongGap_Load);
             this.pnlContainer.ResumeLayout(false);
             this.pnlContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCacVanBanLienQuan)).EndInit();

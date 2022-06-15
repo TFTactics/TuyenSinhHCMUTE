@@ -43,7 +43,7 @@ namespace UI.View_Layer
                 dtTimeLine = new DataTable();
                 dtTimeLine.Clear();
 
-                DataSet ds = dbTimeLine.LayBangTin();
+                DataSet ds = dbTimeLine.LayTimeLine();
                 dtTimeLine = ds.Tables[0];
                 dgvTimeLine.DataSource = dtTimeLine;
 
@@ -52,7 +52,7 @@ namespace UI.View_Layer
 
             catch (SqlException)
             {
-                MessageBox.Show("Không lấy được nội dung trong TinTuyenSinh");
+                MessageBox.Show("Không lấy được nội dung trong Time Line");
             }
         }
     }

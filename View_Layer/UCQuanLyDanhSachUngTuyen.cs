@@ -12,9 +12,15 @@ namespace UI.View_Layer
 {
     public partial class UCQuanLyDanhSachUngTuyen : UserControl
     {
+
         public UCQuanLyDanhSachUngTuyen()
         {
             InitializeComponent();
+        }
+
+        private void UCQuanLyDanhSachUngTuyen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

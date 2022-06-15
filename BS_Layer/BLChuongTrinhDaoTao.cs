@@ -9,20 +9,20 @@ using UI.BD_Layer;
 
 namespace UI.BS_Layer
 {
-    internal class BLTimeLine
+    internal class BLChuongTrinhDaoTao
     {
         DBMain db = null;
-        public BLTimeLine()
+        public BLChuongTrinhDaoTao()
         {
             db=new DBMain();
         }
-        public DataSet LayTimeLine()
+        public DataSet LayChuongTrinhDaoTao()
         {
-            return db.ExecuteQueryDataSet("select * from TimeLine", CommandType.Text);
+            return db.ExecuteQueryDataSet("select * from ChuongTrinhDaoTao", CommandType.Text);
         }
         public bool ThemBangTin(string TieuDe, string NoiDung,string HeDaoTao, string TrangThai, ref string err)
         {
-            string sqlString = "Insert into TimeLine value (" + "N'" + TieuDe + "',N'" + NoiDung + "',N'" + HeDaoTao + "',N'" + TrangThai + "')";
+            string sqlString = "Insert into TinTuyenSinh value (" + "N'" + TieuDe + "',N'" + NoiDung + "',N'" + HeDaoTao + "',N'" + TrangThai + "')";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
         public bool XoaBangTin(ref string err, string TieuDe, string NoiDung, string NgayDang)

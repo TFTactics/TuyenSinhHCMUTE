@@ -50,6 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BD_Layer\DBMain.cs" />
+    <Compile Include="BS_Layer\BLChuongTrinhDaoTao.cs" />
+    <Compile Include="BS_Layer\BLDanhSachNguoiDung.cs" />
+    <Compile Include="BS_Layer\BLThongTinVanBan.cs" />
     <Compile Include="BS_Layer\BLTimeLine.cs" />
     <Compile Include="BS_Layer\BLBangTinTuyenSinh.cs" />
     <Compile Include="Form1.cs">
