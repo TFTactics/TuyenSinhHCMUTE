@@ -37,6 +37,7 @@
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.ThaoTac = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -102,7 +103,8 @@
             this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guna2DataGridView1.ColumnHeadersHeight = 27;
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Choose});
+            this.Choose,
+            this.ThaoTac});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -168,6 +170,16 @@
             this.Choose.MinimumWidth = 6;
             this.Choose.Name = "Choose";
             // 
+            // ThaoTac
+            // 
+            this.ThaoTac.HeaderText = "Thao Tác";
+            this.ThaoTac.Items.AddRange(new object[] {
+            "Chỉnh sửa",
+            "Xem chi tiết",
+            "Xóa"});
+            this.ThaoTac.MinimumWidth = 6;
+            this.ThaoTac.Name = "ThaoTac";
+            // 
             // UCQuanLyDanhSachUngTuyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -195,5 +207,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Choose;
+        private System.Windows.Forms.DataGridViewComboBoxColumn ThaoTac;
     }
 }

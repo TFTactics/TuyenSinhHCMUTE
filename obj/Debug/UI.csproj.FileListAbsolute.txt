@@ -66,12 +66,9 @@ D:\ADO\TuyenSinhHCMUTE\obj\Debug\UI.csproj.SuggestedBindingRedirects.cache
 D:\ADO\TuyenSinhHCMUTE\obj\Debug\UI.Form1.resources
 D:\ADO\TuyenSinhHCMUTE\obj\Debug\UI.Properties.Resources.resources
 D:\ADO\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLBangTinTuyenSinh.UCThemTin.resources
-D:\ADO\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCCacVanBanLienQuan.resources
-D:\ADO\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCCauHoiThuongGap.resources
 D:\ADO\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCCTDaoTao.resources
 D:\ADO\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCDanhSachKhoa.resources
 D:\ADO\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCDanhSachNguoiDung.resources
-D:\ADO\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCDiemChuanHangNam.resources
 D:\ADO\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCGioiThieuChung.resources
 D:\ADO\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCHeDaoTao.resources
 D:\ADO\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.UCHocPhiHocBong.resources

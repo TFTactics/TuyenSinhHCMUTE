@@ -179,6 +179,11 @@ namespace UI
         {
             MenuPrivate();
         }
+
+        private void aToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 
 }

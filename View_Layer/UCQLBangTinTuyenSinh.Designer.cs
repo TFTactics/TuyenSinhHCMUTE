@@ -36,13 +36,14 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.ucThemTin1 = new UI.View_Layer.View_Layer_QLBangTinTuyenSinh.UCThemTin();
             this.pnlBanTinTuyenSinh = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvTinTuyenSinh = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tinTuyenSinhBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ucThemTin1 = new UI.View_Layer.View_Layer_QLBangTinTuyenSinh.UCThemTin();
             this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.ThaoTac = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.pnlContainer.SuspendLayout();
             this.pnlBanTinTuyenSinh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTinTuyenSinh)).BeginInit();
@@ -107,6 +108,13 @@
             this.btnBack.Text = "Trở về";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // ucThemTin1
+            // 
+            this.ucThemTin1.Location = new System.Drawing.Point(15, 588);
+            this.ucThemTin1.Name = "ucThemTin1";
+            this.ucThemTin1.Size = new System.Drawing.Size(50, 50);
+            this.ucThemTin1.TabIndex = 0;
+            // 
             // pnlBanTinTuyenSinh
             // 
             this.pnlBanTinTuyenSinh.BackColor = System.Drawing.SystemColors.Control;
@@ -141,7 +149,8 @@
             this.dgvTinTuyenSinh.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTinTuyenSinh.ColumnHeadersHeight = 27;
             this.dgvTinTuyenSinh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Choose});
+            this.Choose,
+            this.ThaoTac});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -211,19 +220,23 @@
             this.guna2HtmlLabel2.TabIndex = 3;
             this.guna2HtmlLabel2.Text = "Danh sách tin tuyển sinh";
             // 
-            // ucThemTin1
-            // 
-            this.ucThemTin1.Location = new System.Drawing.Point(15, 588);
-            this.ucThemTin1.Name = "ucThemTin1";
-            this.ucThemTin1.Size = new System.Drawing.Size(50, 50);
-            this.ucThemTin1.TabIndex = 0;
-            // 
             // Choose
             // 
             this.Choose.FillWeight = 27.18325F;
             this.Choose.HeaderText = "";
             this.Choose.MinimumWidth = 6;
             this.Choose.Name = "Choose";
+            // 
+            // ThaoTac
+            // 
+            this.ThaoTac.HeaderText = "Thao Tác";
+            this.ThaoTac.Items.AddRange(new object[] {
+            "Chỉnh sửa",
+            "Xóa",
+            "Ẩn bài",
+            "Đăng bài"});
+            this.ThaoTac.MinimumWidth = 6;
+            this.ThaoTac.Name = "ThaoTac";
             // 
             // UCQLBangTinTuyenSinh
             // 
@@ -260,5 +273,6 @@
         private Guna.UI2.WinForms.Guna2DataGridView dgvTinTuyenSinh;
         private System.Windows.Forms.BindingSource tinTuyenSinhBindingSource;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Choose;
+        private System.Windows.Forms.DataGridViewComboBoxColumn ThaoTac;
     }
 }

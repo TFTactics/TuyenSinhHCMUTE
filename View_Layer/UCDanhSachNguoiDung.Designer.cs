@@ -38,13 +38,9 @@
             this.guna2HtmlLabel27 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2CustomGradientPanel9 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2ComboBox9 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinNguoiDung)).BeginInit();
             this.guna2Panel2.SuspendLayout();
-            this.guna2CustomGradientPanel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -57,7 +53,7 @@
             this.guna2Panel1.Controls.Add(this.guna2Panel2);
             this.guna2Panel1.CustomBorderColor = System.Drawing.Color.DimGray;
             this.guna2Panel1.FillColor = System.Drawing.Color.White;
-            this.guna2Panel1.Location = new System.Drawing.Point(20, 226);
+            this.guna2Panel1.Location = new System.Drawing.Point(20, 126);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.BorderRadius = 12;
             this.guna2Panel1.ShadowDecoration.Color = System.Drawing.Color.DimGray;
@@ -182,70 +178,11 @@
             this.guna2HtmlLabel1.TabIndex = 8;
             this.guna2HtmlLabel1.Text = "QUẢN LÝ DANH SÁCH NGƯỜI DÙNG";
             // 
-            // guna2CustomGradientPanel9
-            // 
-            this.guna2CustomGradientPanel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel9.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel9.BorderRadius = 15;
-            this.guna2CustomGradientPanel9.BorderThickness = 1;
-            this.guna2CustomGradientPanel9.Controls.Add(this.guna2ComboBox9);
-            this.guna2CustomGradientPanel9.Controls.Add(this.guna2TextBox1);
-            this.guna2CustomGradientPanel9.Location = new System.Drawing.Point(20, 136);
-            this.guna2CustomGradientPanel9.Name = "guna2CustomGradientPanel9";
-            this.guna2CustomGradientPanel9.Size = new System.Drawing.Size(1108, 70);
-            this.guna2CustomGradientPanel9.TabIndex = 10;
-            // 
-            // guna2ComboBox9
-            // 
-            this.guna2ComboBox9.BackColor = System.Drawing.Color.White;
-            this.guna2ComboBox9.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2ComboBox9.BorderRadius = 5;
-            this.guna2ComboBox9.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox9.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox9.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.guna2ComboBox9.ForeColor = System.Drawing.Color.Black;
-            this.guna2ComboBox9.ItemHeight = 30;
-            this.guna2ComboBox9.Items.AddRange(new object[] {
-            "ALL",
-            "USER",
-            "COLLAB",
-            "ADMIN"});
-            this.guna2ComboBox9.Location = new System.Drawing.Point(950, 18);
-            this.guna2ComboBox9.Name = "guna2ComboBox9";
-            this.guna2ComboBox9.Size = new System.Drawing.Size(140, 36);
-            this.guna2ComboBox9.TabIndex = 14;
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2TextBox1.BorderRadius = 5;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(13, 15);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(399, 42);
-            this.guna2TextBox1.TabIndex = 0;
-            // 
             // UCDanhSachNguoiDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.Controls.Add(this.guna2CustomGradientPanel9);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.DoubleBuffered = true;
@@ -257,7 +194,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinNguoiDung)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            this.guna2CustomGradientPanel9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -266,9 +202,6 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel9;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox9;
         private Guna.UI2.WinForms.Guna2DataGridView dgvThongTinNguoiDung;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel27;

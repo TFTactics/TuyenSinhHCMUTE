@@ -32,10 +32,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvTTNhapHoc = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.ThaoTac = new System.Windows.Forms.DataGridViewComboBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTTNhapHoc)).BeginInit();
             this.pnlContainer.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -60,7 +61,8 @@
             this.dgvTTNhapHoc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTTNhapHoc.ColumnHeadersHeight = 27;
             this.dgvTTNhapHoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Choose});
+            this.Choose,
+            this.ThaoTac});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -101,13 +103,6 @@
             this.dgvTTNhapHoc.ThemeStyle.RowsStyle.Height = 24;
             this.dgvTTNhapHoc.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvTTNhapHoc.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // Choose
-            // 
-            this.Choose.FillWeight = 27.18325F;
-            this.Choose.HeaderText = "";
-            this.Choose.MinimumWidth = 6;
-            this.Choose.Name = "Choose";
             // 
             // pnlContainer
             // 
@@ -152,6 +147,22 @@
             this.guna2HtmlLabel2.TabIndex = 3;
             this.guna2HtmlLabel2.Text = "Quản Lý Thông Tin Nhập Học";
             // 
+            // Choose
+            // 
+            this.Choose.FillWeight = 27.18325F;
+            this.Choose.HeaderText = "";
+            this.Choose.MinimumWidth = 6;
+            this.Choose.Name = "Choose";
+            // 
+            // ThaoTac
+            // 
+            this.ThaoTac.HeaderText = "Thao Tác";
+            this.ThaoTac.Items.AddRange(new object[] {
+            "Chỉnh sửa",
+            "Xóa"});
+            this.ThaoTac.MinimumWidth = 6;
+            this.ThaoTac.Name = "ThaoTac";
+            // 
             // UCThongTinNhapHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -172,9 +183,10 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2DataGridView dgvTTNhapHoc;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Choose;
         private Guna.UI2.WinForms.Guna2Panel pnlContainer;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Choose;
+        private System.Windows.Forms.DataGridViewComboBoxColumn ThaoTac;
     }
 }

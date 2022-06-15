@@ -31,20 +31,13 @@ namespace UI
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnTimeLine = new Guna.UI2.WinForms.Guna2Button();
-            this.btnQLDSUngTuyen = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDSNguoiDung = new Guna.UI2.WinForms.Guna2Button();
-            this.btnQLTinTruong = new Guna.UI2.WinForms.Guna2Button();
-            this.btnQLTuyenSinh = new Guna.UI2.WinForms.Guna2Button();
-            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.txbSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pnlContainer = new System.Windows.Forms.Panel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.msMenuPrivate = new System.Windows.Forms.MenuStrip();
+            this.pnlContainer = new System.Windows.Forms.Panel();
             this.msLight = new System.Windows.Forms.ToolStripMenuItem();
             this.msThongBao = new System.Windows.Forms.ToolStripMenuItem();
             this.msPrivate = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,14 +45,22 @@ namespace UI
             this.msCustomer = new System.Windows.Forms.ToolStripMenuItem();
             this.msDangKi = new System.Windows.Forms.ToolStripMenuItem();
             this.msDangXuat = new System.Windows.Forms.ToolStripMenuItem();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.msExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.txbSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnTimeLine = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQLDSUngTuyen = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDSNguoiDung = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQLTinTruong = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQLTuyenSinh = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel3.SuspendLayout();
-            this.msMenuPrivate.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
+            this.msMenuPrivate.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -87,6 +88,182 @@ namespace UI
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(394, 409);
             this.panel2.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.guna2PictureBox1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(394, 99);
+            this.panel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(93, 54);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Dashboard";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(92, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(210, 29);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "HCMUTE ADMIN";
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BackColor = System.Drawing.Color.White;
+            this.guna2Panel3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.guna2Panel3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.guna2Panel3.Controls.Add(this.guna2Panel2);
+            this.guna2Panel3.Controls.Add(this.txbSearch);
+            this.guna2Panel3.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel3.Location = new System.Drawing.Point(394, 0);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(1150, 99);
+            this.guna2Panel3.TabIndex = 1;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Controls.Add(this.msMenuPrivate);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel2.Location = new System.Drawing.Point(851, 0);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(299, 99);
+            this.guna2Panel2.TabIndex = 4;
+            // 
+            // msMenuPrivate
+            // 
+            this.msMenuPrivate.AutoSize = false;
+            this.msMenuPrivate.BackColor = System.Drawing.Color.Transparent;
+            this.msMenuPrivate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.msMenuPrivate.Dock = System.Windows.Forms.DockStyle.None;
+            this.msMenuPrivate.ImageScalingSize = new System.Drawing.Size(30, 50);
+            this.msMenuPrivate.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msLight,
+            this.msThongBao,
+            this.msPrivate,
+            this.msExit});
+            this.msMenuPrivate.Location = new System.Drawing.Point(0, 36);
+            this.msMenuPrivate.Name = "msMenuPrivate";
+            this.msMenuPrivate.Size = new System.Drawing.Size(290, 28);
+            this.msMenuPrivate.TabIndex = 3;
+            this.msMenuPrivate.Text = "msMenuPrivate";
+            // 
+            // pnlContainer
+            // 
+            this.pnlContainer.AutoSize = true;
+            this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContainer.Location = new System.Drawing.Point(394, 99);
+            this.pnlContainer.Name = "pnlContainer";
+            this.pnlContainer.Size = new System.Drawing.Size(1150, 730);
+            this.pnlContainer.TabIndex = 2;
+            // 
+            // msLight
+            // 
+            this.msLight.AutoSize = false;
+            this.msLight.BackColor = System.Drawing.Color.Transparent;
+            this.msLight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.msLight.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.msLight.Image = global::UI.Properties.Resources.LightMode;
+            this.msLight.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.msLight.Name = "msLight";
+            this.msLight.Size = new System.Drawing.Size(50, 30);
+            this.msLight.Click += new System.EventHandler(this.DarkMode_Click);
+            // 
+            // msThongBao
+            // 
+            this.msThongBao.AutoSize = false;
+            this.msThongBao.BackColor = System.Drawing.Color.Transparent;
+            this.msThongBao.Image = global::UI.Properties.Resources.notifications;
+            this.msThongBao.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.msThongBao.Name = "msThongBao";
+            this.msThongBao.Size = new System.Drawing.Size(50, 30);
+            // 
+            // msPrivate
+            // 
+            this.msPrivate.AutoSize = false;
+            this.msPrivate.BackColor = System.Drawing.Color.Transparent;
+            this.msPrivate.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msAdmin,
+            this.msCustomer,
+            this.msDangKi,
+            this.msDangXuat});
+            this.msPrivate.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.msPrivate.Image = global::UI.Properties.Resources.programmer;
+            this.msPrivate.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.msPrivate.Name = "msPrivate";
+            this.msPrivate.Size = new System.Drawing.Size(50, 30);
+            this.msPrivate.Click += new System.EventHandler(this.msPrivate_Click);
+            // 
+            // msAdmin
+            // 
+            this.msAdmin.Name = "msAdmin";
+            this.msAdmin.Size = new System.Drawing.Size(224, 26);
+            this.msAdmin.Text = "Admin";
+            // 
+            // msCustomer
+            // 
+            this.msCustomer.Name = "msCustomer";
+            this.msCustomer.Size = new System.Drawing.Size(224, 26);
+            this.msCustomer.Text = "Customer";
+            // 
+            // msDangKi
+            // 
+            this.msDangKi.Name = "msDangKi";
+            this.msDangKi.Size = new System.Drawing.Size(224, 26);
+            this.msDangKi.Text = "Đăng kí";
+            // 
+            // msDangXuat
+            // 
+            this.msDangXuat.Name = "msDangXuat";
+            this.msDangXuat.Size = new System.Drawing.Size(224, 26);
+            this.msDangXuat.Text = "Đăng xuất";
+            // 
+            // msExit
+            // 
+            this.msExit.AutoSize = false;
+            this.msExit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.msExit.Image = global::UI.Properties.Resources.iconexit;
+            this.msExit.Name = "msExit";
+            this.msExit.Size = new System.Drawing.Size(50, 30);
+            this.msExit.Click += new System.EventHandler(this.aToolStripMenuItem_Click);
+            // 
+            // txbSearch
+            // 
+            this.txbSearch.BorderRadius = 5;
+            this.txbSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbSearch.DefaultText = "";
+            this.txbSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txbSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbSearch.IconLeft = global::UI.Properties.Resources.icons8_magnifying_glass_64;
+            this.txbSearch.IconLeftSize = new System.Drawing.Size(30, 30);
+            this.txbSearch.Location = new System.Drawing.Point(48, 20);
+            this.txbSearch.Name = "txbSearch";
+            this.txbSearch.PasswordChar = '\0';
+            this.txbSearch.PlaceholderText = "";
+            this.txbSearch.SelectedText = "";
+            this.txbSearch.Size = new System.Drawing.Size(321, 55);
+            this.txbSearch.TabIndex = 0;
             // 
             // btnTimeLine
             // 
@@ -226,18 +403,6 @@ namespace UI
             this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.guna2PictureBox1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(394, 99);
-            this.panel1.TabIndex = 0;
-            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::UI.Properties.Resources.hcmute_logo_7553D4CCA1_seeklogo_com;
@@ -248,160 +413,6 @@ namespace UI
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 3;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(93, 54);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Dashboard";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(92, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "HCMUTE ADMIN";
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.BackColor = System.Drawing.Color.White;
-            this.guna2Panel3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2Panel3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.guna2Panel3.Controls.Add(this.guna2Panel2);
-            this.guna2Panel3.Controls.Add(this.txbSearch);
-            this.guna2Panel3.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel3.Location = new System.Drawing.Point(394, 0);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(1150, 99);
-            this.guna2Panel3.TabIndex = 1;
-            // 
-            // txbSearch
-            // 
-            this.txbSearch.BorderRadius = 5;
-            this.txbSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbSearch.DefaultText = "";
-            this.txbSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txbSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txbSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txbSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbSearch.IconLeft = global::UI.Properties.Resources.icons8_magnifying_glass_64;
-            this.txbSearch.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.txbSearch.Location = new System.Drawing.Point(48, 20);
-            this.txbSearch.Name = "txbSearch";
-            this.txbSearch.PasswordChar = '\0';
-            this.txbSearch.PlaceholderText = "";
-            this.txbSearch.SelectedText = "";
-            this.txbSearch.Size = new System.Drawing.Size(321, 55);
-            this.txbSearch.TabIndex = 0;
-            // 
-            // pnlContainer
-            // 
-            this.pnlContainer.AutoSize = true;
-            this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContainer.Location = new System.Drawing.Point(394, 99);
-            this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(1150, 730);
-            this.pnlContainer.TabIndex = 2;
-            // 
-            // msMenuPrivate
-            // 
-            this.msMenuPrivate.AutoSize = false;
-            this.msMenuPrivate.BackColor = System.Drawing.Color.Transparent;
-            this.msMenuPrivate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.msMenuPrivate.Dock = System.Windows.Forms.DockStyle.None;
-            this.msMenuPrivate.ImageScalingSize = new System.Drawing.Size(30, 50);
-            this.msMenuPrivate.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.msLight,
-            this.msThongBao,
-            this.msPrivate});
-            this.msMenuPrivate.Location = new System.Drawing.Point(0, 38);
-            this.msMenuPrivate.Name = "msMenuPrivate";
-            this.msMenuPrivate.Size = new System.Drawing.Size(247, 28);
-            this.msMenuPrivate.TabIndex = 3;
-            this.msMenuPrivate.Text = "msMenuPrivate";
-            // 
-            // msLight
-            // 
-            this.msLight.AutoSize = false;
-            this.msLight.BackColor = System.Drawing.Color.Transparent;
-            this.msLight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.msLight.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.msLight.Image = global::UI.Properties.Resources.LightMode;
-            this.msLight.ImageTransparentColor = System.Drawing.Color.Transparent;
-            this.msLight.Name = "msLight";
-            this.msLight.Size = new System.Drawing.Size(50, 30);
-            this.msLight.Click += new System.EventHandler(this.DarkMode_Click);
-            // 
-            // msThongBao
-            // 
-            this.msThongBao.AutoSize = false;
-            this.msThongBao.BackColor = System.Drawing.Color.Transparent;
-            this.msThongBao.Image = global::UI.Properties.Resources.notifications;
-            this.msThongBao.ImageTransparentColor = System.Drawing.Color.Transparent;
-            this.msThongBao.Name = "msThongBao";
-            this.msThongBao.Size = new System.Drawing.Size(50, 30);
-            // 
-            // msPrivate
-            // 
-            this.msPrivate.AutoSize = false;
-            this.msPrivate.BackColor = System.Drawing.Color.Transparent;
-            this.msPrivate.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.msAdmin,
-            this.msCustomer,
-            this.msDangKi,
-            this.msDangXuat});
-            this.msPrivate.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.msPrivate.Image = global::UI.Properties.Resources.programmer;
-            this.msPrivate.ImageTransparentColor = System.Drawing.Color.Transparent;
-            this.msPrivate.Name = "msPrivate";
-            this.msPrivate.Size = new System.Drawing.Size(50, 30);
-            this.msPrivate.Click += new System.EventHandler(this.msPrivate_Click);
-            // 
-            // msAdmin
-            // 
-            this.msAdmin.Name = "msAdmin";
-            this.msAdmin.Size = new System.Drawing.Size(224, 26);
-            this.msAdmin.Text = "Admin";
-            // 
-            // msCustomer
-            // 
-            this.msCustomer.Name = "msCustomer";
-            this.msCustomer.Size = new System.Drawing.Size(224, 26);
-            this.msCustomer.Text = "Customer";
-            // 
-            // msDangKi
-            // 
-            this.msDangKi.Name = "msDangKi";
-            this.msDangKi.Size = new System.Drawing.Size(224, 26);
-            this.msDangKi.Text = "Đăng kí";
-            // 
-            // msDangXuat
-            // 
-            this.msDangXuat.Name = "msDangXuat";
-            this.msDangXuat.Size = new System.Drawing.Size(224, 26);
-            this.msDangXuat.Text = "Đăng xuất";
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.Controls.Add(this.msMenuPrivate);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel2.Location = new System.Drawing.Point(894, 0);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(256, 99);
-            this.guna2Panel2.TabIndex = 4;
             // 
             // Form1
             // 
@@ -422,11 +433,11 @@ namespace UI
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
             this.msMenuPrivate.ResumeLayout(false);
             this.msMenuPrivate.PerformLayout();
-            this.guna2Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -458,6 +469,7 @@ namespace UI
         private System.Windows.Forms.ToolStripMenuItem msCustomer;
         private System.Windows.Forms.ToolStripMenuItem msDangKi;
         private System.Windows.Forms.ToolStripMenuItem msDangXuat;
+        private System.Windows.Forms.ToolStripMenuItem msExit;
     }
 }
 

@@ -261,6 +261,7 @@
   <ItemGroup>
     <Content Include="BS_Layer\Describe.txt" />
     <Content Include="BD_Layer\Describe.txt" />
+    <None Include="Resource\iconexit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

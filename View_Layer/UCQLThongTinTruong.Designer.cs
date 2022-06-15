@@ -84,16 +84,16 @@
             // 
             // pnlQLThongTinTruong2
             // 
-            this.pnlQLThongTinTruong2.Controls.Add(this.ucHeDaoTao1);
-            this.pnlQLThongTinTruong2.Controls.Add(this.ucLienHe1);
             this.pnlQLThongTinTruong2.Controls.Add(this.ucNganhDaoTao1);
             this.pnlQLThongTinTruong2.Controls.Add(this.ucDanhSachKhoa1);
-            this.pnlQLThongTinTruong2.Controls.Add(this.ucThongTinNhapHoc1);
-            this.pnlQLThongTinTruong2.Controls.Add(this.ucHocPhiHocBong1);
-            this.pnlQLThongTinTruong2.Controls.Add(this.ucPhuongThucTS1);
             this.pnlQLThongTinTruong2.Controls.Add(this.pnlQLThongTinTruong1);
             this.pnlQLThongTinTruong2.Controls.Add(this.ucGioiThieuChung1);
             this.pnlQLThongTinTruong2.Controls.Add(this.ucctDaoTao1);
+            this.pnlQLThongTinTruong2.Controls.Add(this.ucHeDaoTao1);
+            this.pnlQLThongTinTruong2.Controls.Add(this.ucLienHe1);
+            this.pnlQLThongTinTruong2.Controls.Add(this.ucThongTinNhapHoc1);
+            this.pnlQLThongTinTruong2.Controls.Add(this.ucHocPhiHocBong1);
+            this.pnlQLThongTinTruong2.Controls.Add(this.ucPhuongThucTS1);
             this.pnlQLThongTinTruong2.Location = new System.Drawing.Point(11, 136);
             this.pnlQLThongTinTruong2.Name = "pnlQLThongTinTruong2";
             this.pnlQLThongTinTruong2.Size = new System.Drawing.Size(1113, 1133);
