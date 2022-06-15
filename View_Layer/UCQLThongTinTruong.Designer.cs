@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbHome = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlQLThongTinTruong2 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlQLThongTinTruong1 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlHeDaoTao = new Guna.UI2.WinForms.Guna2Panel();
@@ -72,6 +71,7 @@
             this.pnlGTChung = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.ucHeDaoTao1 = new UI.View_Layer.UCHeDaoTao();
             this.ucLienHe1 = new UI.View_Layer.UCLienHe();
             this.ucNganhDaoTao1 = new UI.View_Layer.UCNganhDaoTao();
@@ -99,20 +99,6 @@
             this.pnlPTTuyenSinh.SuspendLayout();
             this.pnlGTChung.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lbHome
-            // 
-            this.lbHome.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
-            this.lbHome.AutoSize = false;
-            this.lbHome.BackColor = System.Drawing.Color.Transparent;
-            this.lbHome.Font = new System.Drawing.Font("Roboto Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbHome.Location = new System.Drawing.Point(20, 72);
-            this.lbHome.Name = "lbHome";
-            this.lbHome.Size = new System.Drawing.Size(822, 34);
-            this.lbHome.TabIndex = 9;
-            this.lbHome.Text = "QUẢN LÝ THÔNG TIN TRƯỜNG";
-            this.lbHome.Click += new System.EventHandler(this.lbHome_Click);
             // 
             // pnlQLThongTinTruong2
             // 
@@ -731,6 +717,25 @@
             this.guna2HtmlLabel2.TabIndex = 0;
             this.guna2HtmlLabel2.Text = "Giới thiệu chung";
             // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.BorderColor = System.Drawing.Color.Transparent;
+            this.btnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHome.FillColor = System.Drawing.Color.Transparent;
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.Black;
+            this.btnHome.Location = new System.Drawing.Point(20, 72);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(1104, 34);
+            this.btnHome.TabIndex = 45;
+            this.btnHome.Text = "QUẢN LÝ THÔNG TIN TRƯỜNG";
+            this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnHome.Click += new System.EventHandler(this.lbHome_Click);
+            // 
             // ucHeDaoTao1
             // 
             this.ucHeDaoTao1.Location = new System.Drawing.Point(405, 1069);
@@ -824,8 +829,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(5, 5);
+            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.pnlQLThongTinTruong2);
-            this.Controls.Add(this.lbHome);
             this.DoubleBuffered = true;
             this.Name = "UCQLThongTinTruong";
             this.Size = new System.Drawing.Size(1140, 1500);
@@ -850,8 +855,6 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbHome;
         private Guna.UI2.WinForms.Guna2Panel pnlQLThongTinTruong2;
         private Guna.UI2.WinForms.Guna2Panel pnlQLThongTinTruong1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
@@ -907,5 +910,6 @@
         private UCLienHe ucLienHe1;
         private UCHeDaoTao ucHeDaoTao1;
         private UCCacVanBanLienQuan ucCacVanBanLienQuan1;
+        private Guna.UI2.WinForms.Guna2Button btnHome;
     }
 }
