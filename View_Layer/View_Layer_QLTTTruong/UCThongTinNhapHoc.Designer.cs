@@ -160,6 +160,7 @@
             this.Controls.Add(this.pnlContainer);
             this.Name = "UCThongTinNhapHoc";
             this.Size = new System.Drawing.Size(1130, 1130);
+            this.Load += new System.EventHandler(this.UCThongTinNhapHoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTTNhapHoc)).EndInit();
             this.pnlContainer.ResumeLayout(false);
             this.pnlContainer.PerformLayout();
