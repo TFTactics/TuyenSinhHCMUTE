@@ -28,19 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbHome = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlQLThongTinTruong2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.ucHeDaoTao1 = new UI.View_Layer.UCHeDaoTao();
-            this.ucLienHe1 = new UI.View_Layer.UCLienHe();
-            this.ucNganhDaoTao1 = new UI.View_Layer.UCNganhDaoTao();
-            this.ucDanhSachKhoa1 = new UI.View_Layer.UCDanhSachKhoa();
-            this.ucCauHoiThuongGap1 = new UI.View_Layer.UCCauHoiThuongGap();
-            this.ucThongTinNhapHoc1 = new UI.View_Layer.UCThongTinNhapHoc();
-            this.ucDiemChuanHangNam1 = new UI.View_Layer.UCDiemChuanHangNam();
-            this.ucCacVanBanLienQuan1 = new UI.View_Layer.UCCacVanBanLienQuan();
-            this.ucHocPhiHocBong1 = new UI.View_Layer.UCHocPhiHocBong();
-            this.ucPhuongThucTS1 = new UI.View_Layer.UCPhuongThucTS();
-            this.ucctDaoTao1 = new UI.View_Layer.UCCTDaoTao();
             this.pnlQLThongTinTruong1 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlHeDaoTao = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel29 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -83,8 +72,18 @@
             this.pnlGTChung = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.ucHeDaoTao1 = new UI.View_Layer.UCHeDaoTao();
+            this.ucLienHe1 = new UI.View_Layer.UCLienHe();
+            this.ucNganhDaoTao1 = new UI.View_Layer.UCNganhDaoTao();
+            this.ucDanhSachKhoa1 = new UI.View_Layer.UCDanhSachKhoa();
+            this.ucCauHoiThuongGap1 = new UI.View_Layer.UCCauHoiThuongGap();
+            this.ucThongTinNhapHoc1 = new UI.View_Layer.UCThongTinNhapHoc();
+            this.ucDiemChuanHangNam1 = new UI.View_Layer.UCDiemChuanHangNam();
+            this.ucHocPhiHocBong1 = new UI.View_Layer.UCHocPhiHocBong();
+            this.ucPhuongThucTS1 = new UI.View_Layer.UCPhuongThucTS();
+            this.ucctDaoTao1 = new UI.View_Layer.UCCTDaoTao();
             this.ucGioiThieuChung1 = new UI.View_Layer.UCGioiThieuChung();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.ucCacVanBanLienQuan1 = new UI.View_Layer.UCCacVanBanLienQuan();
             this.pnlQLThongTinTruong2.SuspendLayout();
             this.pnlQLThongTinTruong1.SuspendLayout();
             this.pnlHeDaoTao.SuspendLayout();
@@ -101,17 +100,19 @@
             this.pnlGTChung.SuspendLayout();
             this.SuspendLayout();
             // 
-            // guna2HtmlLabel1
+            // lbHome
             // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.AutoSizeHeightOnly = true;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Roboto Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(20, 72);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(822, 34);
-            this.guna2HtmlLabel1.TabIndex = 9;
-            this.guna2HtmlLabel1.Text = "QUẢN LÝ THÔNG TIN TRƯỜNG";
+            this.lbHome.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
+            this.lbHome.AutoSize = false;
+            this.lbHome.BackColor = System.Drawing.Color.Transparent;
+            this.lbHome.Font = new System.Drawing.Font("Roboto Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbHome.Location = new System.Drawing.Point(20, 72);
+            this.lbHome.Name = "lbHome";
+            this.lbHome.Size = new System.Drawing.Size(822, 34);
+            this.lbHome.TabIndex = 9;
+            this.lbHome.Text = "QUẢN LÝ THÔNG TIN TRƯỜNG";
+            this.lbHome.Click += new System.EventHandler(this.lbHome_Click);
             // 
             // pnlQLThongTinTruong2
             // 
@@ -122,94 +123,16 @@
             this.pnlQLThongTinTruong2.Controls.Add(this.ucCauHoiThuongGap1);
             this.pnlQLThongTinTruong2.Controls.Add(this.ucThongTinNhapHoc1);
             this.pnlQLThongTinTruong2.Controls.Add(this.ucDiemChuanHangNam1);
-            this.pnlQLThongTinTruong2.Controls.Add(this.ucCacVanBanLienQuan1);
             this.pnlQLThongTinTruong2.Controls.Add(this.ucHocPhiHocBong1);
             this.pnlQLThongTinTruong2.Controls.Add(this.ucPhuongThucTS1);
             this.pnlQLThongTinTruong2.Controls.Add(this.ucctDaoTao1);
             this.pnlQLThongTinTruong2.Controls.Add(this.pnlQLThongTinTruong1);
             this.pnlQLThongTinTruong2.Controls.Add(this.ucGioiThieuChung1);
+            this.pnlQLThongTinTruong2.Controls.Add(this.ucCacVanBanLienQuan1);
             this.pnlQLThongTinTruong2.Location = new System.Drawing.Point(11, 136);
             this.pnlQLThongTinTruong2.Name = "pnlQLThongTinTruong2";
             this.pnlQLThongTinTruong2.Size = new System.Drawing.Size(1113, 1133);
             this.pnlQLThongTinTruong2.TabIndex = 44;
-            // 
-            // ucHeDaoTao1
-            // 
-            this.ucHeDaoTao1.Location = new System.Drawing.Point(405, 1069);
-            this.ucHeDaoTao1.Name = "ucHeDaoTao1";
-            this.ucHeDaoTao1.Size = new System.Drawing.Size(50, 50);
-            this.ucHeDaoTao1.TabIndex = 56;
-            // 
-            // ucLienHe1
-            // 
-            this.ucLienHe1.Location = new System.Drawing.Point(349, 1069);
-            this.ucLienHe1.Name = "ucLienHe1";
-            this.ucLienHe1.Size = new System.Drawing.Size(50, 50);
-            this.ucLienHe1.TabIndex = 55;
-            // 
-            // ucNganhDaoTao1
-            // 
-            this.ucNganhDaoTao1.Location = new System.Drawing.Point(349, 1069);
-            this.ucNganhDaoTao1.Name = "ucNganhDaoTao1";
-            this.ucNganhDaoTao1.Size = new System.Drawing.Size(50, 50);
-            this.ucNganhDaoTao1.TabIndex = 54;
-            // 
-            // ucDanhSachKhoa1
-            // 
-            this.ucDanhSachKhoa1.Location = new System.Drawing.Point(349, 1069);
-            this.ucDanhSachKhoa1.Name = "ucDanhSachKhoa1";
-            this.ucDanhSachKhoa1.Size = new System.Drawing.Size(50, 50);
-            this.ucDanhSachKhoa1.TabIndex = 53;
-            // 
-            // ucCauHoiThuongGap1
-            // 
-            this.ucCauHoiThuongGap1.Location = new System.Drawing.Point(349, 1069);
-            this.ucCauHoiThuongGap1.Name = "ucCauHoiThuongGap1";
-            this.ucCauHoiThuongGap1.Size = new System.Drawing.Size(50, 50);
-            this.ucCauHoiThuongGap1.TabIndex = 52;
-            // 
-            // ucThongTinNhapHoc1
-            // 
-            this.ucThongTinNhapHoc1.AutoSize = true;
-            this.ucThongTinNhapHoc1.Location = new System.Drawing.Point(293, 1069);
-            this.ucThongTinNhapHoc1.Name = "ucThongTinNhapHoc1";
-            this.ucThongTinNhapHoc1.Size = new System.Drawing.Size(50, 50);
-            this.ucThongTinNhapHoc1.TabIndex = 51;
-            // 
-            // ucDiemChuanHangNam1
-            // 
-            this.ucDiemChuanHangNam1.Location = new System.Drawing.Point(237, 1069);
-            this.ucDiemChuanHangNam1.Name = "ucDiemChuanHangNam1";
-            this.ucDiemChuanHangNam1.Size = new System.Drawing.Size(50, 50);
-            this.ucDiemChuanHangNam1.TabIndex = 50;
-            // 
-            // ucCacVanBanLienQuan1
-            // 
-            this.ucCacVanBanLienQuan1.Location = new System.Drawing.Point(181, 1069);
-            this.ucCacVanBanLienQuan1.Name = "ucCacVanBanLienQuan1";
-            this.ucCacVanBanLienQuan1.Size = new System.Drawing.Size(50, 50);
-            this.ucCacVanBanLienQuan1.TabIndex = 49;
-            // 
-            // ucHocPhiHocBong1
-            // 
-            this.ucHocPhiHocBong1.Location = new System.Drawing.Point(125, 1069);
-            this.ucHocPhiHocBong1.Name = "ucHocPhiHocBong1";
-            this.ucHocPhiHocBong1.Size = new System.Drawing.Size(50, 50);
-            this.ucHocPhiHocBong1.TabIndex = 48;
-            // 
-            // ucPhuongThucTS1
-            // 
-            this.ucPhuongThucTS1.Location = new System.Drawing.Point(69, 1069);
-            this.ucPhuongThucTS1.Name = "ucPhuongThucTS1";
-            this.ucPhuongThucTS1.Size = new System.Drawing.Size(50, 50);
-            this.ucPhuongThucTS1.TabIndex = 47;
-            // 
-            // ucctDaoTao1
-            // 
-            this.ucctDaoTao1.Location = new System.Drawing.Point(13, 1069);
-            this.ucctDaoTao1.Name = "ucctDaoTao1";
-            this.ucctDaoTao1.Size = new System.Drawing.Size(50, 50);
-            this.ucctDaoTao1.TabIndex = 46;
             // 
             // pnlQLThongTinTruong1
             // 
@@ -808,6 +731,77 @@
             this.guna2HtmlLabel2.TabIndex = 0;
             this.guna2HtmlLabel2.Text = "Giới thiệu chung";
             // 
+            // ucHeDaoTao1
+            // 
+            this.ucHeDaoTao1.Location = new System.Drawing.Point(405, 1069);
+            this.ucHeDaoTao1.Name = "ucHeDaoTao1";
+            this.ucHeDaoTao1.Size = new System.Drawing.Size(50, 50);
+            this.ucHeDaoTao1.TabIndex = 56;
+            // 
+            // ucLienHe1
+            // 
+            this.ucLienHe1.Location = new System.Drawing.Point(349, 1069);
+            this.ucLienHe1.Name = "ucLienHe1";
+            this.ucLienHe1.Size = new System.Drawing.Size(50, 50);
+            this.ucLienHe1.TabIndex = 55;
+            // 
+            // ucNganhDaoTao1
+            // 
+            this.ucNganhDaoTao1.Location = new System.Drawing.Point(349, 1069);
+            this.ucNganhDaoTao1.Name = "ucNganhDaoTao1";
+            this.ucNganhDaoTao1.Size = new System.Drawing.Size(50, 50);
+            this.ucNganhDaoTao1.TabIndex = 54;
+            // 
+            // ucDanhSachKhoa1
+            // 
+            this.ucDanhSachKhoa1.Location = new System.Drawing.Point(349, 1069);
+            this.ucDanhSachKhoa1.Name = "ucDanhSachKhoa1";
+            this.ucDanhSachKhoa1.Size = new System.Drawing.Size(50, 50);
+            this.ucDanhSachKhoa1.TabIndex = 53;
+            // 
+            // ucCauHoiThuongGap1
+            // 
+            this.ucCauHoiThuongGap1.Location = new System.Drawing.Point(349, 1069);
+            this.ucCauHoiThuongGap1.Name = "ucCauHoiThuongGap1";
+            this.ucCauHoiThuongGap1.Size = new System.Drawing.Size(50, 50);
+            this.ucCauHoiThuongGap1.TabIndex = 52;
+            // 
+            // ucThongTinNhapHoc1
+            // 
+            this.ucThongTinNhapHoc1.AutoSize = true;
+            this.ucThongTinNhapHoc1.Location = new System.Drawing.Point(293, 1069);
+            this.ucThongTinNhapHoc1.Name = "ucThongTinNhapHoc1";
+            this.ucThongTinNhapHoc1.Size = new System.Drawing.Size(50, 50);
+            this.ucThongTinNhapHoc1.TabIndex = 51;
+            // 
+            // ucDiemChuanHangNam1
+            // 
+            this.ucDiemChuanHangNam1.Location = new System.Drawing.Point(237, 1069);
+            this.ucDiemChuanHangNam1.Name = "ucDiemChuanHangNam1";
+            this.ucDiemChuanHangNam1.Size = new System.Drawing.Size(50, 50);
+            this.ucDiemChuanHangNam1.TabIndex = 50;
+            // 
+            // ucHocPhiHocBong1
+            // 
+            this.ucHocPhiHocBong1.Location = new System.Drawing.Point(125, 1069);
+            this.ucHocPhiHocBong1.Name = "ucHocPhiHocBong1";
+            this.ucHocPhiHocBong1.Size = new System.Drawing.Size(50, 50);
+            this.ucHocPhiHocBong1.TabIndex = 48;
+            // 
+            // ucPhuongThucTS1
+            // 
+            this.ucPhuongThucTS1.Location = new System.Drawing.Point(69, 1069);
+            this.ucPhuongThucTS1.Name = "ucPhuongThucTS1";
+            this.ucPhuongThucTS1.Size = new System.Drawing.Size(50, 50);
+            this.ucPhuongThucTS1.TabIndex = 47;
+            // 
+            // ucctDaoTao1
+            // 
+            this.ucctDaoTao1.Location = new System.Drawing.Point(13, 1069);
+            this.ucctDaoTao1.Name = "ucctDaoTao1";
+            this.ucctDaoTao1.Size = new System.Drawing.Size(50, 50);
+            this.ucctDaoTao1.TabIndex = 46;
+            // 
             // ucGioiThieuChung1
             // 
             this.ucGioiThieuChung1.AutoSize = true;
@@ -817,15 +811,12 @@
             this.ucGioiThieuChung1.Size = new System.Drawing.Size(1113, 0);
             this.ucGioiThieuChung1.TabIndex = 45;
             // 
-            // btnBack
+            // ucCacVanBanLienQuan1
             // 
-            this.btnBack.Location = new System.Drawing.Point(1002, 90);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(80, 40);
-            this.btnBack.TabIndex = 45;
-            this.btnBack.Text = "Trở về";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.ucCacVanBanLienQuan1.Location = new System.Drawing.Point(181, 1069);
+            this.ucCacVanBanLienQuan1.Name = "ucCacVanBanLienQuan1";
+            this.ucCacVanBanLienQuan1.Size = new System.Drawing.Size(50, 50);
+            this.ucCacVanBanLienQuan1.TabIndex = 49;
             // 
             // UCQLThongTinTruong
             // 
@@ -833,9 +824,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(5, 5);
-            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.pnlQLThongTinTruong2);
-            this.Controls.Add(this.guna2HtmlLabel1);
+            this.Controls.Add(this.lbHome);
             this.DoubleBuffered = true;
             this.Name = "UCQLThongTinTruong";
             this.Size = new System.Drawing.Size(1140, 1500);
@@ -861,7 +851,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbHome;
         private Guna.UI2.WinForms.Guna2Panel pnlQLThongTinTruong2;
         private Guna.UI2.WinForms.Guna2Panel pnlQLThongTinTruong1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
@@ -900,7 +890,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private UCGioiThieuChung ucGioiThieuChung1;
-        private System.Windows.Forms.Button btnBack;
         private Guna.UI2.WinForms.Guna2Panel pnlLienHe;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel22;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel23;
@@ -910,7 +899,6 @@
         private UCCTDaoTao ucctDaoTao1;
         private UCPhuongThucTS ucPhuongThucTS1;
         private UCHocPhiHocBong ucHocPhiHocBong1;
-        private UCCacVanBanLienQuan ucCacVanBanLienQuan1;
         private UCDiemChuanHangNam ucDiemChuanHangNam1;
         private UCThongTinNhapHoc ucThongTinNhapHoc1;
         private UCCauHoiThuongGap ucCauHoiThuongGap1;
@@ -918,5 +906,6 @@
         private UCNganhDaoTao ucNganhDaoTao1;
         private UCLienHe ucLienHe1;
         private UCHeDaoTao ucHeDaoTao1;
+        private UCCacVanBanLienQuan ucCacVanBanLienQuan1;
     }
 }

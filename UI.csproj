@@ -162,10 +162,10 @@
     <Compile Include="View_Layer\UCQuanLyDanhSachUngTuyen.Designer.cs">
       <DependentUpon>UCQuanLyDanhSachUngTuyen.cs</DependentUpon>
     </Compile>
-    <Compile Include="View_Layer\UCThongTinNhapHoc.cs">
+    <Compile Include="View_Layer\View_Layer_QLTTTruong\UCThongTinNhapHoc.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View_Layer\UCThongTinNhapHoc.Designer.cs">
+    <Compile Include="View_Layer\View_Layer_QLTTTruong\UCThongTinNhapHoc.Designer.cs">
       <DependentUpon>UCThongTinNhapHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="View_Layer\UCTimeLine.cs">
@@ -233,7 +233,7 @@
     <EmbeddedResource Include="View_Layer\UCQuanLyDanhSachUngTuyen.resx">
       <DependentUpon>UCQuanLyDanhSachUngTuyen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View_Layer\UCThongTinNhapHoc.resx">
+    <EmbeddedResource Include="View_Layer\View_Layer_QLTTTruong\UCThongTinNhapHoc.resx">
       <DependentUpon>UCThongTinNhapHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View_Layer\UCTimeLine.resx">
