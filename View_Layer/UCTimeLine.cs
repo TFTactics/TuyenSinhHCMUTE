@@ -1,17 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
-
+using UI.BS_Layer;
 namespace UI.View_Layer
 {
     public partial class UCTimeLine : UserControl
     {
+        DataTable dtTimeLine = null;
+        BLTimeLine dbTimeLine = new BLTimeLine();
+        private bool checkUC = false;
+
         public UCTimeLine()
         {
             InitializeComponent();
@@ -35,6 +34,26 @@ namespace UI.View_Layer
         private void btnAddEvent_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void UCTimeLine_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                dtTimeLine = new DataTable();
+                dtTimeLine.Clear();
+
+                DataSet ds = dbTimeLine.LayBangTin();
+                dtTimeLine = ds.Tables[0];
+                dgvTimeLine.DataSource = dtTimeLine;
+
+                dgvTimeLine.AutoResizeColumns();
+            }
+
+            catch (SqlException)
+            {
+                MessageBox.Show("Không lấy được nội dung trong TinTuyenSinh");
+            }
         }
     }
 }

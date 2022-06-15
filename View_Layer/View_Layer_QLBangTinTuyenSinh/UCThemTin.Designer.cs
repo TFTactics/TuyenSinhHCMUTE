@@ -196,6 +196,7 @@
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Name = "UCThemTin";
             this.Size = new System.Drawing.Size(1113, 1133);
+            this.Load += new System.EventHandler(this.UCThemTin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

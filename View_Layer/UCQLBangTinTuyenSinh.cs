@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
+using UI.BS_Layer;
 
 namespace UI.View_Layer
 {
     public partial class UCQLBangTinTuyenSinh : UserControl
     {
+        DataTable dtTinTuyenSinh = null;
+        BLBangTinTuyenSinh dbTinTuyyenSinh = new BLBangTinTuyenSinh();
         private bool checkUC = false;
         public UCQLBangTinTuyenSinh()
         {
@@ -44,5 +42,24 @@ namespace UI.View_Layer
             ButtonBack();
         }
 
+        private void UCQLBangTinTuyenSinh_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                dtTinTuyenSinh = new DataTable();
+                dtTinTuyenSinh.Clear();
+
+                DataSet ds = dbTinTuyyenSinh.LayBangTin();
+                dtTinTuyenSinh = ds.Tables[0];
+                dgvTinTuyenSinh.DataSource = dtTinTuyenSinh;
+
+                dgvTinTuyenSinh.AutoResizeColumns();
+            }
+
+            catch (SqlException)
+            {
+                MessageBox.Show("Không lấy được nội dung trong TinTuyenSinh");
+            }
+        }
     }
 }
