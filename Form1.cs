@@ -13,16 +13,17 @@ namespace UI
 {
     public partial class Form1 : Form
     {
+        public bool SignIn = false;
         public bool mode = true;
         static Form1 _obj;
         public static Form1 Instance
         {
             get
             {
-                if(_obj == null)
+                if (_obj == null)
                 {
                     _obj = new Form1();
-                }    
+                }
                 return _obj;
             }
         }
@@ -34,7 +35,6 @@ namespace UI
         public Form1()
         {
             InitializeComponent();
-
             this.WindowState = FormWindowState.Maximized;
         }
 
@@ -42,13 +42,34 @@ namespace UI
         {
             if (mode)
             {
-                DarkMode.BackgroundImage = Properties.Resources.lamp;
+                msLight.Image = Properties.Resources.lamp;
                 mode = false;
             }
             else
             {
-                DarkMode.BackgroundImage = Properties.Resources.LightMode;
+                msLight.Image = Properties.Resources.LightMode;
                 mode = true;
+            }
+        }
+
+        /// <summary>
+        /// Set menu đăng nhập
+        /// </summary>
+        private void MenuPrivate()
+        {
+            if (!SignIn)
+            {
+                msDangXuat.Visible = false;
+                msAdmin.Visible = true;
+                msCustomer.Visible = true;
+                msDangKi.Visible = true;
+            }
+            else
+            {
+                msDangXuat.Visible = true;
+                msAdmin.Visible = false;
+                msCustomer.Visible = false;
+                msDangKi.Visible = false;
             }
         }
         #region UserControl
@@ -132,7 +153,7 @@ namespace UI
                 ucql.Dock = DockStyle.Fill;
                 Form1.Instance.PnlContainer.Controls.Add(ucql);
             }
-            
+
             Form1.Instance.PnlContainer.Controls["UCQLThongTinTruong"].BringToFront();
         }
 
@@ -148,6 +169,16 @@ namespace UI
         }
         #endregion
 
+        private void guna2CircleButton3_Click(object sender, EventArgs e)
+        {
+            pnlContainer.Visible = true;
+            pnlContainer.BringToFront();
+        }
+
+        private void msPrivate_Click(object sender, EventArgs e)
+        {
+            MenuPrivate();
+        }
     }
 
 }
