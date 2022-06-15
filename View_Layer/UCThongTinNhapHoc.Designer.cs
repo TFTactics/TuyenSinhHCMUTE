@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.Name = "UCThongTinNhapHoc";
-            this.Size = new System.Drawing.Size(0, 0);
+            this.Size = new System.Drawing.Size(1130, 1130);
             this.ResumeLayout(false);
 
         }
