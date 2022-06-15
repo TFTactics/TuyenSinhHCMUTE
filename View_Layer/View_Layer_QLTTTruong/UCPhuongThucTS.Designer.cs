@@ -36,6 +36,7 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.ThaoTac = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.pnlContainer.SuspendLayout();
@@ -51,11 +52,10 @@
             this.pnlContainer.BorderThickness = 1;
             this.pnlContainer.Controls.Add(this.dgvPhuongThucTS);
             this.pnlContainer.Controls.Add(this.guna2Panel2);
-            this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContainer.FillColor = System.Drawing.Color.White;
-            this.pnlContainer.Location = new System.Drawing.Point(0, 0);
+            this.pnlContainer.Location = new System.Drawing.Point(0, 120);
             this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(1113, 1133);
+            this.pnlContainer.Size = new System.Drawing.Size(1250, 1133);
             this.pnlContainer.TabIndex = 10;
             // 
             // dgvPhuongThucTS
@@ -90,13 +90,13 @@
             this.dgvPhuongThucTS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPhuongThucTS.EnableHeadersVisualStyles = false;
             this.dgvPhuongThucTS.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvPhuongThucTS.Location = new System.Drawing.Point(0, 72);
+            this.dgvPhuongThucTS.Location = new System.Drawing.Point(0, 40);
             this.dgvPhuongThucTS.Name = "dgvPhuongThucTS";
             this.dgvPhuongThucTS.RowHeadersVisible = false;
             this.dgvPhuongThucTS.RowHeadersWidth = 51;
             this.dgvPhuongThucTS.RowTemplate.Height = 24;
             this.dgvPhuongThucTS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPhuongThucTS.Size = new System.Drawing.Size(1113, 1061);
+            this.dgvPhuongThucTS.Size = new System.Drawing.Size(1250, 1093);
             this.dgvPhuongThucTS.TabIndex = 16;
             this.dgvPhuongThucTS.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvPhuongThucTS.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -122,54 +122,68 @@
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.AutoSize = true;
             this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel2.BorderColor = System.Drawing.Color.Transparent;
             this.guna2Panel2.BorderRadius = 15;
             this.guna2Panel2.BorderThickness = 1;
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.FillColor = System.Drawing.Color.White;
             this.guna2Panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1113, 72);
+            this.guna2Panel2.Size = new System.Drawing.Size(1250, 40);
             this.guna2Panel2.TabIndex = 15;
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(15, 48);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(15, 10);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(803, 21);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(803, 40);
             this.guna2HtmlLabel1.TabIndex = 4;
             this.guna2HtmlLabel1.Text = "Danh sách các phương thức xét tuyển";
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.AutoSizeHeightOnly = true;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(15, 13);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(1, 57);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(803, 30);
-            this.guna2HtmlLabel2.TabIndex = 3;
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(803, 50);
+            this.guna2HtmlLabel2.TabIndex = 11;
             this.guna2HtmlLabel2.Text = "Quản Lý Phương Thức Xét Tuyển";
+            // 
+            // btnAddEvent
+            // 
+            this.btnAddEvent.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddEvent.BorderColor = System.Drawing.Color.Transparent;
+            this.btnAddEvent.BorderRadius = 5;
+            this.btnAddEvent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddEvent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddEvent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddEvent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddEvent.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddEvent.ForeColor = System.Drawing.Color.White;
+            this.btnAddEvent.Location = new System.Drawing.Point(968, 57);
+            this.btnAddEvent.Name = "btnAddEvent";
+            this.btnAddEvent.Size = new System.Drawing.Size(230, 45);
+            this.btnAddEvent.TabIndex = 12;
+            this.btnAddEvent.Text = "+ Thêm Phương Thức";
             // 
             // Choose
             // 
-            this.Choose.FillWeight = 27.18325F;
+            this.Choose.FillWeight = 113.5808F;
             this.Choose.HeaderText = "";
             this.Choose.MinimumWidth = 6;
             this.Choose.Name = "Choose";
             // 
             // ThaoTac
             // 
+            this.ThaoTac.FillWeight = 13.60249F;
             this.ThaoTac.HeaderText = "Thao Tác";
             this.ThaoTac.Items.AddRange(new object[] {
             "Chỉnh sửa",
@@ -181,12 +195,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.btnAddEvent);
+            this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.pnlContainer);
             this.Name = "UCPhuongThucTS";
-            this.Size = new System.Drawing.Size(1113, 1133);
+            this.Size = new System.Drawing.Size(1250, 1133);
             this.Load += new System.EventHandler(this.UCPhuongThucTS_Load);
             this.pnlContainer.ResumeLayout(false);
-            this.pnlContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhuongThucTS)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -200,6 +216,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2Button btnAddEvent;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Choose;
         private System.Windows.Forms.DataGridViewComboBoxColumn ThaoTac;
     }

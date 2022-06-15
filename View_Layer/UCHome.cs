@@ -16,6 +16,5 @@ namespace UI.View_Layer
         {
             InitializeComponent();
         }
-
     }
 }

@@ -158,7 +158,7 @@
             "Bảng công bố"});
             this.cbbTrangThai.Location = new System.Drawing.Point(71, 559);
             this.cbbTrangThai.Name = "cbbTrangThai";
-            this.cbbTrangThai.Size = new System.Drawing.Size(140, 36);
+            this.cbbTrangThai.Size = new System.Drawing.Size(243, 36);
             this.cbbTrangThai.StartIndex = 0;
             this.cbbTrangThai.TabIndex = 8;
             // 
@@ -174,7 +174,7 @@
             this.btnDangBai.FillColor = System.Drawing.Color.White;
             this.btnDangBai.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangBai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnDangBai.Location = new System.Drawing.Point(71, 617);
+            this.btnDangBai.Location = new System.Drawing.Point(71, 615);
             this.btnDangBai.Name = "btnDangBai";
             this.btnDangBai.Size = new System.Drawing.Size(140, 43);
             this.btnDangBai.TabIndex = 10;

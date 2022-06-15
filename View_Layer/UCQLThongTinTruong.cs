@@ -76,5 +76,6 @@ namespace UI.View_Layer
         {
             pnlQLThongTinTruong1.BringToFront();
         }
+
     }
 }
