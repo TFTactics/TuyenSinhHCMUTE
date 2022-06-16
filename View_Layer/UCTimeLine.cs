@@ -55,5 +55,11 @@ namespace UI.View_Layer
                 MessageBox.Show("Không lấy được nội dung trong Time Line");
             }
         }
+
+        private void dgvTimeLine_CurrentCellDirtyStateChanged(object sender, EventArgs e)
+        {
+            int index = dgvTimeLine.CurrentCell.RowIndex;);
+
+        }
     }
 }
