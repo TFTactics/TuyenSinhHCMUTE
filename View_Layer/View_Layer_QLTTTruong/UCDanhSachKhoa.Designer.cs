@@ -28,21 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvDanhSachKhoa = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.ThaoTac = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
+            this.ucThemKhoa1 = new UI.View_Layer.View_Layer_QLTTTruong.DSKhoa.UCThemKhoa();
+            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel1.SuspendLayout();
             this.pnlContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachKhoa)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btnAddEvent
+            // 
+            this.btnAddEvent.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddEvent.BorderColor = System.Drawing.Color.Transparent;
+            this.btnAddEvent.BorderRadius = 5;
+            this.btnAddEvent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddEvent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddEvent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddEvent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddEvent.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddEvent.ForeColor = System.Drawing.Color.White;
+            this.btnAddEvent.Location = new System.Drawing.Point(1030, 57);
+            this.btnAddEvent.Name = "btnAddEvent";
+            this.btnAddEvent.Size = new System.Drawing.Size(170, 45);
+            this.btnAddEvent.TabIndex = 13;
+            this.btnAddEvent.Text = "+ Thêm Khoa";
+            this.btnAddEvent.Click += new System.EventHandler(this.btnAddEvent_Click);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.ucThemKhoa1);
+            this.guna2Panel1.Controls.Add(this.pnlContainer);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 120);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1200, 990);
+            this.guna2Panel1.TabIndex = 14;
             // 
             // pnlContainer
             // 
@@ -53,40 +83,40 @@
             this.pnlContainer.Controls.Add(this.dgvDanhSachKhoa);
             this.pnlContainer.Controls.Add(this.guna2Panel2);
             this.pnlContainer.FillColor = System.Drawing.Color.White;
-            this.pnlContainer.Location = new System.Drawing.Point(0, 120);
+            this.pnlContainer.Location = new System.Drawing.Point(0, 0);
             this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(1200, 630);
-            this.pnlContainer.TabIndex = 8;
+            this.pnlContainer.Size = new System.Drawing.Size(1200, 990);
+            this.pnlContainer.TabIndex = 9;
             // 
             // dgvDanhSachKhoa
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvDanhSachKhoa.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dgvDanhSachKhoa.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvDanhSachKhoa.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDanhSachKhoa.BackgroundColor = System.Drawing.Color.White;
             this.dgvDanhSachKhoa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvDanhSachKhoa.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvDanhSachKhoa.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDanhSachKhoa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDanhSachKhoa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvDanhSachKhoa.ColumnHeadersHeight = 27;
             this.dgvDanhSachKhoa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Choose,
             this.ThaoTac});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDanhSachKhoa.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDanhSachKhoa.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgvDanhSachKhoa.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDanhSachKhoa.EnableHeadersVisualStyles = false;
             this.dgvDanhSachKhoa.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -96,7 +126,7 @@
             this.dgvDanhSachKhoa.RowHeadersWidth = 51;
             this.dgvDanhSachKhoa.RowTemplate.Height = 24;
             this.dgvDanhSachKhoa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDanhSachKhoa.Size = new System.Drawing.Size(1200, 590);
+            this.dgvDanhSachKhoa.Size = new System.Drawing.Size(1200, 950);
             this.dgvDanhSachKhoa.TabIndex = 16;
             this.dgvDanhSachKhoa.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvDanhSachKhoa.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -162,44 +192,45 @@
             this.guna2HtmlLabel1.TabIndex = 6;
             this.guna2HtmlLabel1.Text = "Danh sách khoa đào tạo";
             // 
-            // guna2HtmlLabel2
+            // ucThemKhoa1
             // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(1, 57);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(803, 50);
-            this.guna2HtmlLabel2.TabIndex = 3;
-            this.guna2HtmlLabel2.Text = "Quản Lý Danh Sách Khoa";
+            this.ucThemKhoa1.Location = new System.Drawing.Point(0, 996);
+            this.ucThemKhoa1.Name = "ucThemKhoa1";
+            this.ucThemKhoa1.Size = new System.Drawing.Size(50, 50);
+            this.ucThemKhoa1.TabIndex = 10;
             // 
-            // btnAddEvent
+            // btnHome
             // 
-            this.btnAddEvent.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddEvent.BorderColor = System.Drawing.Color.Transparent;
-            this.btnAddEvent.BorderRadius = 5;
-            this.btnAddEvent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddEvent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddEvent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAddEvent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAddEvent.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddEvent.ForeColor = System.Drawing.Color.White;
-            this.btnAddEvent.Location = new System.Drawing.Point(1030, 57);
-            this.btnAddEvent.Name = "btnAddEvent";
-            this.btnAddEvent.Size = new System.Drawing.Size(170, 45);
-            this.btnAddEvent.TabIndex = 13;
-            this.btnAddEvent.Text = "+ Thêm Khoa";
+            this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.BorderColor = System.Drawing.Color.Transparent;
+            this.btnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHome.FillColor = System.Drawing.Color.Transparent;
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.Black;
+            this.btnHome.Location = new System.Drawing.Point(1, 57);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnHome.Size = new System.Drawing.Size(963, 45);
+            this.btnHome.TabIndex = 49;
+            this.btnHome.Text = "Quản Lý Danh Sách Khoa";
+            this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // UCDanhSachKhoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.Controls.Add(this.btnHome);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.btnAddEvent);
-            this.Controls.Add(this.pnlContainer);
-            this.Controls.Add(this.guna2HtmlLabel2);
             this.Name = "UCDanhSachKhoa";
-            this.Size = new System.Drawing.Size(1250, 750);
+            this.Size = new System.Drawing.Size(1250, 1133);
             this.Load += new System.EventHandler(this.UCDanhSachKhoa_Load);
+            this.guna2Panel1.ResumeLayout(false);
             this.pnlContainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachKhoa)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
@@ -208,14 +239,15 @@
         }
 
         #endregion
-
+        private Guna.UI2.WinForms.Guna2Button btnAddEvent;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel pnlContainer;
         private Guna.UI2.WinForms.Guna2DataGridView dgvDanhSachKhoa;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Choose;
         private System.Windows.Forms.DataGridViewComboBoxColumn ThaoTac;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Button btnAddEvent;
+        private View_Layer_QLTTTruong.DSKhoa.UCThemKhoa ucThemKhoa1;
+        private Guna.UI2.WinForms.Guna2Button btnHome;
     }
 }

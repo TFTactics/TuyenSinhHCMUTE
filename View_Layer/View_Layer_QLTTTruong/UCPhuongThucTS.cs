@@ -36,5 +36,10 @@ namespace UI.View_Layer
                 MessageBox.Show("Không lấy được nội dung trong Phuong thuc xet tuyen");
             }
         }
+
+        private void btnAddEvent_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -79,7 +79,7 @@
             this.pnlContainer.FillColor = System.Drawing.Color.White;
             this.pnlContainer.Location = new System.Drawing.Point(0, 0);
             this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(1250, 750);
+            this.pnlContainer.Size = new System.Drawing.Size(1250, 1105);
             this.pnlContainer.TabIndex = 8;
             // 
             // guna2HtmlLabel9
@@ -381,9 +381,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.Controls.Add(this.pnlContainer);
             this.Name = "UCGioiThieuChung";
-            this.Size = new System.Drawing.Size(1250, 750);
+            this.Size = new System.Drawing.Size(1250, 1133);
             this.Load += new System.EventHandler(this.UCGioiThieuChung_Load);
             this.pnlContainer.ResumeLayout(false);
             this.pnlContainer.PerformLayout();

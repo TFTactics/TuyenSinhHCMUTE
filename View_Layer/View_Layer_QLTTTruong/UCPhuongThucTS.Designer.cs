@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvPhuongThucTS = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.ThaoTac = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
-            this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.ThaoTac = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.pnlContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhuongThucTS)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -55,38 +55,38 @@
             this.pnlContainer.FillColor = System.Drawing.Color.White;
             this.pnlContainer.Location = new System.Drawing.Point(0, 120);
             this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(1250, 1133);
+            this.pnlContainer.Size = new System.Drawing.Size(1200, 990);
             this.pnlContainer.TabIndex = 10;
             // 
             // dgvPhuongThucTS
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvPhuongThucTS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvPhuongThucTS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvPhuongThucTS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPhuongThucTS.BackgroundColor = System.Drawing.Color.White;
             this.dgvPhuongThucTS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvPhuongThucTS.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvPhuongThucTS.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPhuongThucTS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPhuongThucTS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvPhuongThucTS.ColumnHeadersHeight = 27;
             this.dgvPhuongThucTS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Choose,
             this.ThaoTac});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPhuongThucTS.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPhuongThucTS.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvPhuongThucTS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPhuongThucTS.EnableHeadersVisualStyles = false;
             this.dgvPhuongThucTS.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -96,7 +96,7 @@
             this.dgvPhuongThucTS.RowHeadersWidth = 51;
             this.dgvPhuongThucTS.RowTemplate.Height = 24;
             this.dgvPhuongThucTS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPhuongThucTS.Size = new System.Drawing.Size(1250, 1093);
+            this.dgvPhuongThucTS.Size = new System.Drawing.Size(1200, 950);
             this.dgvPhuongThucTS.TabIndex = 16;
             this.dgvPhuongThucTS.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvPhuongThucTS.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -120,6 +120,23 @@
             this.dgvPhuongThucTS.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvPhuongThucTS.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // Choose
+            // 
+            this.Choose.FillWeight = 113.5808F;
+            this.Choose.HeaderText = "";
+            this.Choose.MinimumWidth = 6;
+            this.Choose.Name = "Choose";
+            // 
+            // ThaoTac
+            // 
+            this.ThaoTac.FillWeight = 13.60249F;
+            this.ThaoTac.HeaderText = "Thao Tác";
+            this.ThaoTac.Items.AddRange(new object[] {
+            "Chỉnh sửa",
+            "Xóa"});
+            this.ThaoTac.MinimumWidth = 6;
+            this.ThaoTac.Name = "ThaoTac";
+            // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
@@ -132,7 +149,7 @@
             this.guna2Panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1250, 40);
+            this.guna2Panel2.Size = new System.Drawing.Size(1200, 40);
             this.guna2Panel2.TabIndex = 15;
             // 
             // guna2HtmlLabel1
@@ -173,28 +190,13 @@
             this.btnAddEvent.Size = new System.Drawing.Size(230, 45);
             this.btnAddEvent.TabIndex = 12;
             this.btnAddEvent.Text = "+ Thêm Phương Thức";
-            // 
-            // Choose
-            // 
-            this.Choose.FillWeight = 113.5808F;
-            this.Choose.HeaderText = "";
-            this.Choose.MinimumWidth = 6;
-            this.Choose.Name = "Choose";
-            // 
-            // ThaoTac
-            // 
-            this.ThaoTac.FillWeight = 13.60249F;
-            this.ThaoTac.HeaderText = "Thao Tác";
-            this.ThaoTac.Items.AddRange(new object[] {
-            "Chỉnh sửa",
-            "Xóa"});
-            this.ThaoTac.MinimumWidth = 6;
-            this.ThaoTac.Name = "ThaoTac";
+            this.btnAddEvent.Click += new System.EventHandler(this.btnAddEvent_Click);
             // 
             // UCPhuongThucTS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.btnAddEvent);
             this.Controls.Add(this.guna2HtmlLabel2);

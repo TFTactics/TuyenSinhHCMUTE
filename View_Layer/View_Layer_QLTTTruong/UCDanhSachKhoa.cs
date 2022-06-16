@@ -36,5 +36,16 @@ namespace UI.View_Layer
                 MessageBox.Show("Không lấy được nội dung trong Thong Tin Khoa");
             }
         }
+
+        private void btnAddEvent_Click(object sender, EventArgs e)
+        {
+            ucThemKhoa1.Dock = DockStyle.Fill;
+            ucThemKhoa1.BringToFront();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            pnlContainer.BringToFront();
+        }
     }
 }

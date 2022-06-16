@@ -107,6 +107,7 @@
             // pnlQLThongTinTruong1
             // 
             this.pnlQLThongTinTruong1.BackColor = System.Drawing.Color.Transparent;
+            this.pnlQLThongTinTruong1.BorderColor = System.Drawing.Color.Transparent;
             this.pnlQLThongTinTruong1.Controls.Add(this.pnlHeDaoTao);
             this.pnlQLThongTinTruong1.Controls.Add(this.guna2Panel6);
             this.pnlQLThongTinTruong1.Controls.Add(this.pnlDSKhoa);
@@ -118,7 +119,7 @@
             this.pnlQLThongTinTruong1.Controls.Add(this.pnlGTChung);
             this.pnlQLThongTinTruong1.Location = new System.Drawing.Point(0, 0);
             this.pnlQLThongTinTruong1.Name = "pnlQLThongTinTruong1";
-            this.pnlQLThongTinTruong1.Size = new System.Drawing.Size(1250, 1000);
+            this.pnlQLThongTinTruong1.Size = new System.Drawing.Size(1250, 945);
             this.pnlQLThongTinTruong1.TabIndex = 44;
             // 
             // pnlHeDaoTao
@@ -594,6 +595,7 @@
             // 
             // ucctDaoTao1
             // 
+            this.ucctDaoTao1.AutoScroll = true;
             this.ucctDaoTao1.BackColor = System.Drawing.Color.Transparent;
             this.ucctDaoTao1.Location = new System.Drawing.Point(76, 897);
             this.ucctDaoTao1.Name = "ucctDaoTao1";

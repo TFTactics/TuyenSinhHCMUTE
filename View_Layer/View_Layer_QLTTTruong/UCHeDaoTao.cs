@@ -36,5 +36,16 @@ namespace UI.View_Layer
                 MessageBox.Show("Không lấy được nội dung trong Time Line");
             }
         }
+
+        private void btnAddEvent_Click(object sender, EventArgs e)
+        {
+            ucThemHDaoTao1.Dock = DockStyle.Fill;
+            ucThemHDaoTao1.BringToFront();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            pnlContainer.BringToFront();
+        }
     }
 }

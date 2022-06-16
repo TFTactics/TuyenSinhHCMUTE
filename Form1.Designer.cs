@@ -397,12 +397,12 @@ namespace UI
             this.txbSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txbSearch.IconLeft = global::UI.Properties.Resources.icons8_magnifying_glass_64;
             this.txbSearch.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.txbSearch.Location = new System.Drawing.Point(48, 20);
+            this.txbSearch.Location = new System.Drawing.Point(35, 30);
             this.txbSearch.Name = "txbSearch";
             this.txbSearch.PasswordChar = '\0';
             this.txbSearch.PlaceholderText = "";
             this.txbSearch.SelectedText = "";
-            this.txbSearch.Size = new System.Drawing.Size(321, 55);
+            this.txbSearch.Size = new System.Drawing.Size(490, 40);
             this.txbSearch.TabIndex = 0;
             // 
             // pnlContainer

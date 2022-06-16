@@ -180,3 +180,7 @@ C:\Users\T\OneDrive\Máy tính\TuyenSinhHCMUTE\obj\Debug\UI.csproj.CoreCompileIn
 C:\Users\T\OneDrive\Máy tính\TuyenSinhHCMUTE\obj\Debug\UI.csproj.CopyComplete
 C:\Users\T\OneDrive\Máy tính\TuyenSinhHCMUTE\obj\Debug\UI.exe
 C:\Users\T\OneDrive\Máy tính\TuyenSinhHCMUTE\obj\Debug\UI.pdb
+D:\ADO\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.DSKhoa.UCThemKhoa.resources
+D:\ADO\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.HDaoTao.UCThemHDaoTao.resources
+D:\ADO\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.NganhDaoTao.UCNDaoTao.resources
+D:\ADO\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.TTNhapHoc.UCThemTTNhapHoc.resources

@@ -93,6 +93,30 @@
     <Compile Include="View_Layer\View_Layer_QLTTTruong\CTDaoTao\UCThemCTDaoTao.Designer.cs">
       <DependentUpon>UCThemCTDaoTao.cs</DependentUpon>
     </Compile>
+    <Compile Include="View_Layer\View_Layer_QLTTTruong\DSKhoa\UCThemKhoa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View_Layer\View_Layer_QLTTTruong\DSKhoa\UCThemKhoa.Designer.cs">
+      <DependentUpon>UCThemKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Layer\View_Layer_QLTTTruong\HDaoTao\UCThemHDaoTao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View_Layer\View_Layer_QLTTTruong\HDaoTao\UCThemHDaoTao.Designer.cs">
+      <DependentUpon>UCThemHDaoTao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Layer\View_Layer_QLTTTruong\NganhDaoTao\UCNDaoTao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View_Layer\View_Layer_QLTTTruong\NganhDaoTao\UCNDaoTao.Designer.cs">
+      <DependentUpon>UCNDaoTao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Layer\View_Layer_QLTTTruong\TTNhapHoc\UCThemTTNhapHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View_Layer\View_Layer_QLTTTruong\TTNhapHoc\UCThemTTNhapHoc.Designer.cs">
+      <DependentUpon>UCThemTTNhapHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="View_Layer\View_Layer_QLTTTruong\UCCTDaoTao.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -202,6 +226,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View_Layer\View_Layer_QLTTTruong\CTDaoTao\UCThemCTDaoTao.resx">
       <DependentUpon>UCThemCTDaoTao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Layer\View_Layer_QLTTTruong\DSKhoa\UCThemKhoa.resx">
+      <DependentUpon>UCThemKhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Layer\View_Layer_QLTTTruong\HDaoTao\UCThemHDaoTao.resx">
+      <DependentUpon>UCThemHDaoTao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Layer\View_Layer_QLTTTruong\NganhDaoTao\UCNDaoTao.resx">
+      <DependentUpon>UCNDaoTao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Layer\View_Layer_QLTTTruong\TTNhapHoc\UCThemTTNhapHoc.resx">
+      <DependentUpon>UCThemTTNhapHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View_Layer\View_Layer_QLTTTruong\UCCTDaoTao.resx">
       <DependentUpon>UCCTDaoTao.cs</DependentUpon>
