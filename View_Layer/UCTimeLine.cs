@@ -9,7 +9,6 @@ namespace UI.View_Layer
     {
         DataTable dtTimeLine = null;
         BLTimeLine dbTimeLine = new BLTimeLine();
-        private bool checkUC = false;
 
         public UCTimeLine()
         {
@@ -67,8 +66,6 @@ namespace UI.View_Layer
 
         private void dgvTimeLine_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgvTimeLine.CurrentRow == null)
-                return;
             var x = dgvTimeLine.CurrentCell!=null? dgvTimeLine.CurrentCell.Value.ToString(): "No";
             if (x != "No")
             {
