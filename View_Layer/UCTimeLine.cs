@@ -39,32 +39,6 @@ namespace UI.View_Layer
             }
         }
 
-        private void dgvTimeLine_CurrentCellDirtyStateChanged(object sender, EventArgs e)
-        {
-            if (dgvTimeLine.IsCurrentCellDirty)
-            {
-                // This fires the cell value changed handler below
-                dgvTimeLine.CommitEdit(DataGridViewDataErrorContexts.Commit);
-            }
-        }
-
-        private void dgvTimeLine_CellValueChanged(object sender, DataGridViewCellEventArgs e)
-        {
-            var x = dgvTimeLine.CurrentCell!=null? dgvTimeLine.CurrentCell.Value.ToString(): "No";
-            if (x != "No")
-            {
-                if (x == "Chỉnh sửa")
-                {
-                    MessageBox.Show("Chuẩn bị chỉnh sửa");
-                    /// Code update
-                }
-                if (x == "Xóa")
-                {
-                    MessageBox.Show("Chuẩn bị xóa");
-                    /// Code delete
-                }
-            }
-        }
 
         private void btnAddEvent_Click(object sender, EventArgs e)
         {
@@ -77,5 +51,6 @@ namespace UI.View_Layer
             ucThemTimeLine1.SendToBack();
             LoadData();
         }
+
     }
 }

@@ -36,19 +36,22 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
-            this.ucThemTin1 = new UI.View_Layer.View_Layer_QLBangTinTuyenSinh.UCThemTin();
             this.pnlBanTinTuyenSinh = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvTinTuyenSinh = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.ThaoTac = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.tinTuyenSinhBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
+            this.ucThemTin1 = new UI.View_Layer.View_Layer_QLBangTinTuyenSinh.UCThemTin();
             this.pnlContainer.SuspendLayout();
             this.pnlBanTinTuyenSinh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTinTuyenSinh)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tinTuyenSinhBindingSource)).BeginInit();
+            this.guna2Panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAddEvent
@@ -109,13 +112,6 @@
             this.btnBack.Text = "Trở về";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // ucThemTin1
-            // 
-            this.ucThemTin1.Location = new System.Drawing.Point(15, 588);
-            this.ucThemTin1.Name = "ucThemTin1";
-            this.ucThemTin1.Size = new System.Drawing.Size(50, 50);
-            this.ucThemTin1.TabIndex = 0;
-            // 
             // pnlBanTinTuyenSinh
             // 
             this.pnlBanTinTuyenSinh.BackColor = System.Drawing.SystemColors.Control;
@@ -133,6 +129,7 @@
             // 
             // dgvTinTuyenSinh
             // 
+            this.dgvTinTuyenSinh.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvTinTuyenSinh.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTinTuyenSinh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -150,8 +147,7 @@
             this.dgvTinTuyenSinh.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTinTuyenSinh.ColumnHeadersHeight = 27;
             this.dgvTinTuyenSinh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Choose,
-            this.ThaoTac});
+            this.Choose});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -195,30 +191,13 @@
             this.dgvTinTuyenSinh.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTinTuyenSinh_CellValueChanged);
             this.dgvTinTuyenSinh.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvTinTuyenSinh_CurrentCellDirtyStateChanged);
             // 
-            // Choose
-            // 
-            this.Choose.FillWeight = 27.18325F;
-            this.Choose.HeaderText = "";
-            this.Choose.MinimumWidth = 6;
-            this.Choose.Name = "Choose";
-            // 
-            // ThaoTac
-            // 
-            this.ThaoTac.HeaderText = "Thao Tác";
-            this.ThaoTac.Items.AddRange(new object[] {
-            "Chỉnh sửa",
-            "Xóa",
-            "Ẩn bài",
-            "Đăng bài"});
-            this.ThaoTac.MinimumWidth = 6;
-            this.ThaoTac.Name = "ThaoTac";
-            // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel2.BorderColor = System.Drawing.Color.Transparent;
             this.guna2Panel2.BorderRadius = 15;
             this.guna2Panel2.BorderThickness = 1;
+            this.guna2Panel2.Controls.Add(this.guna2Panel4);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.FillColor = System.Drawing.Color.White;
@@ -239,6 +218,72 @@
             this.guna2HtmlLabel2.TabIndex = 3;
             this.guna2HtmlLabel2.Text = "Danh sách tin tuyển sinh";
             // 
+            // Choose
+            // 
+            this.Choose.FillWeight = 27.18325F;
+            this.Choose.HeaderText = "";
+            this.Choose.MinimumWidth = 6;
+            this.Choose.Name = "Choose";
+            // 
+            // guna2Panel4
+            // 
+            this.guna2Panel4.Controls.Add(this.btnDelete);
+            this.guna2Panel4.Controls.Add(this.btnEdit);
+            this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel4.Location = new System.Drawing.Point(1116, 0);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.Size = new System.Drawing.Size(134, 50);
+            this.guna2Panel4.TabIndex = 50;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.White;
+            this.btnDelete.BorderColor = System.Drawing.Color.Transparent;
+            this.btnDelete.BorderRadius = 15;
+            this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDelete.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnDelete.FillColor = System.Drawing.Color.Transparent;
+            this.btnDelete.FocusedColor = System.Drawing.Color.Transparent;
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Image = global::UI.Properties.Resources.bin;
+            this.btnDelete.Location = new System.Drawing.Point(34, 0);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.PressedColor = System.Drawing.Color.White;
+            this.btnDelete.Size = new System.Drawing.Size(50, 50);
+            this.btnDelete.TabIndex = 49;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.BackColor = System.Drawing.Color.White;
+            this.btnEdit.BorderColor = System.Drawing.Color.Transparent;
+            this.btnEdit.BorderRadius = 15;
+            this.btnEdit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEdit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEdit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnEdit.FillColor = System.Drawing.Color.Transparent;
+            this.btnEdit.FocusedColor = System.Drawing.Color.Transparent;
+            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.Image = global::UI.Properties.Resources.edit;
+            this.btnEdit.Location = new System.Drawing.Point(84, 0);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.PressedColor = System.Drawing.Color.White;
+            this.btnEdit.Size = new System.Drawing.Size(50, 50);
+            this.btnEdit.TabIndex = 48;
+            // 
+            // ucThemTin1
+            // 
+            this.ucThemTin1.Location = new System.Drawing.Point(15, 588);
+            this.ucThemTin1.Name = "ucThemTin1";
+            this.ucThemTin1.Size = new System.Drawing.Size(50, 50);
+            this.ucThemTin1.TabIndex = 0;
+            // 
             // UCQLBangTinTuyenSinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -258,6 +303,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvTinTuyenSinh)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tinTuyenSinhBindingSource)).EndInit();
+            this.guna2Panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -274,6 +320,8 @@
         private Guna.UI2.WinForms.Guna2DataGridView dgvTinTuyenSinh;
         private System.Windows.Forms.BindingSource tinTuyenSinhBindingSource;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Choose;
-        private System.Windows.Forms.DataGridViewComboBoxColumn ThaoTac;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private Guna.UI2.WinForms.Guna2Button btnDelete;
+        private Guna.UI2.WinForms.Guna2Button btnEdit;
     }
 }
