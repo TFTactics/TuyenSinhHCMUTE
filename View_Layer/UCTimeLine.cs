@@ -67,9 +67,22 @@ namespace UI.View_Layer
 
         private void dgvTimeLine_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
+            if (dgvTimeLine.CurrentRow == null)
+                return;
             var x = dgvTimeLine.CurrentCell!=null? dgvTimeLine.CurrentCell.Value.ToString(): "No";
-            if(x!="No")
-                MessageBox.Show(x);
+            if (x != "No")
+            {
+                if (x == "Chỉnh sửa")
+                {
+                    MessageBox.Show("Chuẩn bị chỉnh sửa");
+                    /// Code update
+                }
+                if (x == "Xóa")
+                {
+                    MessageBox.Show("Chuẩn bị xóa");
+                    /// Code delete
+                }
+            }
         }
     }
 }
