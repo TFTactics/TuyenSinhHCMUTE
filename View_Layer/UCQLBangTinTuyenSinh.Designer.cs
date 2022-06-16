@@ -36,6 +36,7 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.ucThemTin1 = new UI.View_Layer.View_Layer_QLBangTinTuyenSinh.UCThemTin();
             this.pnlBanTinTuyenSinh = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvTinTuyenSinh = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -43,7 +44,6 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tinTuyenSinhBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ucThemTin1 = new UI.View_Layer.View_Layer_QLBangTinTuyenSinh.UCThemTin();
             this.pnlContainer.SuspendLayout();
             this.pnlBanTinTuyenSinh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTinTuyenSinh)).BeginInit();
@@ -108,6 +108,13 @@
             this.btnBack.TabIndex = 12;
             this.btnBack.Text = "Trở về";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // ucThemTin1
+            // 
+            this.ucThemTin1.Location = new System.Drawing.Point(15, 588);
+            this.ucThemTin1.Name = "ucThemTin1";
+            this.ucThemTin1.Size = new System.Drawing.Size(50, 50);
+            this.ucThemTin1.TabIndex = 0;
             // 
             // pnlBanTinTuyenSinh
             // 
@@ -185,6 +192,8 @@
             this.dgvTinTuyenSinh.ThemeStyle.RowsStyle.Height = 24;
             this.dgvTinTuyenSinh.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvTinTuyenSinh.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvTinTuyenSinh.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTinTuyenSinh_CellValueChanged);
+            this.dgvTinTuyenSinh.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvTinTuyenSinh_CurrentCellDirtyStateChanged);
             // 
             // Choose
             // 
@@ -229,13 +238,6 @@
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(505, 40);
             this.guna2HtmlLabel2.TabIndex = 3;
             this.guna2HtmlLabel2.Text = "Danh sách tin tuyển sinh";
-            // 
-            // ucThemTin1
-            // 
-            this.ucThemTin1.Location = new System.Drawing.Point(15, 588);
-            this.ucThemTin1.Name = "ucThemTin1";
-            this.ucThemTin1.Size = new System.Drawing.Size(50, 50);
-            this.ucThemTin1.TabIndex = 0;
             // 
             // UCQLBangTinTuyenSinh
             // 

@@ -16,6 +16,11 @@ namespace UI.View_Layer
 
         private void UCTimeLine_Load(object sender, EventArgs e)
         {
+            LoadData();
+        }
+
+        private void LoadData()
+        {
             try
             {
                 dtTimeLine = new DataTable();
@@ -70,6 +75,7 @@ namespace UI.View_Layer
         private void btnHome_Click(object sender, EventArgs e)
         {
             ucThemTimeLine1.SendToBack();
+            LoadData();
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Data;
 using UI.BD_Layer;
+using System;
 
 namespace UI.BS_Layer
 {
@@ -14,9 +15,9 @@ namespace UI.BS_Layer
         {
             return db.ExecuteQueryDataSet("select * from TimeLine", CommandType.Text);
         }
-        public bool ThemBangTin(string TieuDe, string NoiDung,string HeDaoTao, string TrangThai, ref string err)
+        public bool ThemTimeLine(string TenSuKien, DateTime BatDau,DateTime KetThuc, string HeDaoTao, string NoiDung, ref string err)
         {
-            string sqlString = "Insert into TimeLine value (" + "N'" + TieuDe + "',N'" + NoiDung + "',N'" + HeDaoTao + "',N'" + TrangThai + "')";
+            string sqlString = "Insert into TimeLine values (" + "N'" + TenSuKien + "',N'" + BatDau.ToString("yyyy-MM-dd") + "',N'" + KetThuc.ToString("yyyy-MM-dd") + "',N'" + HeDaoTao + "',N'" + NoiDung + "')";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
         public bool XoaBangTin(ref string err, string TieuDe, string NoiDung, string NgayDang)

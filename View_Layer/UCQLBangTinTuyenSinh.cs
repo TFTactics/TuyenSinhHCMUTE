@@ -40,9 +40,15 @@ namespace UI.View_Layer
             btnBack.BringToFront();
             ucThemTin1.SendToBack();
             ButtonBack();
+            LoadData();
         }
 
         private void UCQLBangTinTuyenSinh_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        private void LoadData()
         {
             try
             {
@@ -59,6 +65,35 @@ namespace UI.View_Layer
             catch (SqlException)
             {
                 MessageBox.Show("Không lấy được nội dung trong TinTuyenSinh");
+            }
+        }
+
+        private void dgvTinTuyenSinh_CurrentCellDirtyStateChanged(object sender, EventArgs e)
+        {
+            if (dgvTinTuyenSinh.IsCurrentCellDirty)
+            {
+                // This fires the cell value changed handler below
+                dgvTinTuyenSinh.CommitEdit(DataGridViewDataErrorContexts.Commit);
+            }
+        }
+
+        private void dgvTinTuyenSinh_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            BLBangTinTuyenSinh blTS = new BLBangTinTuyenSinh();
+            var x = dgvTinTuyenSinh.CurrentCell != null ? dgvTinTuyenSinh.CurrentCell.Value.ToString() : "No";
+            if (x != "No")
+            {
+                if (x == "Chỉnh sửa")
+                {
+                    MessageBox.Show("Chuẩn bị chỉnh sửa");
+                    /// Code update
+                }
+                if (x == "Xóa")
+                {
+                    ///blTS.XoaBangTin(dgvTinTuyenSinh);
+                    MessageBox.Show("Chuẩn xóa");
+                    /// Code delete
+                }
             }
         }
     }

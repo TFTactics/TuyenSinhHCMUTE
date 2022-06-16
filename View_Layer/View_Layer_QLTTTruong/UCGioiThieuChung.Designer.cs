@@ -316,6 +316,7 @@
             this.btnSave.Size = new System.Drawing.Size(200, 45);
             this.btnSave.TabIndex = 18;
             this.btnSave.Text = "Lưu thay đổi";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // guna2TextBox1
             // 
@@ -383,6 +384,7 @@
             this.Controls.Add(this.pnlContainer);
             this.Name = "UCGioiThieuChung";
             this.Size = new System.Drawing.Size(1250, 750);
+            this.Load += new System.EventHandler(this.UCGioiThieuChung_Load);
             this.pnlContainer.ResumeLayout(false);
             this.pnlContainer.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);

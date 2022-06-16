@@ -76,6 +76,7 @@
             this.btnDangBai.Size = new System.Drawing.Size(140, 43);
             this.btnDangBai.TabIndex = 20;
             this.btnDangBai.Text = "Đăng bài";
+            this.btnDangBai.Click += new System.EventHandler(this.btnDangBai_Click);
             // 
             // cbbTrangThai
             // 
