@@ -58,8 +58,17 @@ namespace UI.View_Layer
 
         private void dgvTimeLine_CurrentCellDirtyStateChanged(object sender, EventArgs e)
         {
-            int index = dgvTimeLine.CurrentCell.RowIndex;);
+            if (dgvTimeLine.IsCurrentCellDirty)
+            {
+                // This fires the cell value changed handler below
+                dgvTimeLine.CommitEdit(DataGridViewDataErrorContexts.Commit);
+            }
+        }
 
+        private void dgvTimeLine_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            string x = dgvTimeLine.CurrentCell!=null?"Yes":"No";
+            MessageBox.Show(x);
         }
     }
 }
