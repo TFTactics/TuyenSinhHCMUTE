@@ -189,7 +189,6 @@
             this.DoubleBuffered = true;
             this.Name = "UCQuanLyDanhSachUngTuyen";
             this.Size = new System.Drawing.Size(1500, 1500);
-            this.Load += new System.EventHandler(this.UCQuanLyDanhSachUngTuyen_Load);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace UI.View_Layer
@@ -16,65 +9,104 @@ namespace UI.View_Layer
         {
             InitializeComponent();
         }
+        public void HidePnlContainer(bool flag)
+        {
+            if (flag)
+                pnlQLThongTinTruong1.Visible = false;
+            else pnlQLThongTinTruong1.Visible=true;
+        }
+        public void HideUC()
+        {
+            ucctDaoTao1.Visible = false;
+            ucDanhSachKhoa1.Visible = false;
+            ucGioiThieuChung1.Visible = false;
+            ucHeDaoTao1.Visible = false;
+            ucHocPhiHocBong1.Visible = false;
+            ucLienHe1.Visible = false;
+            ucNganhDaoTao1.Visible = false;
+            ucPhuongThucTS1.Visible = false;
+            ucThongTinNhapHoc1.Visible = false;
 
+        }
         private void pnlGTChung_Click(object sender, EventArgs e)
         {
+            HidePnlContainer(true);
+            HideUC();
+            ucGioiThieuChung1.Visible = true;
             ucGioiThieuChung1.Dock = DockStyle.Fill;
             ucGioiThieuChung1.BringToFront();
         }
 
         private void pnlCTDaoTao_Click(object sender, EventArgs e)
         {
+            HidePnlContainer(true);
+            ucctDaoTao1.Visible=true;
             ucctDaoTao1.Dock = DockStyle.Fill;
             ucctDaoTao1.BringToFront();
         }
 
         private void pnlPTTuyenSinh_Click(object sender, EventArgs e)
         {
+            HidePnlContainer(true);
             ucPhuongThucTS1.Dock = DockStyle.Fill;
             ucPhuongThucTS1.BringToFront();
+            ucPhuongThucTS1.Visible = true;
         }
 
         private void guna2Panel6_Click(object sender, EventArgs e)
         {
+            HidePnlContainer(true);
             ucHocPhiHocBong1.Dock = DockStyle.Fill;
             ucHocPhiHocBong1.BringToFront();
+            ucHocPhiHocBong1.Visible = true;
         }
 
         private void pnlTTNhapHoc_Click(object sender, EventArgs e)
         {
+            HidePnlContainer(true);
+            ucThongTinNhapHoc1.Visible = true;
             ucThongTinNhapHoc1.Dock = DockStyle.Fill;
             ucThongTinNhapHoc1.BringToFront();
+            ucThongTinNhapHoc1.Visible = true;
         }
 
 
         private void pnlDSKhoa_Click(object sender, EventArgs e)
         {
+            HidePnlContainer(true);
             ucDanhSachKhoa1.Dock = DockStyle.Fill;
             ucDanhSachKhoa1.BringToFront();
+            ucDanhSachKhoa1.Visible = true;
         }
 
         private void pnlNganhDT_Click(object sender, EventArgs e)
         {
+            HidePnlContainer(true);
             ucNganhDaoTao1.Dock = DockStyle.Fill;
             ucNganhDaoTao1.BringToFront();
+            ucNganhDaoTao1.Visible = true;
         }
 
         private void pnlLienHe_Click(object sender, EventArgs e)
         {
+            HidePnlContainer(true);
             ucLienHe1.Dock = DockStyle.Fill;
             ucLienHe1.BringToFront();
+            ucLienHe1.Visible = true;
         }
 
         private void pnlHeDaoTao_Click(object sender, EventArgs e)
         {
+            HidePnlContainer(true);
             ucHeDaoTao1.Dock = DockStyle.Fill;
             ucHeDaoTao1.BringToFront();
+            ucHeDaoTao1.Visible = true;
         }
 
         private void lbHome_Click(object sender, EventArgs e)
         {
-            pnlQLThongTinTruong1.BringToFront();
+            HidePnlContainer(false);
+            HideUC();
         }
 
     }

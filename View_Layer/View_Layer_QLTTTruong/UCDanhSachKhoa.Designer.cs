@@ -36,8 +36,8 @@
             this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.ThaoTac = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             this.pnlContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachKhoa)).BeginInit();
@@ -55,7 +55,7 @@
             this.pnlContainer.FillColor = System.Drawing.Color.White;
             this.pnlContainer.Location = new System.Drawing.Point(0, 120);
             this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(1200, 1133);
+            this.pnlContainer.Size = new System.Drawing.Size(1200, 630);
             this.pnlContainer.TabIndex = 8;
             // 
             // dgvDanhSachKhoa
@@ -96,7 +96,7 @@
             this.dgvDanhSachKhoa.RowHeadersWidth = 51;
             this.dgvDanhSachKhoa.RowTemplate.Height = 24;
             this.dgvDanhSachKhoa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDanhSachKhoa.Size = new System.Drawing.Size(1200, 1093);
+            this.dgvDanhSachKhoa.Size = new System.Drawing.Size(1200, 590);
             this.dgvDanhSachKhoa.TabIndex = 16;
             this.dgvDanhSachKhoa.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvDanhSachKhoa.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -151,17 +151,6 @@
             this.guna2Panel2.Size = new System.Drawing.Size(1200, 40);
             this.guna2Panel2.TabIndex = 15;
             // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(1, 57);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(803, 50);
-            this.guna2HtmlLabel2.TabIndex = 3;
-            this.guna2HtmlLabel2.Text = "Quản Lý Danh Sách Khoa";
-            // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.AutoSize = false;
@@ -172,6 +161,17 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(803, 40);
             this.guna2HtmlLabel1.TabIndex = 6;
             this.guna2HtmlLabel1.Text = "Danh sách khoa đào tạo";
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.AutoSize = false;
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(1, 57);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(803, 50);
+            this.guna2HtmlLabel2.TabIndex = 3;
+            this.guna2HtmlLabel2.Text = "Quản Lý Danh Sách Khoa";
             // 
             // btnAddEvent
             // 
@@ -198,7 +198,7 @@
             this.Controls.Add(this.pnlContainer);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Name = "UCDanhSachKhoa";
-            this.Size = new System.Drawing.Size(1250, 1133);
+            this.Size = new System.Drawing.Size(1250, 750);
             this.Load += new System.EventHandler(this.UCDanhSachKhoa_Load);
             this.pnlContainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachKhoa)).EndInit();

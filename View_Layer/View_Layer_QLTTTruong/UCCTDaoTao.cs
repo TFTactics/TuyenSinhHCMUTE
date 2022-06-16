@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using UI.BS_Layer;
 
@@ -42,19 +36,15 @@ namespace UI.View_Layer
             }
         }
 
-        private void pnlContainer_Paint(object sender, PaintEventArgs e)
+        private void btnAddEvent_Click(object sender, EventArgs e)
         {
-
+            ucThemCTDaoTao1.BringToFront();
+            ucThemCTDaoTao1.Dock = DockStyle.Fill;
         }
 
-        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        private void btnHome_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
-        {
-
+            pnlContainer1.BringToFront();
         }
     }
 }

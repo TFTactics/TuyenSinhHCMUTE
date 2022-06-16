@@ -9,30 +9,9 @@ namespace UI.View_Layer
     {
         DataTable dtTimeLine = null;
         BLTimeLine dbTimeLine = new BLTimeLine();
-
         public UCTimeLine()
         {
             InitializeComponent();
-        }
-
-        private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2CheckBox2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAddEvent_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void UCTimeLine_Load(object sender, EventArgs e)
@@ -80,6 +59,17 @@ namespace UI.View_Layer
                     /// Code delete
                 }
             }
+        }
+
+        private void btnAddEvent_Click(object sender, EventArgs e)
+        {
+            ucThemTimeLine1.BringToFront();
+            ucThemTimeLine1.Dock = DockStyle.Fill;
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            ucThemTimeLine1.SendToBack();
         }
     }
 }

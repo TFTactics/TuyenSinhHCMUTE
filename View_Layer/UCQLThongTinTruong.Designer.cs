@@ -60,6 +60,7 @@
             this.pnlGTChung = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.ucGioiThieuChung1 = new UI.View_Layer.UCGioiThieuChung();
             this.ucLienHe1 = new UI.View_Layer.UCLienHe();
             this.ucctDaoTao1 = new UI.View_Layer.UCCTDaoTao();
@@ -69,7 +70,6 @@
             this.ucPhuongThucTS1 = new UI.View_Layer.UCPhuongThucTS();
             this.ucNganhDaoTao1 = new UI.View_Layer.UCNganhDaoTao();
             this.ucDanhSachKhoa1 = new UI.View_Layer.UCDanhSachKhoa();
-            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.pnlQLThongTinTruong2.SuspendLayout();
             this.pnlQLThongTinTruong1.SuspendLayout();
             this.pnlHeDaoTao.SuspendLayout();
@@ -116,9 +116,9 @@
             this.pnlQLThongTinTruong1.Controls.Add(this.pnlCTDaoTao);
             this.pnlQLThongTinTruong1.Controls.Add(this.pnlPTTuyenSinh);
             this.pnlQLThongTinTruong1.Controls.Add(this.pnlGTChung);
-            this.pnlQLThongTinTruong1.Location = new System.Drawing.Point(3, 0);
+            this.pnlQLThongTinTruong1.Location = new System.Drawing.Point(0, 0);
             this.pnlQLThongTinTruong1.Name = "pnlQLThongTinTruong1";
-            this.pnlQLThongTinTruong1.Size = new System.Drawing.Size(1223, 1119);
+            this.pnlQLThongTinTruong1.Size = new System.Drawing.Size(1250, 1000);
             this.pnlQLThongTinTruong1.TabIndex = 44;
             // 
             // pnlHeDaoTao
@@ -556,75 +556,6 @@
             this.guna2HtmlLabel2.Text = "Giới thiệu chung";
             this.guna2HtmlLabel2.Click += new System.EventHandler(this.pnlGTChung_Click);
             // 
-            // ucGioiThieuChung1
-            // 
-            this.ucGioiThieuChung1.AutoSize = true;
-            this.ucGioiThieuChung1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucGioiThieuChung1.Location = new System.Drawing.Point(0, 0);
-            this.ucGioiThieuChung1.Name = "ucGioiThieuChung1";
-            this.ucGioiThieuChung1.Size = new System.Drawing.Size(1229, 0);
-            this.ucGioiThieuChung1.TabIndex = 45;
-            // 
-            // ucLienHe1
-            // 
-            this.ucLienHe1.Location = new System.Drawing.Point(349, 1069);
-            this.ucLienHe1.Name = "ucLienHe1";
-            this.ucLienHe1.Size = new System.Drawing.Size(50, 50);
-            this.ucLienHe1.TabIndex = 55;
-            // 
-            // ucctDaoTao1
-            // 
-            this.ucctDaoTao1.BackColor = System.Drawing.Color.Transparent;
-            this.ucctDaoTao1.Location = new System.Drawing.Point(25, 1030);
-            this.ucctDaoTao1.Name = "ucctDaoTao1";
-            this.ucctDaoTao1.Size = new System.Drawing.Size(50, 50);
-            this.ucctDaoTao1.TabIndex = 46;
-            // 
-            // ucHeDaoTao1
-            // 
-            this.ucHeDaoTao1.Location = new System.Drawing.Point(417, 1030);
-            this.ucHeDaoTao1.Name = "ucHeDaoTao1";
-            this.ucHeDaoTao1.Size = new System.Drawing.Size(50, 50);
-            this.ucHeDaoTao1.TabIndex = 56;
-            // 
-            // ucThongTinNhapHoc1
-            // 
-            this.ucThongTinNhapHoc1.BackColor = System.Drawing.Color.Transparent;
-            this.ucThongTinNhapHoc1.Location = new System.Drawing.Point(305, 1847);
-            this.ucThongTinNhapHoc1.Name = "ucThongTinNhapHoc1";
-            this.ucThongTinNhapHoc1.Size = new System.Drawing.Size(50, 50);
-            this.ucThongTinNhapHoc1.TabIndex = 51;
-            this.ucThongTinNhapHoc1.Visible = false;
-            // 
-            // ucHocPhiHocBong1
-            // 
-            this.ucHocPhiHocBong1.Location = new System.Drawing.Point(137, 1030);
-            this.ucHocPhiHocBong1.Name = "ucHocPhiHocBong1";
-            this.ucHocPhiHocBong1.Size = new System.Drawing.Size(50, 50);
-            this.ucHocPhiHocBong1.TabIndex = 48;
-            // 
-            // ucPhuongThucTS1
-            // 
-            this.ucPhuongThucTS1.BackColor = System.Drawing.Color.Transparent;
-            this.ucPhuongThucTS1.Location = new System.Drawing.Point(81, 1030);
-            this.ucPhuongThucTS1.Name = "ucPhuongThucTS1";
-            this.ucPhuongThucTS1.Size = new System.Drawing.Size(50, 50);
-            this.ucPhuongThucTS1.TabIndex = 47;
-            // 
-            // ucNganhDaoTao1
-            // 
-            this.ucNganhDaoTao1.Location = new System.Drawing.Point(349, 1069);
-            this.ucNganhDaoTao1.Name = "ucNganhDaoTao1";
-            this.ucNganhDaoTao1.Size = new System.Drawing.Size(50, 50);
-            this.ucNganhDaoTao1.TabIndex = 54;
-            // 
-            // ucDanhSachKhoa1
-            // 
-            this.ucDanhSachKhoa1.Location = new System.Drawing.Point(349, 1069);
-            this.ucDanhSachKhoa1.Name = "ucDanhSachKhoa1";
-            this.ucDanhSachKhoa1.Size = new System.Drawing.Size(50, 50);
-            this.ucDanhSachKhoa1.TabIndex = 53;
-            // 
             // btnHome
             // 
             this.btnHome.BackColor = System.Drawing.Color.Transparent;
@@ -644,6 +575,75 @@
             this.btnHome.Text = "QUẢN LÝ THÔNG TIN TRƯỜNG";
             this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnHome.Click += new System.EventHandler(this.lbHome_Click);
+            // 
+            // ucGioiThieuChung1
+            // 
+            this.ucGioiThieuChung1.AutoSize = true;
+            this.ucGioiThieuChung1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ucGioiThieuChung1.Location = new System.Drawing.Point(0, 0);
+            this.ucGioiThieuChung1.Name = "ucGioiThieuChung1";
+            this.ucGioiThieuChung1.Size = new System.Drawing.Size(1250, 753);
+            this.ucGioiThieuChung1.TabIndex = 45;
+            // 
+            // ucLienHe1
+            // 
+            this.ucLienHe1.Location = new System.Drawing.Point(256, 897);
+            this.ucLienHe1.Name = "ucLienHe1";
+            this.ucLienHe1.Size = new System.Drawing.Size(50, 50);
+            this.ucLienHe1.TabIndex = 55;
+            // 
+            // ucctDaoTao1
+            // 
+            this.ucctDaoTao1.BackColor = System.Drawing.Color.Transparent;
+            this.ucctDaoTao1.Location = new System.Drawing.Point(76, 897);
+            this.ucctDaoTao1.Name = "ucctDaoTao1";
+            this.ucctDaoTao1.Size = new System.Drawing.Size(50, 50);
+            this.ucctDaoTao1.TabIndex = 46;
+            // 
+            // ucHeDaoTao1
+            // 
+            this.ucHeDaoTao1.Location = new System.Drawing.Point(375, 897);
+            this.ucHeDaoTao1.Name = "ucHeDaoTao1";
+            this.ucHeDaoTao1.Size = new System.Drawing.Size(50, 50);
+            this.ucHeDaoTao1.TabIndex = 56;
+            // 
+            // ucThongTinNhapHoc1
+            // 
+            this.ucThongTinNhapHoc1.BackColor = System.Drawing.Color.Transparent;
+            this.ucThongTinNhapHoc1.Location = new System.Drawing.Point(147, 897);
+            this.ucThongTinNhapHoc1.Name = "ucThongTinNhapHoc1";
+            this.ucThongTinNhapHoc1.Size = new System.Drawing.Size(50, 50);
+            this.ucThongTinNhapHoc1.TabIndex = 51;
+            this.ucThongTinNhapHoc1.Visible = false;
+            // 
+            // ucHocPhiHocBong1
+            // 
+            this.ucHocPhiHocBong1.Location = new System.Drawing.Point(203, 897);
+            this.ucHocPhiHocBong1.Name = "ucHocPhiHocBong1";
+            this.ucHocPhiHocBong1.Size = new System.Drawing.Size(50, 50);
+            this.ucHocPhiHocBong1.TabIndex = 48;
+            // 
+            // ucPhuongThucTS1
+            // 
+            this.ucPhuongThucTS1.BackColor = System.Drawing.Color.Transparent;
+            this.ucPhuongThucTS1.Location = new System.Drawing.Point(20, 897);
+            this.ucPhuongThucTS1.Name = "ucPhuongThucTS1";
+            this.ucPhuongThucTS1.Size = new System.Drawing.Size(50, 50);
+            this.ucPhuongThucTS1.TabIndex = 47;
+            // 
+            // ucNganhDaoTao1
+            // 
+            this.ucNganhDaoTao1.Location = new System.Drawing.Point(312, 897);
+            this.ucNganhDaoTao1.Name = "ucNganhDaoTao1";
+            this.ucNganhDaoTao1.Size = new System.Drawing.Size(50, 50);
+            this.ucNganhDaoTao1.TabIndex = 54;
+            // 
+            // ucDanhSachKhoa1
+            // 
+            this.ucDanhSachKhoa1.Location = new System.Drawing.Point(431, 897);
+            this.ucDanhSachKhoa1.Name = "ucDanhSachKhoa1";
+            this.ucDanhSachKhoa1.Size = new System.Drawing.Size(50, 50);
+            this.ucDanhSachKhoa1.TabIndex = 53;
             // 
             // UCQLThongTinTruong
             // 

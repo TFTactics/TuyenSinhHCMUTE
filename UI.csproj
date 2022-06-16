@@ -74,6 +74,24 @@
     <Compile Include="View_Layer\View_Layer_QLBangTinTuyenSinh\UCThemTin.Designer.cs">
       <DependentUpon>UCThemTin.cs</DependentUpon>
     </Compile>
+    <Compile Include="View_Layer\View_Layer_QLDSNguoiDung\UCThemNguoiDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View_Layer\View_Layer_QLDSNguoiDung\UCThemNguoiDung.Designer.cs">
+      <DependentUpon>UCThemNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Layer\View_Layer_QLTimeLine\UCThemTimeLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View_Layer\View_Layer_QLTimeLine\UCThemTimeLine.Designer.cs">
+      <DependentUpon>UCThemTimeLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Layer\View_Layer_QLTTTruong\CTDaoTao\UCThemCTDaoTao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View_Layer\View_Layer_QLTTTruong\CTDaoTao\UCThemCTDaoTao.Designer.cs">
+      <DependentUpon>UCThemCTDaoTao.cs</DependentUpon>
+    </Compile>
     <Compile Include="View_Layer\View_Layer_QLTTTruong\UCCTDaoTao.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -174,6 +192,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View_Layer\View_Layer_QLBangTinTuyenSinh\UCThemTin.resx">
       <DependentUpon>UCThemTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Layer\View_Layer_QLDSNguoiDung\UCThemNguoiDung.resx">
+      <DependentUpon>UCThemNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Layer\View_Layer_QLTimeLine\UCThemTimeLine.resx">
+      <DependentUpon>UCThemTimeLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Layer\View_Layer_QLTTTruong\CTDaoTao\UCThemCTDaoTao.resx">
+      <DependentUpon>UCThemCTDaoTao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View_Layer\View_Layer_QLTTTruong\UCCTDaoTao.resx">
       <DependentUpon>UCCTDaoTao.cs</DependentUpon>

@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using UI.BS_Layer;
 
@@ -21,11 +15,6 @@ namespace UI.View_Layer
         public UCDanhSachNguoiDung()
         {
             InitializeComponent();
-        }
-
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void UCDanhSachNguoiDung_Load(object sender, EventArgs e)
@@ -46,6 +35,17 @@ namespace UI.View_Layer
             {
                 MessageBox.Show("Không lấy được nội dung trong Time Line");
             }
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            ucThemNguoiDung1.SendToBack();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            ucThemNguoiDung1.BringToFront();
+            ucThemNguoiDung1.Dock = DockStyle.Fill;
         }
     }
 }

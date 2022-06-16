@@ -76,11 +76,10 @@
             this.pnlContainer.Controls.Add(this.guna2TextBox1);
             this.pnlContainer.Controls.Add(this.guna2HtmlLabel1);
             this.pnlContainer.Controls.Add(this.guna2Panel2);
-            this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContainer.FillColor = System.Drawing.Color.White;
             this.pnlContainer.Location = new System.Drawing.Point(0, 0);
             this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(1250, 1133);
+            this.pnlContainer.Size = new System.Drawing.Size(1250, 750);
             this.pnlContainer.TabIndex = 8;
             // 
             // guna2HtmlLabel9
@@ -383,7 +382,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlContainer);
             this.Name = "UCGioiThieuChung";
-            this.Size = new System.Drawing.Size(1250, 1133);
+            this.Size = new System.Drawing.Size(1250, 750);
             this.pnlContainer.ResumeLayout(false);
             this.pnlContainer.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);

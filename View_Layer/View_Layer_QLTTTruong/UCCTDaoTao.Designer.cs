@@ -31,33 +31,63 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlContainer1 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvCTDaoTao = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.ThaoTac = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
+            this.ucThemCTDaoTao1 = new UI.View_Layer.View_Layer_QLTTTruong.CTDaoTao.UCThemCTDaoTao();
             this.pnlContainer.SuspendLayout();
+            this.pnlContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTDaoTao)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
+            // btnAddEvent
+            // 
+            this.btnAddEvent.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddEvent.BorderColor = System.Drawing.Color.Transparent;
+            this.btnAddEvent.BorderRadius = 5;
+            this.btnAddEvent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddEvent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddEvent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddEvent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddEvent.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddEvent.ForeColor = System.Drawing.Color.White;
+            this.btnAddEvent.Location = new System.Drawing.Point(970, 57);
+            this.btnAddEvent.Name = "btnAddEvent";
+            this.btnAddEvent.Size = new System.Drawing.Size(230, 45);
+            this.btnAddEvent.TabIndex = 10;
+            this.btnAddEvent.Text = "+ Thêm Chương Trình";
+            this.btnAddEvent.Click += new System.EventHandler(this.btnAddEvent_Click);
+            // 
             // pnlContainer
             // 
-            this.pnlContainer.BackColor = System.Drawing.Color.Transparent;
-            this.pnlContainer.BorderColor = System.Drawing.Color.Transparent;
-            this.pnlContainer.BorderRadius = 15;
-            this.pnlContainer.BorderThickness = 1;
-            this.pnlContainer.Controls.Add(this.dgvCTDaoTao);
-            this.pnlContainer.Controls.Add(this.guna2Panel2);
-            this.pnlContainer.FillColor = System.Drawing.Color.White;
+            this.pnlContainer.AutoScroll = true;
+            this.pnlContainer.Controls.Add(this.ucThemCTDaoTao1);
+            this.pnlContainer.Controls.Add(this.pnlContainer1);
             this.pnlContainer.Location = new System.Drawing.Point(0, 120);
             this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(1200, 1133);
-            this.pnlContainer.TabIndex = 9;
-            this.pnlContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContainer_Paint);
+            this.pnlContainer.Size = new System.Drawing.Size(1200, 750);
+            this.pnlContainer.TabIndex = 11;
+            // 
+            // pnlContainer1
+            // 
+            this.pnlContainer1.BackColor = System.Drawing.Color.Transparent;
+            this.pnlContainer1.BorderColor = System.Drawing.Color.Transparent;
+            this.pnlContainer1.BorderRadius = 15;
+            this.pnlContainer1.BorderThickness = 1;
+            this.pnlContainer1.Controls.Add(this.dgvCTDaoTao);
+            this.pnlContainer1.Controls.Add(this.guna2Panel2);
+            this.pnlContainer1.FillColor = System.Drawing.Color.White;
+            this.pnlContainer1.Location = new System.Drawing.Point(0, 0);
+            this.pnlContainer1.Name = "pnlContainer1";
+            this.pnlContainer1.Size = new System.Drawing.Size(1200, 750);
+            this.pnlContainer1.TabIndex = 10;
             // 
             // dgvCTDaoTao
             // 
@@ -97,7 +127,7 @@
             this.dgvCTDaoTao.RowHeadersWidth = 51;
             this.dgvCTDaoTao.RowTemplate.Height = 24;
             this.dgvCTDaoTao.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCTDaoTao.Size = new System.Drawing.Size(1200, 1093);
+            this.dgvCTDaoTao.Size = new System.Drawing.Size(1200, 710);
             this.dgvCTDaoTao.TabIndex = 16;
             this.dgvCTDaoTao.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvCTDaoTao.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -151,19 +181,6 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1200, 40);
             this.guna2Panel2.TabIndex = 15;
-            this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(1, 57);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(803, 50);
-            this.guna2HtmlLabel2.TabIndex = 3;
-            this.guna2HtmlLabel2.Text = "Quản Lý Chương Trình Đào Tạo";
-            this.guna2HtmlLabel2.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
             // 
             // guna2HtmlLabel1
             // 
@@ -176,35 +193,47 @@
             this.guna2HtmlLabel1.TabIndex = 6;
             this.guna2HtmlLabel1.Text = "Danh sách chương trình đào tạo";
             // 
-            // btnAddEvent
+            // btnHome
             // 
-            this.btnAddEvent.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddEvent.BorderColor = System.Drawing.Color.Transparent;
-            this.btnAddEvent.BorderRadius = 5;
-            this.btnAddEvent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddEvent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddEvent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAddEvent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAddEvent.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddEvent.ForeColor = System.Drawing.Color.White;
-            this.btnAddEvent.Location = new System.Drawing.Point(970, 57);
-            this.btnAddEvent.Name = "btnAddEvent";
-            this.btnAddEvent.Size = new System.Drawing.Size(230, 45);
-            this.btnAddEvent.TabIndex = 10;
-            this.btnAddEvent.Text = "+ Thêm Chương Trình";
+            this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.BorderColor = System.Drawing.Color.Transparent;
+            this.btnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHome.FillColor = System.Drawing.Color.Transparent;
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.Black;
+            this.btnHome.Location = new System.Drawing.Point(1, 57);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnHome.Size = new System.Drawing.Size(963, 45);
+            this.btnHome.TabIndex = 48;
+            this.btnHome.Text = "Quản Lý Chương Trình Đào Tạo";
+            this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // ucThemCTDaoTao1
+            // 
+            this.ucThemCTDaoTao1.AllowDrop = true;
+            this.ucThemCTDaoTao1.Location = new System.Drawing.Point(15, 756);
+            this.ucThemCTDaoTao1.Name = "ucThemCTDaoTao1";
+            this.ucThemCTDaoTao1.Size = new System.Drawing.Size(50, 50);
+            this.ucThemCTDaoTao1.TabIndex = 11;
             // 
             // UCCTDaoTao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.btnAddEvent);
+            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.pnlContainer);
-            this.Controls.Add(this.guna2HtmlLabel2);
+            this.Controls.Add(this.btnAddEvent);
             this.Name = "UCCTDaoTao";
             this.Size = new System.Drawing.Size(1250, 1133);
             this.Load += new System.EventHandler(this.UCCTDaoTao_Load);
             this.pnlContainer.ResumeLayout(false);
+            this.pnlContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTDaoTao)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -212,14 +241,15 @@
         }
 
         #endregion
-
+        private Guna.UI2.WinForms.Guna2Button btnAddEvent;
         private Guna.UI2.WinForms.Guna2Panel pnlContainer;
+        private Guna.UI2.WinForms.Guna2Panel pnlContainer1;
         private Guna.UI2.WinForms.Guna2DataGridView dgvCTDaoTao;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Choose;
         private System.Windows.Forms.DataGridViewComboBoxColumn ThaoTac;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Button btnAddEvent;
+        private View_Layer_QLTTTruong.CTDaoTao.UCThemCTDaoTao ucThemCTDaoTao1;
+        private Guna.UI2.WinForms.Guna2Button btnHome;
     }
 }

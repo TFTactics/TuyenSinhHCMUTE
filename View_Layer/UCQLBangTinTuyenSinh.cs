@@ -61,20 +61,5 @@ namespace UI.View_Layer
                 MessageBox.Show("Không lấy được nội dung trong TinTuyenSinh");
             }
         }
-
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvTinTuyenSinh_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }
