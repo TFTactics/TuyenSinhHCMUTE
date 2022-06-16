@@ -33,26 +33,26 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.ucnDaoTao1 = new UI.View_Layer.View_Layer_QLTTTruong.NganhDaoTao.UCNDaoTao();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvDSNganh = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel27 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2CustomGradientPanel9 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.cbbLoaiCT = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.txbSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
-            this.ucnDaoTao1 = new UI.View_Layer.View_Layer_QLTTTruong.NganhDaoTao.UCNDaoTao();
+            this.guna2HtmlLabel27 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2CustomGradientPanel9 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.txbSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cbbLoaiCT = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSNganh)).BeginInit();
             this.guna2Panel2.SuspendLayout();
-            this.guna2CustomGradientPanel9.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
+            this.guna2CustomGradientPanel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAddEvent
@@ -82,6 +82,13 @@
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(1200, 990);
             this.guna2Panel3.TabIndex = 15;
+            // 
+            // ucnDaoTao1
+            // 
+            this.ucnDaoTao1.Location = new System.Drawing.Point(0, 996);
+            this.ucnDaoTao1.Name = "ucnDaoTao1";
+            this.ucnDaoTao1.Size = new System.Drawing.Size(50, 41);
+            this.ucnDaoTao1.TabIndex = 16;
             // 
             // guna2Panel1
             // 
@@ -162,6 +169,13 @@
             this.dgvDSNganh.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvDSNganh.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // Choose
+            // 
+            this.Choose.FillWeight = 37.43316F;
+            this.Choose.HeaderText = "";
+            this.Choose.MinimumWidth = 6;
+            this.Choose.Name = "Choose";
+            // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
@@ -178,110 +192,6 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1200, 75);
             this.guna2Panel2.TabIndex = 0;
-            // 
-            // guna2HtmlLabel27
-            // 
-            this.guna2HtmlLabel27.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel27.Location = new System.Drawing.Point(819, 57);
-            this.guna2HtmlLabel27.Name = "guna2HtmlLabel27";
-            this.guna2HtmlLabel27.Size = new System.Drawing.Size(3, 2);
-            this.guna2HtmlLabel27.TabIndex = 9;
-            this.guna2HtmlLabel27.Text = null;
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(15, 25);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(803, 40);
-            this.guna2HtmlLabel2.TabIndex = 3;
-            this.guna2HtmlLabel2.Text = "Danh sách ngành đào tạo";
-            // 
-            // guna2CustomGradientPanel9
-            // 
-            this.guna2CustomGradientPanel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel9.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel9.BorderRadius = 15;
-            this.guna2CustomGradientPanel9.BorderThickness = 1;
-            this.guna2CustomGradientPanel9.Controls.Add(this.txbSearch);
-            this.guna2CustomGradientPanel9.Controls.Add(this.cbbLoaiCT);
-            this.guna2CustomGradientPanel9.Location = new System.Drawing.Point(0, 0);
-            this.guna2CustomGradientPanel9.Name = "guna2CustomGradientPanel9";
-            this.guna2CustomGradientPanel9.Size = new System.Drawing.Size(1200, 70);
-            this.guna2CustomGradientPanel9.TabIndex = 15;
-            // 
-            // cbbLoaiCT
-            // 
-            this.cbbLoaiCT.BackColor = System.Drawing.Color.White;
-            this.cbbLoaiCT.BorderColor = System.Drawing.Color.DimGray;
-            this.cbbLoaiCT.BorderRadius = 5;
-            this.cbbLoaiCT.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbbLoaiCT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbLoaiCT.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbLoaiCT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbLoaiCT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.cbbLoaiCT.ForeColor = System.Drawing.Color.Black;
-            this.cbbLoaiCT.ItemHeight = 30;
-            this.cbbLoaiCT.Items.AddRange(new object[] {
-            "ALL",
-            "USER",
-            "COLLAB",
-            "ADMIN"});
-            this.cbbLoaiCT.Location = new System.Drawing.Point(950, 18);
-            this.cbbLoaiCT.Name = "cbbLoaiCT";
-            this.cbbLoaiCT.Size = new System.Drawing.Size(234, 36);
-            this.cbbLoaiCT.TabIndex = 14;
-            // 
-            // btnHome
-            // 
-            this.btnHome.BackColor = System.Drawing.Color.Transparent;
-            this.btnHome.BorderColor = System.Drawing.Color.Transparent;
-            this.btnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHome.FillColor = System.Drawing.Color.Transparent;
-            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.Black;
-            this.btnHome.Location = new System.Drawing.Point(1, 57);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnHome.Size = new System.Drawing.Size(963, 45);
-            this.btnHome.TabIndex = 49;
-            this.btnHome.Text = "Quản Lý Ngành Đào Tạo";
-            this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // Choose
-            // 
-            this.Choose.FillWeight = 37.43316F;
-            this.Choose.HeaderText = "";
-            this.Choose.MinimumWidth = 6;
-            this.Choose.Name = "Choose";
-            // 
-            // txbSearch
-            // 
-            this.txbSearch.BorderRadius = 5;
-            this.txbSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbSearch.DefaultText = "";
-            this.txbSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txbSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txbSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txbSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbSearch.IconLeft = global::UI.Properties.Resources.icons8_magnifying_glass_64;
-            this.txbSearch.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.txbSearch.Location = new System.Drawing.Point(15, 10);
-            this.txbSearch.Name = "txbSearch";
-            this.txbSearch.PasswordChar = '\0';
-            this.txbSearch.PlaceholderText = "";
-            this.txbSearch.SelectedText = "";
-            this.txbSearch.Size = new System.Drawing.Size(320, 50);
-            this.txbSearch.TabIndex = 15;
             // 
             // guna2Panel4
             // 
@@ -335,12 +245,102 @@
             this.btnEdit.Size = new System.Drawing.Size(50, 75);
             this.btnEdit.TabIndex = 48;
             // 
-            // ucnDaoTao1
+            // guna2HtmlLabel27
             // 
-            this.ucnDaoTao1.Location = new System.Drawing.Point(0, 996);
-            this.ucnDaoTao1.Name = "ucnDaoTao1";
-            this.ucnDaoTao1.Size = new System.Drawing.Size(50, 41);
-            this.ucnDaoTao1.TabIndex = 16;
+            this.guna2HtmlLabel27.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel27.Location = new System.Drawing.Point(819, 57);
+            this.guna2HtmlLabel27.Name = "guna2HtmlLabel27";
+            this.guna2HtmlLabel27.Size = new System.Drawing.Size(3, 2);
+            this.guna2HtmlLabel27.TabIndex = 9;
+            this.guna2HtmlLabel27.Text = null;
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.AutoSize = false;
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(15, 25);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(803, 40);
+            this.guna2HtmlLabel2.TabIndex = 3;
+            this.guna2HtmlLabel2.Text = "Danh sách ngành đào tạo";
+            // 
+            // guna2CustomGradientPanel9
+            // 
+            this.guna2CustomGradientPanel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel9.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel9.BorderRadius = 15;
+            this.guna2CustomGradientPanel9.BorderThickness = 1;
+            this.guna2CustomGradientPanel9.Controls.Add(this.txbSearch);
+            this.guna2CustomGradientPanel9.Controls.Add(this.cbbLoaiCT);
+            this.guna2CustomGradientPanel9.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel9.Name = "guna2CustomGradientPanel9";
+            this.guna2CustomGradientPanel9.Size = new System.Drawing.Size(1200, 70);
+            this.guna2CustomGradientPanel9.TabIndex = 15;
+            // 
+            // txbSearch
+            // 
+            this.txbSearch.BorderRadius = 5;
+            this.txbSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbSearch.DefaultText = "";
+            this.txbSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txbSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbSearch.IconLeft = global::UI.Properties.Resources.icons8_magnifying_glass_64;
+            this.txbSearch.IconLeftSize = new System.Drawing.Size(30, 30);
+            this.txbSearch.Location = new System.Drawing.Point(15, 10);
+            this.txbSearch.Name = "txbSearch";
+            this.txbSearch.PasswordChar = '\0';
+            this.txbSearch.PlaceholderText = "";
+            this.txbSearch.SelectedText = "";
+            this.txbSearch.Size = new System.Drawing.Size(320, 50);
+            this.txbSearch.TabIndex = 15;
+            // 
+            // cbbLoaiCT
+            // 
+            this.cbbLoaiCT.BackColor = System.Drawing.Color.White;
+            this.cbbLoaiCT.BorderColor = System.Drawing.Color.DimGray;
+            this.cbbLoaiCT.BorderRadius = 5;
+            this.cbbLoaiCT.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbLoaiCT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbLoaiCT.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbLoaiCT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbLoaiCT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.cbbLoaiCT.ForeColor = System.Drawing.Color.Black;
+            this.cbbLoaiCT.ItemHeight = 30;
+            this.cbbLoaiCT.Items.AddRange(new object[] {
+            "ALL",
+            "USER",
+            "COLLAB",
+            "ADMIN"});
+            this.cbbLoaiCT.Location = new System.Drawing.Point(950, 18);
+            this.cbbLoaiCT.Name = "cbbLoaiCT";
+            this.cbbLoaiCT.Size = new System.Drawing.Size(234, 36);
+            this.cbbLoaiCT.TabIndex = 14;
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.BorderColor = System.Drawing.Color.Transparent;
+            this.btnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHome.FillColor = System.Drawing.Color.Transparent;
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.Black;
+            this.btnHome.Location = new System.Drawing.Point(1, 57);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnHome.Size = new System.Drawing.Size(963, 45);
+            this.btnHome.TabIndex = 49;
+            this.btnHome.Text = "Quản Lý Ngành Đào Tạo";
+            this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // UCNganhDaoTao
             // 
@@ -352,13 +352,14 @@
             this.Controls.Add(this.btnAddEvent);
             this.Name = "UCNganhDaoTao";
             this.Size = new System.Drawing.Size(1250, 1133);
+            this.Load += new System.EventHandler(this.UCNganhDaoTao_Load);
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSNganh)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            this.guna2CustomGradientPanel9.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
+            this.guna2CustomGradientPanel9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

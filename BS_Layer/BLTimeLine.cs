@@ -22,7 +22,7 @@ namespace UI.BS_Layer
         }
         public bool XoaBangTin(ref string err, string TieuDe, string NoiDung, string NgayDang)
         {
-            string sqlString = "delete from TuyenSinh where TieuDe=N'" + TieuDe + "' and NgayDang='" + NgayDang + "'";
+            string sqlString = "delete from TimeLine where TenSuKien=N'" + TieuDe + "'and ThoiGianBatDau='" + NgayDang + "'and NoiDung=N'" + NoiDung + "'";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
     }

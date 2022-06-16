@@ -14,9 +14,29 @@ namespace UI.View_Layer
         public UCThongTinNhapHoc()
         {
             InitializeComponent();
+            HideBtn(true);
+        }
+
+        public void HideBtn(bool flag)
+        {
+            if (flag)
+            {
+                btnEdit.Visible = false;
+                btnDelete.Visible = false;
+            }
+            else
+            {
+                btnEdit.Visible = true;
+                btnDelete.Visible = true;
+            }
         }
 
         private void UCThongTinNhapHoc_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        public void LoadData()
         {
             try
             {
@@ -45,6 +65,27 @@ namespace UI.View_Layer
         private void btnHome_Click(object sender, EventArgs e)
         {
             pnlContainer.BringToFront();
+            LoadData();
+        }
+
+        private void dgvTTNhapHoc_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (string.Compare(dgvTTNhapHoc.CurrentCell.OwningColumn.Name, "STT") == 0)
+            {
+                bool checkBoxStatus = Convert.ToBoolean(dgvTTNhapHoc.CurrentCell.EditedFormattedValue);
+                //checkBoxStatus gives you whether checkbox cell value of selected row for the
+                //"CheckBoxColumn" column value is checked or not. 
+                if (checkBoxStatus)
+                {
+                    //write your code
+                    HideBtn(!checkBoxStatus);
+                }
+                else
+                {
+                    //write your code
+                    HideBtn(!checkBoxStatus);
+                }
+            }
         }
     }
 }

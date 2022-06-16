@@ -69,6 +69,7 @@
             this.btnLuu.Size = new System.Drawing.Size(150, 43);
             this.btnLuu.TabIndex = 20;
             this.btnLuu.Text = "Lưu thay đổi";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // txtGTKhoa
             // 
@@ -98,7 +99,7 @@
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(388, 40);
             this.guna2HtmlLabel3.TabIndex = 14;
-            this.guna2HtmlLabel3.Text = "Giới thiệu khoa";
+            this.guna2HtmlLabel3.Text = "Giới thiệu";
             // 
             // txtTenKhoa
             // 
@@ -128,7 +129,7 @@
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(388, 40);
             this.guna2HtmlLabel2.TabIndex = 12;
-            this.guna2HtmlLabel2.Text = "Tên khoa";
+            this.guna2HtmlLabel2.Text = "Mã Hệ Đào Tạo";
             // 
             // guna2HtmlLabel1
             // 
@@ -148,6 +149,7 @@
             this.Controls.Add(this.pnlContainer);
             this.Name = "UCThemHDaoTao";
             this.Size = new System.Drawing.Size(1250, 1133);
+            this.Load += new System.EventHandler(this.UCThemHDaoTao_Load);
             this.pnlContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 

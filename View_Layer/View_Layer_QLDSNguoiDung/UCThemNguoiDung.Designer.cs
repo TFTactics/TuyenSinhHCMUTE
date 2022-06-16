@@ -162,6 +162,7 @@
             this.btnLuu.Size = new System.Drawing.Size(150, 43);
             this.btnLuu.TabIndex = 20;
             this.btnLuu.Text = "Lưu thay đổi";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // txtHoTen
             // 
@@ -211,6 +212,7 @@
             this.Controls.Add(this.pnlContainer);
             this.Name = "UCThemNguoiDung";
             this.Size = new System.Drawing.Size(1250, 1133);
+            this.Load += new System.EventHandler(this.UCThemNguoiDung_Load);
             this.pnlContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 

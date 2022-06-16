@@ -33,16 +33,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.ucThemCTDaoTao1 = new UI.View_Layer.View_Layer_QLTTTruong.CTDaoTao.UCThemCTDaoTao();
             this.pnlContainer1 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvCTDaoTao = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
-            this.ucThemCTDaoTao1 = new UI.View_Layer.View_Layer_QLTTTruong.CTDaoTao.UCThemCTDaoTao();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.pnlContainer.SuspendLayout();
             this.pnlContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTDaoTao)).BeginInit();
@@ -76,6 +76,14 @@
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(1200, 990);
             this.pnlContainer.TabIndex = 11;
+            // 
+            // ucThemCTDaoTao1
+            // 
+            this.ucThemCTDaoTao1.AllowDrop = true;
+            this.ucThemCTDaoTao1.Location = new System.Drawing.Point(15, 756);
+            this.ucThemCTDaoTao1.Name = "ucThemCTDaoTao1";
+            this.ucThemCTDaoTao1.Size = new System.Drawing.Size(50, 50);
+            this.ucThemCTDaoTao1.TabIndex = 11;
             // 
             // pnlContainer1
             // 
@@ -152,6 +160,14 @@
             this.dgvCTDaoTao.ThemeStyle.RowsStyle.Height = 24;
             this.dgvCTDaoTao.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvCTDaoTao.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvCTDaoTao.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCTDaoTao_CellContentClick);
+            // 
+            // Choose
+            // 
+            this.Choose.FillWeight = 27.18325F;
+            this.Choose.HeaderText = "";
+            this.Choose.MinimumWidth = 6;
+            this.Choose.Name = "Choose";
             // 
             // guna2Panel2
             // 
@@ -168,44 +184,6 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1200, 40);
             this.guna2Panel2.TabIndex = 15;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(15, 10);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(803, 40);
-            this.guna2HtmlLabel1.TabIndex = 6;
-            this.guna2HtmlLabel1.Text = "Danh sách chương trình đào tạo";
-            // 
-            // btnHome
-            // 
-            this.btnHome.BackColor = System.Drawing.Color.Transparent;
-            this.btnHome.BorderColor = System.Drawing.Color.Transparent;
-            this.btnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHome.FillColor = System.Drawing.Color.Transparent;
-            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.Black;
-            this.btnHome.Location = new System.Drawing.Point(1, 57);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnHome.Size = new System.Drawing.Size(963, 45);
-            this.btnHome.TabIndex = 48;
-            this.btnHome.Text = "Quản Lý Chương Trình Đào Tạo";
-            this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // Choose
-            // 
-            this.Choose.FillWeight = 27.18325F;
-            this.Choose.HeaderText = "";
-            this.Choose.MinimumWidth = 6;
-            this.Choose.Name = "Choose";
             // 
             // guna2Panel4
             // 
@@ -237,6 +215,7 @@
             this.btnDelete.PressedColor = System.Drawing.Color.White;
             this.btnDelete.Size = new System.Drawing.Size(50, 40);
             this.btnDelete.TabIndex = 49;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
@@ -259,13 +238,36 @@
             this.btnEdit.Size = new System.Drawing.Size(50, 40);
             this.btnEdit.TabIndex = 48;
             // 
-            // ucThemCTDaoTao1
+            // guna2HtmlLabel1
             // 
-            this.ucThemCTDaoTao1.AllowDrop = true;
-            this.ucThemCTDaoTao1.Location = new System.Drawing.Point(15, 756);
-            this.ucThemCTDaoTao1.Name = "ucThemCTDaoTao1";
-            this.ucThemCTDaoTao1.Size = new System.Drawing.Size(50, 50);
-            this.ucThemCTDaoTao1.TabIndex = 11;
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(15, 10);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(803, 40);
+            this.guna2HtmlLabel1.TabIndex = 6;
+            this.guna2HtmlLabel1.Text = "Danh sách chương trình đào tạo";
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.BorderColor = System.Drawing.Color.Transparent;
+            this.btnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHome.FillColor = System.Drawing.Color.Transparent;
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.Black;
+            this.btnHome.Location = new System.Drawing.Point(1, 57);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnHome.Size = new System.Drawing.Size(963, 45);
+            this.btnHome.TabIndex = 48;
+            this.btnHome.Text = "Quản Lý Chương Trình Đào Tạo";
+            this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // UCCTDaoTao
             // 

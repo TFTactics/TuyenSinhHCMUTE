@@ -14,9 +14,9 @@ namespace UI.BS_Layer
         {
             return db.ExecuteQueryDataSet("select * from ThongTinNguoiDung", CommandType.Text);
         }
-        public bool ThemBangTin(string TieuDe, string NoiDung,string HeDaoTao, string TrangThai, ref string err)
+        public bool ThemNguoiDung(string HoTen, string DienThoai,string Email, string LoaiNGuoiDung, ref string err)
         {
-            string sqlString = "Insert into TimeLine value (" + "N'" + TieuDe + "',N'" + NoiDung + "',N'" + HeDaoTao + "',N'" + TrangThai + "')";
+            string sqlString = "Insert into ThongTinNguoiDung values (" + "N'" + HoTen + "',N'" + DienThoai + "',N'" + Email + "',N'" + LoaiNGuoiDung + "')";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
         public bool XoaBangTin(ref string err, string TieuDe, string NoiDung, string NgayDang)

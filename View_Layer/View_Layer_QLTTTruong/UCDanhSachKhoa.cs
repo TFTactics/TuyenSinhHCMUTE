@@ -15,9 +15,29 @@ namespace UI.View_Layer
         public UCDanhSachKhoa()
         {
             InitializeComponent();
+            HideBtn(true);
+        }
+
+        public void HideBtn(bool flag)
+        {
+            if (flag)
+            {
+                btnEdit.Visible = false;
+                btnDelete.Visible = false;
+            }
+            else
+            {
+                btnEdit.Visible = true;
+                btnDelete.Visible = true;
+            }
         }
 
         private void UCDanhSachKhoa_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        public void LoadData()
         {
             try
             {
@@ -36,7 +56,6 @@ namespace UI.View_Layer
                 MessageBox.Show("Không lấy được nội dung trong Thong Tin Khoa");
             }
         }
-
         private void btnAddEvent_Click(object sender, EventArgs e)
         {
             ucThemKhoa1.Dock = DockStyle.Fill;
@@ -46,6 +65,32 @@ namespace UI.View_Layer
         private void btnHome_Click(object sender, EventArgs e)
         {
             pnlContainer.BringToFront();
+            LoadData();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvDanhSachKhoa_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (string.Compare(dgvDanhSachKhoa.CurrentCell.OwningColumn.Name, "STT") == 0)
+            {
+                bool checkBoxStatus = Convert.ToBoolean(dgvDanhSachKhoa.CurrentCell.EditedFormattedValue);
+                //checkBoxStatus gives you whether checkbox cell value of selected row for the
+                //"CheckBoxColumn" column value is checked or not. 
+                if (checkBoxStatus)
+                {
+                    //write your code
+                    HideBtn(!checkBoxStatus);
+                }
+                else
+                {
+                    //write your code
+                    HideBtn(!checkBoxStatus);
+                }
+            }
         }
     }
 }

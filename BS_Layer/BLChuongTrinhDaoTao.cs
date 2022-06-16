@@ -14,9 +14,9 @@ namespace UI.BS_Layer
         {
             return db.ExecuteQueryDataSet("select * from ChuongTrinhDaoTao", CommandType.Text);
         }
-        public bool ThemBangTin(string TieuDe, string NoiDung,string HeDaoTao, string TrangThai, ref string err)
+        public bool ThemChuongTrinhDaoTao(string TenCTDT, string NganhDaoTao,string HeDaoTao, string PDFDaoTao, string NoiDung, ref string err)
         {
-            string sqlString = "Insert into TinTuyenSinh value (" + "N'" + TieuDe + "',N'" + NoiDung + "',N'" + HeDaoTao + "',N'" + TrangThai + "')";
+            string sqlString = "Insert into ChuongTrinhDaoTao values (" + "N'" + TenCTDT + "',N'" + NganhDaoTao + "',N'" + HeDaoTao + "',N'" + PDFDaoTao + "',N'" + NoiDung + "')";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
         public bool XoaBangTin(ref string err, string TieuDe, string NoiDung, string NgayDang)

@@ -33,16 +33,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.ucThemKhoa1 = new UI.View_Layer.View_Layer_QLTTTruong.DSKhoa.UCThemKhoa();
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvDanhSachKhoa = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
-            this.ucThemKhoa1 = new UI.View_Layer.View_Layer_QLTTTruong.DSKhoa.UCThemKhoa();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.pnlContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachKhoa)).BeginInit();
@@ -76,6 +76,13 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1200, 990);
             this.guna2Panel1.TabIndex = 14;
+            // 
+            // ucThemKhoa1
+            // 
+            this.ucThemKhoa1.Location = new System.Drawing.Point(0, 996);
+            this.ucThemKhoa1.Name = "ucThemKhoa1";
+            this.ucThemKhoa1.Size = new System.Drawing.Size(50, 50);
+            this.ucThemKhoa1.TabIndex = 10;
             // 
             // pnlContainer
             // 
@@ -152,6 +159,14 @@
             this.dgvDanhSachKhoa.ThemeStyle.RowsStyle.Height = 24;
             this.dgvDanhSachKhoa.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvDanhSachKhoa.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvDanhSachKhoa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachKhoa_CellContentClick);
+            // 
+            // Choose
+            // 
+            this.Choose.FillWeight = 27.18325F;
+            this.Choose.HeaderText = "";
+            this.Choose.MinimumWidth = 6;
+            this.Choose.Name = "Choose";
             // 
             // guna2Panel2
             // 
@@ -168,44 +183,6 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1200, 40);
             this.guna2Panel2.TabIndex = 15;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(15, 10);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(803, 40);
-            this.guna2HtmlLabel1.TabIndex = 6;
-            this.guna2HtmlLabel1.Text = "Danh sách khoa đào tạo";
-            // 
-            // btnHome
-            // 
-            this.btnHome.BackColor = System.Drawing.Color.Transparent;
-            this.btnHome.BorderColor = System.Drawing.Color.Transparent;
-            this.btnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHome.FillColor = System.Drawing.Color.Transparent;
-            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.Black;
-            this.btnHome.Location = new System.Drawing.Point(1, 57);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnHome.Size = new System.Drawing.Size(963, 45);
-            this.btnHome.TabIndex = 49;
-            this.btnHome.Text = "Quản Lý Danh Sách Khoa";
-            this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // Choose
-            // 
-            this.Choose.FillWeight = 27.18325F;
-            this.Choose.HeaderText = "";
-            this.Choose.MinimumWidth = 6;
-            this.Choose.Name = "Choose";
             // 
             // guna2Panel4
             // 
@@ -237,6 +214,7 @@
             this.btnDelete.PressedColor = System.Drawing.Color.White;
             this.btnDelete.Size = new System.Drawing.Size(50, 40);
             this.btnDelete.TabIndex = 49;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
@@ -259,12 +237,36 @@
             this.btnEdit.Size = new System.Drawing.Size(50, 40);
             this.btnEdit.TabIndex = 48;
             // 
-            // ucThemKhoa1
+            // guna2HtmlLabel1
             // 
-            this.ucThemKhoa1.Location = new System.Drawing.Point(0, 996);
-            this.ucThemKhoa1.Name = "ucThemKhoa1";
-            this.ucThemKhoa1.Size = new System.Drawing.Size(50, 50);
-            this.ucThemKhoa1.TabIndex = 10;
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(15, 10);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(803, 40);
+            this.guna2HtmlLabel1.TabIndex = 6;
+            this.guna2HtmlLabel1.Text = "Danh sách khoa đào tạo";
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.BorderColor = System.Drawing.Color.Transparent;
+            this.btnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHome.FillColor = System.Drawing.Color.Transparent;
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.Black;
+            this.btnHome.Location = new System.Drawing.Point(1, 57);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnHome.Size = new System.Drawing.Size(963, 45);
+            this.btnHome.TabIndex = 49;
+            this.btnHome.Text = "Quản Lý Danh Sách Khoa";
+            this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // UCDanhSachKhoa
             // 

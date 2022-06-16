@@ -103,6 +103,7 @@
             this.btnLuu.Size = new System.Drawing.Size(150, 43);
             this.btnLuu.TabIndex = 20;
             this.btnLuu.Text = "Lưu thay đổi";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // txtNDTTNhapHoc
             // 

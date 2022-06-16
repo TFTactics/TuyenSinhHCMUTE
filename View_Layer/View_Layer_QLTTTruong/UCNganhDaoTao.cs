@@ -20,5 +20,10 @@ namespace UI.View_Layer
         {
             ucnDaoTao1.Visible = false;
         }
+
+        private void UCNganhDaoTao_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
