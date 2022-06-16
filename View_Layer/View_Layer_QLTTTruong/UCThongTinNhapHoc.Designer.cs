@@ -58,9 +58,9 @@
             this.btnAddEvent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAddEvent.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddEvent.ForeColor = System.Drawing.Color.White;
-            this.btnAddEvent.Location = new System.Drawing.Point(925, 57);
+            this.btnAddEvent.Location = new System.Drawing.Point(905, 57);
             this.btnAddEvent.Name = "btnAddEvent";
-            this.btnAddEvent.Size = new System.Drawing.Size(275, 45);
+            this.btnAddEvent.Size = new System.Drawing.Size(295, 45);
             this.btnAddEvent.TabIndex = 13;
             this.btnAddEvent.Text = "+ ThêmThông Tin Nhập Học";
             this.btnAddEvent.Click += new System.EventHandler(this.btnAddEvent_Click);
@@ -206,7 +206,7 @@
             this.btnHome.Location = new System.Drawing.Point(1, 57);
             this.btnHome.Name = "btnHome";
             this.btnHome.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnHome.Size = new System.Drawing.Size(918, 45);
+            this.btnHome.Size = new System.Drawing.Size(898, 45);
             this.btnHome.TabIndex = 49;
             this.btnHome.Text = "Quản Lý Thông Tin Nhập Học";
             this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;

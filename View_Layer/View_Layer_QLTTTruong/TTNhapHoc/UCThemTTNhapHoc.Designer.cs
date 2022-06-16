@@ -30,8 +30,8 @@
         {
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.txtBuocSo = new Guna.UI2.WinForms.Guna2TextBox();
-            this.labelChiTieu = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnDangBai = new Guna.UI2.WinForms.Guna2Button();
+            this.labelBuocSo = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnLuu = new Guna.UI2.WinForms.Guna2Button();
             this.txtNDTTNhapHoc = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtTenNDNhapHoc = new Guna.UI2.WinForms.Guna2TextBox();
@@ -44,8 +44,8 @@
             // 
             this.pnlContainer.AutoScroll = true;
             this.pnlContainer.Controls.Add(this.txtBuocSo);
-            this.pnlContainer.Controls.Add(this.labelChiTieu);
-            this.pnlContainer.Controls.Add(this.btnDangBai);
+            this.pnlContainer.Controls.Add(this.labelBuocSo);
+            this.pnlContainer.Controls.Add(this.btnLuu);
             this.pnlContainer.Controls.Add(this.txtNDTTNhapHoc);
             this.pnlContainer.Controls.Add(this.guna2HtmlLabel3);
             this.pnlContainer.Controls.Add(this.txtTenNDNhapHoc);
@@ -75,34 +75,34 @@
             this.txtBuocSo.Size = new System.Drawing.Size(388, 45);
             this.txtBuocSo.TabIndex = 31;
             // 
-            // labelChiTieu
+            // labelBuocSo
             // 
-            this.labelChiTieu.AutoSize = false;
-            this.labelChiTieu.BackColor = System.Drawing.Color.Transparent;
-            this.labelChiTieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelChiTieu.Location = new System.Drawing.Point(0, 139);
-            this.labelChiTieu.Name = "labelChiTieu";
-            this.labelChiTieu.Size = new System.Drawing.Size(362, 40);
-            this.labelChiTieu.TabIndex = 30;
-            this.labelChiTieu.Text = "Chỉ tiêu";
+            this.labelBuocSo.AutoSize = false;
+            this.labelBuocSo.BackColor = System.Drawing.Color.Transparent;
+            this.labelBuocSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBuocSo.Location = new System.Drawing.Point(0, 139);
+            this.labelBuocSo.Name = "labelBuocSo";
+            this.labelBuocSo.Size = new System.Drawing.Size(362, 40);
+            this.labelBuocSo.TabIndex = 30;
+            this.labelBuocSo.Text = "Bước số";
             // 
-            // btnDangBai
+            // btnLuu
             // 
-            this.btnDangBai.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnDangBai.BorderRadius = 5;
-            this.btnDangBai.BorderThickness = 1;
-            this.btnDangBai.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDangBai.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDangBai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDangBai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDangBai.FillColor = System.Drawing.Color.White;
-            this.btnDangBai.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangBai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnDangBai.Location = new System.Drawing.Point(0, 536);
-            this.btnDangBai.Name = "btnDangBai";
-            this.btnDangBai.Size = new System.Drawing.Size(150, 43);
-            this.btnDangBai.TabIndex = 20;
-            this.btnDangBai.Text = "Lưu thay đổi";
+            this.btnLuu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnLuu.BorderRadius = 5;
+            this.btnLuu.BorderThickness = 1;
+            this.btnLuu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLuu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLuu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLuu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLuu.FillColor = System.Drawing.Color.White;
+            this.btnLuu.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnLuu.Location = new System.Drawing.Point(0, 536);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(150, 43);
+            this.btnLuu.TabIndex = 20;
+            this.btnLuu.Text = "Lưu thay đổi";
             // 
             // txtNDTTNhapHoc
             // 
@@ -166,11 +166,12 @@
             // 
             // guna2HtmlLabel1
             // 
+            this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(0, 0);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(238, 27);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(778, 44);
             this.guna2HtmlLabel1.TabIndex = 11;
             this.guna2HtmlLabel1.Text = "Nhập thông tin nhập học";
             // 
@@ -182,7 +183,6 @@
             this.Name = "UCThemTTNhapHoc";
             this.Size = new System.Drawing.Size(1250, 1133);
             this.pnlContainer.ResumeLayout(false);
-            this.pnlContainer.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -191,8 +191,8 @@
 
         private Guna.UI2.WinForms.Guna2Panel pnlContainer;
         private Guna.UI2.WinForms.Guna2TextBox txtBuocSo;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelChiTieu;
-        private Guna.UI2.WinForms.Guna2Button btnDangBai;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labelBuocSo;
+        private Guna.UI2.WinForms.Guna2Button btnLuu;
         private Guna.UI2.WinForms.Guna2TextBox txtNDTTNhapHoc;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2TextBox txtTenNDNhapHoc;
