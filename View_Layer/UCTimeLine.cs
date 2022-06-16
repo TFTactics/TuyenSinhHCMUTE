@@ -67,8 +67,9 @@ namespace UI.View_Layer
 
         private void dgvTimeLine_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            string x = dgvTimeLine.CurrentCell!=null?"Yes":"No";
-            MessageBox.Show(x);
+            var x = dgvTimeLine.CurrentCell!=null? dgvTimeLine.CurrentCell.Value.ToString(): "No";
+            if(x!="No")
+                MessageBox.Show(x);
         }
     }
 }
