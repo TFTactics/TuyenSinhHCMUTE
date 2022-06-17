@@ -16,7 +16,7 @@ namespace UI.BS_Layer
         }
         public bool SuaLienHe(string DiaDiem, string SoDT,string Email, string Fanpage,string PhongBanLH, string VanPhong, ref string err)
         {
-            string sqlString = "Update LienHe set DiaDiem=N'" + DiaDiem + "' , SoDienThoai=N'" + SoDT + "',Email=N'" + Email + "',Fanpage=N'" + Fanpage + "',PhongBanLienHe=N'" +PhongBanLH + "',VanPhong=N'" +VanPhong+ "')";
+            string sqlString = "Update LienHe set DiaDiem=N'" + DiaDiem + "' , SoDienThoai=N'" + SoDT + "',Email=N'" + Email + "',Fanpage=N'" + Fanpage + "',PhongBanLienHe=N'" +PhongBanLH + "',VanPhong=N'" +VanPhong+"'";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
         public void LayDuLieu(ref string DD, ref string SDT, ref string Email, ref string Fanpage, ref string TenPB, ref string VanPhong)
