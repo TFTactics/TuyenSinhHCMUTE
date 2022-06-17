@@ -54,6 +54,7 @@ namespace UI
             this.msExit = new System.Windows.Forms.ToolStripMenuItem();
             this.txbSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.pnlContainer = new System.Windows.Forms.Panel();
+            this.aDMINToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2Panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -329,6 +330,8 @@ namespace UI
             // 
             this.msThongBao.AutoSize = false;
             this.msThongBao.BackColor = System.Drawing.Color.Transparent;
+            this.msThongBao.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aDMINToolStripMenuItem});
             this.msThongBao.Image = global::UI.Properties.Resources.notifications;
             this.msThongBao.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.msThongBao.Name = "msThongBao";
@@ -353,26 +356,27 @@ namespace UI
             // msAdmin
             // 
             this.msAdmin.Name = "msAdmin";
-            this.msAdmin.Size = new System.Drawing.Size(163, 26);
+            this.msAdmin.Size = new System.Drawing.Size(224, 26);
             this.msAdmin.Text = "Admin";
             // 
             // msCustomer
             // 
             this.msCustomer.Name = "msCustomer";
-            this.msCustomer.Size = new System.Drawing.Size(163, 26);
+            this.msCustomer.Size = new System.Drawing.Size(224, 26);
             this.msCustomer.Text = "Customer";
             // 
             // msDangKi
             // 
             this.msDangKi.Name = "msDangKi";
-            this.msDangKi.Size = new System.Drawing.Size(163, 26);
+            this.msDangKi.Size = new System.Drawing.Size(224, 26);
             this.msDangKi.Text = "Đăng kí";
             // 
             // msDangXuat
             // 
             this.msDangXuat.Name = "msDangXuat";
-            this.msDangXuat.Size = new System.Drawing.Size(163, 26);
+            this.msDangXuat.Size = new System.Drawing.Size(224, 26);
             this.msDangXuat.Text = "Đăng xuất";
+            this.msDangXuat.Click += new System.EventHandler(this.msDangXuat_Click);
             // 
             // msExit
             // 
@@ -413,6 +417,12 @@ namespace UI
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(1150, 0);
             this.pnlContainer.TabIndex = 2;
+            // 
+            // aDMINToolStripMenuItem
+            // 
+            this.aDMINToolStripMenuItem.Name = "aDMINToolStripMenuItem";
+            this.aDMINToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.aDMINToolStripMenuItem.Text = "ADMIN";
             // 
             // Form1
             // 
@@ -470,6 +480,7 @@ namespace UI
         private System.Windows.Forms.ToolStripMenuItem msDangKi;
         private System.Windows.Forms.ToolStripMenuItem msDangXuat;
         private System.Windows.Forms.ToolStripMenuItem msExit;
+        private System.Windows.Forms.ToolStripMenuItem aDMINToolStripMenuItem;
     }
 }
 

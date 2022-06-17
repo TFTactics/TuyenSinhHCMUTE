@@ -6,7 +6,7 @@ namespace UI
 {
     public partial class Form1 : Form
     {
-        public bool SignIn = false;
+        public static bool SignIn = false;
         public bool mode = true;
         static Form1 _obj;
         public static Form1 Instance
@@ -175,9 +175,15 @@ namespace UI
 
         private void aToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
+
+        private void msDangXuat_Click(object sender, EventArgs e)
+        {
+            SignIn = false;
+            FormDangNhap dn = new FormDangNhap();
             this.Close();
-            FormDangNhap login = new FormDangNhap();
-            login.Show();
+            dn.Show();
         }
     }
 
