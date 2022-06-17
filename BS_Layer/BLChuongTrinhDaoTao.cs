@@ -31,5 +31,11 @@ namespace UI.BS_Layer
                 "',NoiDung=N'" + ND + "'WHERE TenChuongTrinh = N'" + TCT + "'";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
+        public DataTable LayTenChuongTrinh()
+        {
+            string sqlString = "Select TenChuongTrinh from ChuongTrinhDaoTao";
+            DataSet ds = db.ExecuteQueryDataSet(sqlString,CommandType.Text);
+            return ds.Tables[0];
+        }
     }
 }

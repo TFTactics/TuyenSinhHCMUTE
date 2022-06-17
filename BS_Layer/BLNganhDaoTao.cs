@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using System.Text.RegularExpressions;
 using UI.BD_Layer;
 
 namespace UI.BS_Layer
@@ -29,6 +30,35 @@ namespace UI.BS_Layer
             string sqlString = "Update ThongTinChuyenNganh SET TenNganh = N'" + TenN + "',LoaiChuongTrinh =N'" + LoaiCT + "',Khoa=N'" + Khoa + "',ChiTieu='" + ChiTieu+"',HocPhi='"+HocPhi+"',MoTaNganh=N'"+MoTa
                 + "'WHERE MaNganh = N'" + MaNganh + "'" ;
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
+        }
+        public bool IsNumber(string pText)
+        {
+            Regex regex = new Regex(@"^[-+]?[0-9]*.?[0-9]+$");
+            return regex.IsMatch(pText);
+        }
+        public DataSet SearchNganh(string value)
+        {
+            string sqlString;
+            if (!IsNumber(value))
+            {
+                sqlString = "select * from ThongTinChuyenNganh where MaNganh like '%"
+                    + value + "%' or TenNganh like '%" + value + "%' or LoaiChuongTrinh like '%" + value
+                    + "%' or Khoa like '%" + value + "%' or  MoTaNganh like '%" + value + "%'";
+                
+            }
+            else
+            {
+                sqlString = "select * from ThongTinChuyenNganh where MaNganh like '%"
+                    + value + "%' or TenNganh like '%" + value + "%' or LoaiChuongTrinh like '%" + value
+                    + "%' or Khoa like '%" + value + "%' or ChiTieu='" + value + "' or HocPhi ='"
+                    + value + "' or MoTaNganh like '%" + value + "%'";
+            }
+            return db.ExecuteQueryDataSet(sqlString, CommandType.Text);
+        }
+        public DataSet LocLoaiCT(string value)
+        {
+            string sqlString = "select * from ThongTinChuyenNganh where LoaiChuongTrinh = '"+value+"'";
+            return db.ExecuteQueryDataSet(sqlString, CommandType.Text);
         }
     }
 }

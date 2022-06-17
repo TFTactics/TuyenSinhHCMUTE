@@ -14,6 +14,7 @@ namespace UI.View_Layer
         public UCNganhDaoTao()
         {
             InitializeComponent();
+            LoadCombobox();
             HideBtn(true);
         }
         public void HideBtn(bool flag)
@@ -132,6 +133,59 @@ namespace UI.View_Layer
                         }
                     }
                 }
+            }
+        }
+
+        public void Search()
+        {
+            if (txtSearch.Text != "")
+            {
+                DataSet ds = dbNganhDT.SearchNganh(txtSearch.Text);
+                dtNganhDT = new DataTable();
+                dtNganhDT.Clear();
+                dtNganhDT = ds.Tables[0];
+                dgvDSNganh.DataSource = dtNganhDT;
+                dgvDSNganh.AutoResizeColumns();
+                HideBtn(true);
+            }
+            else LoadData();
+        }
+
+        private void txtSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                Search();
+        }
+
+        public void LoadCombobox()
+        {
+            BS_Layer.BLChuongTrinhDaoTao dbCTDT = new BLChuongTrinhDaoTao();
+            DataTable dt = dbCTDT.LayTenChuongTrinh();
+
+            DataRow row = dt.NewRow();
+            row["TenChuongTrinh"] = "Tất cả";
+            dt.Rows.Add(row);
+
+            cbbLoaiCT.DisplayMember = "TenChuongTrinh";
+            cbbLoaiCT.DataSource = dt;
+            cbbLoaiCT.Text = "Tất cả";
+            
+        }
+
+
+        private void cbbLoaiCT_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbbLoaiCT.Text == "Tất cả")
+                LoadData();
+            else
+            {
+                dtNganhDT = new DataTable();
+                dtNganhDT.Clear();
+                DataSet ds = dbNganhDT.LocLoaiCT(cbbLoaiCT.Text);
+                dtNganhDT = ds.Tables[0];
+                dgvDSNganh.DataSource = dtNganhDT;
+                dgvDSNganh.AutoResizeColumns();
+                HideBtn(true);
             }
         }
     }

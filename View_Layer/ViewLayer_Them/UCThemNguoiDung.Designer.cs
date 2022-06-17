@@ -69,6 +69,9 @@
             this.cbbLoaiCV.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbbLoaiCV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbbLoaiCV.ItemHeight = 30;
+            this.cbbLoaiCV.Items.AddRange(new object[] {
+            "Admin",
+            "Customer"});
             this.cbbLoaiCV.Location = new System.Drawing.Point(662, 175);
             this.cbbLoaiCV.Name = "cbbLoaiCV";
             this.cbbLoaiCV.Size = new System.Drawing.Size(267, 36);
