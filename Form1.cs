@@ -175,7 +175,9 @@ namespace UI
 
         private void aToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
+            FormDangNhap login = new FormDangNhap();
+            login.Show();
         }
     }
 

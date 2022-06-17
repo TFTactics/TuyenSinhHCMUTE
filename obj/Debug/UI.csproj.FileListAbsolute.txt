@@ -235,3 +235,9 @@ D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.NganhDaoTao.UCN
 D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.TTNhapHoc.UCThemTTNhapHoc.resources
 D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.ViewLayer_Them.UCThemPTXT.resources
 C:\Users\HP\Desktop\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.ViewLayer_Them.UCThemPTXT.resources
+C:\Users\T\OneDrive\Máy tính\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.ViewLayer_Them.UCThemPTXT.resources
+C:\Users\T\OneDrive\Máy tính\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.DSKhoa.UCThemKhoa.resources
+C:\Users\T\OneDrive\Máy tính\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.HDaoTao.UCThemHDaoTao.resources
+C:\Users\T\OneDrive\Máy tính\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.NganhDaoTao.UCNDaoTao.resources
+C:\Users\T\OneDrive\Máy tính\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.TTNhapHoc.UCThemTTNhapHoc.resources
+C:\Users\T\OneDrive\Máy tính\TuyenSinhHCMUTE\obj\Debug\UI.FormDangNhap.resources

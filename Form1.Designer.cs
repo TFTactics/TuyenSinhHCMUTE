@@ -274,7 +274,7 @@ namespace UI
             // 
             // guna2Panel3
             // 
-            this.guna2Panel3.BackColor = System.Drawing.Color.White;
+            this.guna2Panel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.guna2Panel3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.guna2Panel3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
             this.guna2Panel3.Controls.Add(this.guna2Panel2);
