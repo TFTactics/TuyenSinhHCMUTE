@@ -20,9 +20,15 @@ namespace UI.BS_Layer
             string sqlString = "Insert into TimeLine values (" + "N'" + TenSuKien + "',N'" + BatDau.ToString("yyyy-MM-dd") + "',N'" + KetThuc.ToString("yyyy-MM-dd") + "',N'" + HeDaoTao + "',N'" + NoiDung + "')";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
-        public bool XoaBangTin(ref string err, string TieuDe, string NoiDung, string NgayDang)
+        public bool XoaBangTin(ref string err, string TieuDe)
         {
-            string sqlString = "delete from TimeLine where TenSuKien=N'" + TieuDe + "'and ThoiGianBatDau='" + NgayDang + "'and NoiDung=N'" + NoiDung + "'";
+            string sqlString = "delete from TimeLine where TenSuKien=N'" + TieuDe + "'";
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
+        }
+        public bool SuaBangTin(ref string err, string TieuDe, string NgayDang, string KetThuc, string HDT, string NoiDung)
+        {
+            string sqlString = "UPDATE TimeLine SET ThoiGianBatDau=N'" + NgayDang + "',ThoiGianKetThuc=N'"
+                + KetThuc + "',HeDaoTao=N'" + HDT + "',NoiDung=N'" + NoiDung + "'WHERE TenSuKien=N'" + TieuDe + "'";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
     }

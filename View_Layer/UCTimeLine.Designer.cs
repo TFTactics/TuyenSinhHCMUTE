@@ -34,7 +34,6 @@
             this.btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
-            this.ucThemTimeLine1 = new UI.View_Layer.View_Layer_QLTimeLine.UCThemTimeLine();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvTimeLine = new Guna.UI2.WinForms.Guna2DataGridView();
             this.STT = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -43,6 +42,7 @@
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.ucThemTimeLine1 = new UI.View_Layer.View_Layer_QLTimeLine.UCThemTimeLine();
             this.pnlContainer.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTimeLine)).BeginInit();
@@ -96,14 +96,6 @@
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(1250, 750);
             this.pnlContainer.TabIndex = 47;
-            // 
-            // ucThemTimeLine1
-            // 
-            this.ucThemTimeLine1.AutoScroll = true;
-            this.ucThemTimeLine1.Location = new System.Drawing.Point(38, 769);
-            this.ucThemTimeLine1.Name = "ucThemTimeLine1";
-            this.ucThemTimeLine1.Size = new System.Drawing.Size(50, 50);
-            this.ucThemTimeLine1.TabIndex = 4;
             // 
             // guna2Panel1
             // 
@@ -258,6 +250,7 @@
             this.btnEdit.PressedColor = System.Drawing.Color.White;
             this.btnEdit.Size = new System.Drawing.Size(50, 50);
             this.btnEdit.TabIndex = 48;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // guna2HtmlLabel2
             // 
@@ -269,6 +262,14 @@
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(803, 65);
             this.guna2HtmlLabel2.TabIndex = 3;
             this.guna2HtmlLabel2.Text = "Danh sách các mốc sự kiện";
+            // 
+            // ucThemTimeLine1
+            // 
+            this.ucThemTimeLine1.AutoScroll = true;
+            this.ucThemTimeLine1.Location = new System.Drawing.Point(38, 769);
+            this.ucThemTimeLine1.Name = "ucThemTimeLine1";
+            this.ucThemTimeLine1.Size = new System.Drawing.Size(50, 50);
+            this.ucThemTimeLine1.TabIndex = 4;
             // 
             // UCTimeLine
             // 

@@ -41,6 +41,11 @@ namespace UI.View_Layer
 
         private void btnAddEvent_Click(object sender, EventArgs e)
         {
+            UPDATE();   
+        }
+
+        private void UPDATE()
+        {
             checkUC = true;
             ucThemTin1.BringToFront();
             ucThemTin1.Dock = DockStyle.Fill;
@@ -123,6 +128,31 @@ namespace UI.View_Layer
                             dbTinTuyyenSinh.XoaBangTin(ref err, dr.Cells[1].Value.ToString());
                             LoadData();
                             MessageBox.Show("Done");
+                        }
+                        catch (SqlException)
+                        {
+                            MessageBox.Show("Không xóa được!");
+                        }
+                    }
+                }
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow dr in dgvTinTuyenSinh.Rows)
+            {
+                if (dr.Cells[0].Value != null)
+                {
+                    if (Convert.ToBoolean(dr.Cells[0].Value.ToString()))
+                    {
+                        try
+                        {
+                            dbTinTuyyenSinh.SuaTin(ref err, dr.Cells[1].Value.ToString(),
+                                dr.Cells[2].Value.ToString(), dr.Cells[3].Value.ToString(),
+                                dr.Cells[4].Value.ToString());
+                            LoadData();
+                            MessageBox.Show("Done!!");
                         }
                         catch (SqlException)
                         {

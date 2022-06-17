@@ -24,5 +24,12 @@ namespace UI.BS_Layer
             string sqlString = "delete from ChuongTrinhDaoTao where TenChuongTrinh=N'" + TieuDe + "'";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
+        public bool SuaChuongTrinh(ref string err, string TCT, string NDT, string HDT, string PDF, string ND)
+        {
+            string sqlString = "UPDATE ChuongTrinhDaoTao SET TenChuongTrinh=N'" + TCT + 
+                "',NganhDaoTao=N'" + NDT + "',HeDaoTao=N'" + HDT + "',PDFDaoTao=N'" + PDF +
+                "',NoiDung=N'" + ND + "'WHERE TenChuongTrinh = N'" + TCT + "'";
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
+        }
     }
 }

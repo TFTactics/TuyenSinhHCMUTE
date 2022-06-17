@@ -36,13 +36,13 @@
             this.ucThemKhoa1 = new UI.View_Layer.View_Layer_QLTTTruong.DSKhoa.UCThemKhoa();
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvDanhSachKhoa = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.STT = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnHome = new Guna.UI2.WinForms.Guna2Button();
-            this.STT = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.guna2Panel1.SuspendLayout();
             this.pnlContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachKhoa)).BeginInit();
@@ -161,6 +161,13 @@
             this.dgvDanhSachKhoa.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvDanhSachKhoa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachKhoa_CellContentClick);
             // 
+            // STT
+            // 
+            this.STT.FillWeight = 27.18325F;
+            this.STT.HeaderText = "";
+            this.STT.MinimumWidth = 6;
+            this.STT.Name = "STT";
+            // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
@@ -229,6 +236,7 @@
             this.btnEdit.PressedColor = System.Drawing.Color.White;
             this.btnEdit.Size = new System.Drawing.Size(50, 40);
             this.btnEdit.TabIndex = 48;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // guna2HtmlLabel1
             // 
@@ -260,13 +268,6 @@
             this.btnHome.Text = "Quản Lý Danh Sách Khoa";
             this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // STT
-            // 
-            this.STT.FillWeight = 27.18325F;
-            this.STT.HeaderText = "";
-            this.STT.MinimumWidth = 6;
-            this.STT.Name = "STT";
             // 
             // UCDanhSachKhoa
             // 

@@ -21,7 +21,14 @@ namespace UI.BS_Layer
         }
         public bool XoaBangTin(ref string err, string TieuDe)
         {
-            string sqlString = "delete from TinTuyenSinh where TieuDe=N'" + TieuDe+"'";
+            string sqlString = "delete from TinTuyenSinh where TieuDe=N'" + TieuDe +"'";
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
+        }
+        public bool SuaTin(ref string err, string TieuDe, string NoiDung, string HeDaoTao, string TrangThai)
+        {
+            string sqlString = "Update TinTuyenSinh SET TieuDe=N'" + TieuDe + 
+                "',NoiDung=N'" + NoiDung + "',HeDaoTao=N'" + HeDaoTao + "',TrangThai=N'" + TrangThai
+                + "'WHERE TieuDe = N'" + TieuDe + "'" ;
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
     }

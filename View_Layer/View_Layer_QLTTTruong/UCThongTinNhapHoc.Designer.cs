@@ -235,6 +235,7 @@
             this.btnEdit.PressedColor = System.Drawing.Color.White;
             this.btnEdit.Size = new System.Drawing.Size(50, 40);
             this.btnEdit.TabIndex = 48;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // guna2HtmlLabel1
             // 

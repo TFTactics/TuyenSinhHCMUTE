@@ -24,5 +24,11 @@ namespace UI.BS_Layer
             string sqlString = "delete from HeDaoTao where MaHeDaoTao=N'" + MaHDT + "'";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
+        public bool SuaHeDaoTao(ref string err, string MaHDT, string TenHDT, string GT)
+        {
+            string sqlString = "UPDATE HeDaoTao SET TenHeDaoTao=N'" + TenHDT + "',GioiThieu=N'"
+                + GT + "'WHERE MaHeDaoTao=N'" + MaHDT + "'";
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
+        }
     }
 }

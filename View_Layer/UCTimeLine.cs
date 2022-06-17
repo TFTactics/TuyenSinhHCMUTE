@@ -105,7 +105,7 @@ namespace UI.View_Layer
                     {
                         try
                         {
-                            dbTimeLine.XoaBangTin(ref err, dr.Cells[1].Value.ToString(), dr.Cells[5].Value.ToString(), dr.Cells[2].Value.ToString());
+                            dbTimeLine.XoaBangTin(ref err, dr.Cells[1].Value.ToString());
                             LoadData();
                             MessageBox.Show("Done");
                         }
@@ -116,6 +116,31 @@ namespace UI.View_Layer
                     }
                 }
             }    
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow dr in dgvTimeLine.Rows)
+            {
+                if (dr.Cells[0].Value != null)
+                {
+                    if (Convert.ToBoolean(dr.Cells[0].Value.ToString()))
+                    {
+                        try
+                        {
+                            dbTimeLine.SuaBangTin(ref err, dr.Cells[1].Value.ToString(), 
+                                dr.Cells[5].Value.ToString(), dr.Cells[2].Value.ToString(),
+                                dr.Cells[2].Value.ToString(), dr.Cells[2].Value.ToString());
+                            LoadData();
+                            MessageBox.Show("Done");
+                        }
+                        catch (SqlException)
+                        {
+                            MessageBox.Show("Không xóa được!");
+                        }
+                    }
+                }
+            }
         }
     }
 }

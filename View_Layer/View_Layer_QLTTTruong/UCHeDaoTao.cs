@@ -116,5 +116,29 @@ namespace UI.View_Layer
                 }
             }
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow dr in dgvCTDaoTao.Rows)
+            {
+                if (dr.Cells[0].Value != null)
+                {
+                    if (Convert.ToBoolean(dr.Cells[0].Value.ToString()))
+                    {
+                        try
+                        {
+                            dbHeDaoTao.SuaHeDaoTao(ref err, dr.Cells[1].Value.ToString(),
+                                dr.Cells[2].Value.ToString(), dr.Cells[3].Value.ToString());
+                            LoadData();
+                            MessageBox.Show("Done");
+                        }
+                        catch (SqlException)
+                        {
+                            MessageBox.Show("Không xóa được!");
+                        }
+                    }
+                }
+            }
+        }
     }
 }

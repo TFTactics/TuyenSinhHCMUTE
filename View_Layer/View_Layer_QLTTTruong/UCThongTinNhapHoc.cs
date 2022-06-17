@@ -87,5 +87,10 @@ namespace UI.View_Layer
                 }
             }
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

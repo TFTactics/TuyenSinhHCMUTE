@@ -24,5 +24,11 @@ namespace UI.BS_Layer
             string sqlString = "delete from ThongTinKhoa where TenKhoa=N'" + TenKhoa+ "'";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
+        public bool SuaThongTinKhoa(ref string err, string TenKhoa, string GT)
+        {
+            string sqlString = "UPDATE ThongTinKhoa SET GioiThieu=N'" + GT + "'WHERE TenKhoa=N'" +TenKhoa
+                + "'";
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
+        }
     }
 }
