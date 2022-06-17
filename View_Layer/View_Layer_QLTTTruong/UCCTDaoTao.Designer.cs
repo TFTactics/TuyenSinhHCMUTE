@@ -36,13 +36,13 @@
             this.ucThemCTDaoTao1 = new UI.View_Layer.View_Layer_QLTTTruong.CTDaoTao.UCThemCTDaoTao();
             this.pnlContainer1 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvCTDaoTao = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnHome = new Guna.UI2.WinForms.Guna2Button();
+            this.STT = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.pnlContainer.SuspendLayout();
             this.pnlContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTDaoTao)).BeginInit();
@@ -119,7 +119,7 @@
             this.dgvCTDaoTao.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCTDaoTao.ColumnHeadersHeight = 27;
             this.dgvCTDaoTao.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Choose});
+            this.STT});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -161,13 +161,6 @@
             this.dgvCTDaoTao.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvCTDaoTao.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvCTDaoTao.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCTDaoTao_CellContentClick);
-            // 
-            // Choose
-            // 
-            this.Choose.FillWeight = 27.18325F;
-            this.Choose.HeaderText = "";
-            this.Choose.MinimumWidth = 6;
-            this.Choose.Name = "Choose";
             // 
             // guna2Panel2
             // 
@@ -269,6 +262,13 @@
             this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
+            // STT
+            // 
+            this.STT.FillWeight = 27.18325F;
+            this.STT.HeaderText = "";
+            this.STT.MinimumWidth = 6;
+            this.STT.Name = "STT";
+            // 
             // UCCTDaoTao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -299,9 +299,9 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private View_Layer_QLTTTruong.CTDaoTao.UCThemCTDaoTao ucThemCTDaoTao1;
         private Guna.UI2.WinForms.Guna2Button btnHome;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Choose;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private Guna.UI2.WinForms.Guna2Button btnEdit;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn STT;
     }
 }

@@ -16,5 +16,10 @@ namespace UI.View_Layer.View_Layer_QLTTTruong.NganhDaoTao
         {
             InitializeComponent();
         }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

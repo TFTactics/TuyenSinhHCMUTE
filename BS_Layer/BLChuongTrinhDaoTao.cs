@@ -19,9 +19,9 @@ namespace UI.BS_Layer
             string sqlString = "Insert into ChuongTrinhDaoTao values (" + "N'" + TenCTDT + "',N'" + NganhDaoTao + "',N'" + HeDaoTao + "',N'" + PDFDaoTao + "',N'" + NoiDung + "')";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
-        public bool XoaBangTin(ref string err, string TieuDe, string NoiDung, string NgayDang)
+        public bool XoaChuongTrinhDaoTao(ref string err, string TieuDe)
         {
-            string sqlString = "delete from TuyenSinh where TieuDe=N'" + TieuDe + "' and NgayDang='" + NgayDang + "'";
+            string sqlString = "delete from ChuongTrinhDaoTao where TenChuongTrinh=N'" + TieuDe + "'";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
     }

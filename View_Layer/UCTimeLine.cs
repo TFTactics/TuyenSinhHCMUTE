@@ -69,9 +69,6 @@ namespace UI.View_Layer
             LoadData();
         }
 
-        private void dgvTimeLine_CellValueChanged(object sender, DataGridViewCellEventArgs e)
-        {
-        }
 
         private void dgvTimeLine_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -93,16 +90,31 @@ namespace UI.View_Layer
             }
         }
 
+        /// <summary>
+        /// Xóa TimeLine
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnDelete_Click(object sender, EventArgs e)
         {
             foreach(DataGridViewRow dr in dgvTimeLine.Rows)
             {
-                if (Convert.ToBoolean(dr.Cells[0].Value.ToString()))
+                if (dr.Cells[0].Value != null)
                 {
-                    dbTimeLine.XoaBangTin(ref err, dr.Cells[1].Value.ToString(), dr.Cells[5].Value.ToString(), dr.Cells[2].Value.ToString());
-                    LoadData();
+                    if (Convert.ToBoolean(dr.Cells[0].Value.ToString()))
+                    {
+                        try
+                        {
+                            dbTimeLine.XoaBangTin(ref err, dr.Cells[1].Value.ToString(), dr.Cells[5].Value.ToString(), dr.Cells[2].Value.ToString());
+                            LoadData();
+                            MessageBox.Show("Done");
+                        }
+                        catch (SqlException)
+                        {
+                            MessageBox.Show("Không xóa được!");
+                        }
+                    }
                 }
-
             }    
         }
     }

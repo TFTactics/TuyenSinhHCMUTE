@@ -10,12 +10,28 @@ namespace UI.View_Layer
     {
         DataTable dtTinTuyenSinh = null;
         BLBangTinTuyenSinh dbTinTuyyenSinh = new BLBangTinTuyenSinh();
+        string err;
         private bool checkUC = false;
         public UCQLBangTinTuyenSinh()
         {
             InitializeComponent();
             ButtonBack();
+            HideBtn(true);
         }
+        public void HideBtn(bool flag)
+        {
+            if(flag)
+            {
+                btnDelete.Visible = false;
+                btnEdit.Visible = false;
+            }
+            else
+            {
+                btnDelete.Visible = true;
+                btnEdit.Visible = true;
+            }
+        }
+
         private void ButtonBack()
         {
             if (checkUC)
@@ -60,6 +76,7 @@ namespace UI.View_Layer
                 dgvTinTuyenSinh.DataSource = dtTinTuyenSinh;
 
                 dgvTinTuyenSinh.AutoResizeColumns();
+                HideBtn(true);
             }
 
             catch (SqlException)
@@ -68,31 +85,50 @@ namespace UI.View_Layer
             }
         }
 
-        private void dgvTinTuyenSinh_CurrentCellDirtyStateChanged(object sender, EventArgs e)
+        private void dgvTinTuyenSinh_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgvTinTuyenSinh.IsCurrentCellDirty)
+            if (string.Compare(dgvTinTuyenSinh.CurrentCell.OwningColumn.Name, "STT") == 0)
             {
-                // This fires the cell value changed handler below
-                dgvTinTuyenSinh.CommitEdit(DataGridViewDataErrorContexts.Commit);
+                bool checkBoxStatus = Convert.ToBoolean(dgvTinTuyenSinh.CurrentCell.EditedFormattedValue);
+                //checkBoxStatus gives you whether checkbox cell value of selected row for the
+                //"CheckBoxColumn" column value is checked or not. 
+                if (checkBoxStatus)
+                {
+                    //write your code
+                    HideBtn(!checkBoxStatus);
+                }
+                else
+                {
+                    //write your code
+                    HideBtn(!checkBoxStatus);
+                }
             }
         }
-
-        private void dgvTinTuyenSinh_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        /// <summary>
+        /// Xóa Bảng Tin
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnDelete_Click(object sender, EventArgs e)
         {
-            BLBangTinTuyenSinh blTS = new BLBangTinTuyenSinh();
-            var x = dgvTinTuyenSinh.CurrentCell != null ? dgvTinTuyenSinh.CurrentCell.Value.ToString() : "No";
-            if (x != "No")
+            //MessageBox.Show(dgvTinTuyenSinh.Rows[0].Cells[0].Value.ToString());
+            foreach (DataGridViewRow dr in dgvTinTuyenSinh.Rows)
             {
-                if (x == "Chỉnh sửa")
+                if (dr.Cells[0].Value != null)
                 {
-                    MessageBox.Show("Chuẩn bị chỉnh sửa");
-                    /// Code update
-                }
-                if (x == "Xóa")
-                {
-                    ///blTS.XoaBangTin(dgvTinTuyenSinh);
-                    MessageBox.Show("Chuẩn xóa");
-                    /// Code delete
+                    if(Convert.ToBoolean(dr.Cells[0].Value.ToString()))
+                    {
+                        try
+                        {
+                            dbTinTuyyenSinh.XoaBangTin(ref err, dr.Cells[1].Value.ToString());
+                            LoadData();
+                            MessageBox.Show("Done");
+                        }
+                        catch (SqlException)
+                        {
+                            MessageBox.Show("Không xóa được!");
+                        }
+                    }
                 }
             }
         }

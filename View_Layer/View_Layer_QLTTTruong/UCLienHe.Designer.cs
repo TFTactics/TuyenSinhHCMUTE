@@ -91,6 +91,7 @@
             this.btnEdit.Size = new System.Drawing.Size(180, 45);
             this.btnEdit.TabIndex = 28;
             this.btnEdit.Text = "Chỉnh sửa";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // txtVanPhong
             // 
@@ -302,6 +303,7 @@
             this.Controls.Add(this.pnlContainer);
             this.Name = "UCLienHe";
             this.Size = new System.Drawing.Size(1250, 1133);
+            this.Load += new System.EventHandler(this.UCLienHe_Load);
             this.pnlContainer.ResumeLayout(false);
             this.pnlContainer.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);

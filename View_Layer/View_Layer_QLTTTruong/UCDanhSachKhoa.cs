@@ -10,7 +10,7 @@ namespace UI.View_Layer
     {
         DataTable dtThongTinKhoa = null;
         BLThongTinKhoa dbTTK = new BLThongTinKhoa();
-        private bool checkUC = false;
+        string err;
 
         public UCDanhSachKhoa()
         {
@@ -68,9 +68,32 @@ namespace UI.View_Layer
             LoadData();
         }
 
+        /// <summary>
+        /// Xóa DS Khoa
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
+            foreach (DataGridViewRow dr in dgvDanhSachKhoa.Rows)
+            {
+                if (dr.Cells[0].Value != null)
+                {
+                    if (Convert.ToBoolean(dr.Cells[0].Value.ToString()))
+                    {
+                        try
+                        {
+                            dbTTK.XoaThongTinKhoa(ref err, dr.Cells[1].Value.ToString());
+                            LoadData();
+                            MessageBox.Show("Done");
+                        }
+                        catch (SqlException)
+                        {
+                            MessageBox.Show("Không xóa được!");
+                        }
+                    }
+                }
+            }
         }
 
         private void dgvDanhSachKhoa_CellContentClick(object sender, DataGridViewCellEventArgs e)

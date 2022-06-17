@@ -34,6 +34,7 @@
             this.btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.ucThemTimeLine1 = new UI.View_Layer.View_Layer_QLTimeLine.UCThemTimeLine();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvTimeLine = new Guna.UI2.WinForms.Guna2DataGridView();
             this.STT = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -42,7 +43,6 @@
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.ucThemTimeLine1 = new UI.View_Layer.View_Layer_QLTimeLine.UCThemTimeLine();
             this.pnlContainer.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTimeLine)).BeginInit();
@@ -96,6 +96,14 @@
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(1250, 750);
             this.pnlContainer.TabIndex = 47;
+            // 
+            // ucThemTimeLine1
+            // 
+            this.ucThemTimeLine1.AutoScroll = true;
+            this.ucThemTimeLine1.Location = new System.Drawing.Point(38, 769);
+            this.ucThemTimeLine1.Name = "ucThemTimeLine1";
+            this.ucThemTimeLine1.Size = new System.Drawing.Size(50, 50);
+            this.ucThemTimeLine1.TabIndex = 4;
             // 
             // guna2Panel1
             // 
@@ -174,7 +182,6 @@
             this.dgvTimeLine.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvTimeLine.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvTimeLine.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTimeLine_CellContentClick);
-            this.dgvTimeLine.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTimeLine_CellValueChanged);
             // 
             // STT
             // 
@@ -259,17 +266,9 @@
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(15, 13);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(803, 40);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(803, 65);
             this.guna2HtmlLabel2.TabIndex = 3;
             this.guna2HtmlLabel2.Text = "Danh sách các mốc sự kiện";
-            // 
-            // ucThemTimeLine1
-            // 
-            this.ucThemTimeLine1.AutoScroll = true;
-            this.ucThemTimeLine1.Location = new System.Drawing.Point(38, 769);
-            this.ucThemTimeLine1.Name = "ucThemTimeLine1";
-            this.ucThemTimeLine1.Size = new System.Drawing.Size(50, 50);
-            this.ucThemTimeLine1.TabIndex = 4;
             // 
             // UCTimeLine
             // 

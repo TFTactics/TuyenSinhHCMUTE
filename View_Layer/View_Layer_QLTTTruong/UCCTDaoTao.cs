@@ -10,6 +10,7 @@ namespace UI.View_Layer
     {
         DataTable dtCTDT = null;
         BLChuongTrinhDaoTao dbCTDT = new BLChuongTrinhDaoTao();
+        string err;
 
         public UCCTDaoTao()
         {
@@ -33,6 +34,7 @@ namespace UI.View_Layer
         private void UCCTDaoTao_Load(object sender, EventArgs e)
         {
             LoadData();
+            
         }
 
         public void LoadData()
@@ -47,6 +49,7 @@ namespace UI.View_Layer
                 dgvCTDaoTao.DataSource = dtCTDT;
 
                 dgvCTDaoTao.AutoResizeColumns();
+                HideBtn(true);
             }
 
             catch (SqlException)
@@ -70,10 +73,21 @@ namespace UI.View_Layer
         {
             foreach (DataGridViewRow dr in dgvCTDaoTao.Rows)
             {
-                if (Convert.ToBoolean(dr.Cells[0].Value.ToString()))
+                if (dr.Cells[0].Value != null)
                 {
-                    //dbCTDT.XoaBangTin(ref err, dr.Cells[1].Value.ToString(), dr.Cells[5].Value.ToString(), dr.Cells[2].Value.ToString());
-                    LoadData();
+                    if (Convert.ToBoolean(dr.Cells[0].Value.ToString()))
+                    {
+                        try
+                        {
+                            dbCTDT.XoaChuongTrinhDaoTao(ref err, dr.Cells[1].Value.ToString());
+                            LoadData();
+                            MessageBox.Show("Done");
+                        }
+                        catch (SqlException)
+                        {
+                            MessageBox.Show("Không xóa được!");
+                        }
+                    }
                 }
             }
         }

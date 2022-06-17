@@ -14,14 +14,14 @@ namespace UI.BS_Layer
         {
             return db.ExecuteQueryDataSet("select * from HeDaoTao", CommandType.Text);
         }
-        public bool ThemH(string MaHDT, string TenHDT,string GioiThieu, ref string err)
+        public bool ThemHeDaoTao(string MaHDT, string TenHDT,string GioiThieu, ref string err)
         {
             string sqlString = "Insert into HeDaoTao values (" + "N'" + MaHDT + "',N'" + TenHDT + "',N'" + GioiThieu + "')";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
-        public bool XoaBangTin(ref string err, string TieuDe, string NoiDung, string NgayDang)
+        public bool XoaHeDaoTao(ref string err, string MaHDT)
         {
-            string sqlString = "delete from TuyenSinh where TieuDe=N'" + TieuDe + "' and NgayDang='" + NgayDang + "'";
+            string sqlString = "delete from HeDaoTao where MaHeDaoTao=N'" + MaHDT + "'";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
     }
