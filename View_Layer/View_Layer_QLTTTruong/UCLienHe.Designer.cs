@@ -240,6 +240,7 @@
             // 
             // txtDDLienHe
             // 
+            this.txtDDLienHe.AutoScroll = true;
             this.txtDDLienHe.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDDLienHe.DefaultText = "";
             this.txtDDLienHe.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));

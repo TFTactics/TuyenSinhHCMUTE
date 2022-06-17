@@ -15,6 +15,11 @@ namespace UI.BS_Layer
         {
             return db.ExecuteQueryDataSet("select * from HocPhiHocBong", CommandType.Text);
         }
+        public bool ThemThongTin(string NoiDung, ref string err)
+        {
+            string sqlString = "insert into HocPhiHocBong values(N'"+NoiDung +"')";
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
+        }
         public bool SuaThongTin(string noidung, ref string err)
         {
             string sqlString = "UPDATE HocPhiHocBong SET " + "NoiDung = " +
@@ -23,11 +28,14 @@ namespace UI.BS_Layer
         }
         public void LayDuLieu(ref string GTC)
         {
+            string err = " ";
             DataSet ds = LayThongTin();
             DataTable dtGTC = new DataTable();
             dtGTC.Clear();
             dtGTC = ds.Tables[0];
-            GTC = dtGTC.Rows[0][0].ToString();
+            if (dtGTC.Rows.Count > 0)
+                GTC = dtGTC.Rows[0][0].ToString();
+            else ThemThongTin(" ", ref err);
             
         }
     }
