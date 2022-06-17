@@ -17,7 +17,7 @@ namespace UI.BS_Layer
         }
         public bool ThemPhuongThucXetTuyen(string TenPT, string MaPT, string HeDT, DateTime TGBD , DateTime TGKT, string Anh, string NoiDung, string PTCha,ref string err)
         {
-            string sqlString = "Insert into PhuongThucXetTuyen values (" + "N'" + TenPT + "',N'" + MaPT + "',N'" + HeDT + "','" + TGBD.Date + "','" + TGKT.Date + "',N'" + Anh + "',N'" + NoiDung + "',N'" + PTCha + "')";
+            string sqlString = "Insert into PhuongThucXetTuyen values (" + "N'" + TenPT + "',N'" + MaPT + "',N'" + HeDT + "','" + TGBD.ToString("yyyy-MM-dd") + "','" + TGKT.ToString("yyyy-MM-dd") + "',N'" + Anh + "',N'" + NoiDung + "',N'" + PTCha + "')";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
         public bool XoaPhuongThucXetTuyen(ref string err, string MaPhuongThuc)

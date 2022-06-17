@@ -18,7 +18,7 @@ namespace UI.View_Layer.ViewLayer_Them
         {
             BS_Layer.BLPhuongThucXetTuyen bdPTTX = new BS_Layer.BLPhuongThucXetTuyen();
             bdPTTX.ThemPhuongThucXetTuyen(txtTenPT.Text, txtMaPT.Text, cbbHeDaoTao.Text, Convert.ToDateTime(dtTGBatDau.Value.ToString()).Date, Convert.ToDateTime(dtTGKetThuc.Value.ToString()).Date, txtAnh.Text, txtNoiDungPT.Text, cbbPTcha.Text,ref err);
-            MessageBox.Show(dtTGBatDau.Value.ToString("yyyy-MM-dd"));
+            MessageBox.Show("Done!!");
             
         }
 
