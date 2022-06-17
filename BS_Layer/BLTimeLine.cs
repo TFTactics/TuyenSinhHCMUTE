@@ -25,10 +25,10 @@ namespace UI.BS_Layer
             string sqlString = "delete from TimeLine where TenSuKien=N'" + TieuDe + "'";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
-        public bool SuaBangTin(ref string err, string TieuDe, string NgayDang, string KetThuc, string HDT, string NoiDung)
+        public bool SuaBangTin(ref string err, string TenSK, string NgayDang, string KetThuc, string HDT, string NoiDung)
         {
-            string sqlString = "UPDATE TimeLine SET ThoiGianBatDau=N'" + NgayDang + "',ThoiGianKetThuc=N'"
-                + KetThuc + "',HeDaoTao=N'" + HDT + "',NoiDung=N'" + NoiDung + "'WHERE TenSuKien=N'" + TieuDe + "'";
+            string sqlString = "UPDATE TimeLine SET ThoiGianBatDau=N'" + Convert.ToDateTime(NgayDang).Date + "',ThoiGianKetThuc=N'"
+                + Convert.ToDateTime(KetThuc).Date + "',HeDaoTao=N'" + HDT + "',NoiDung=N'" + NoiDung + "'WHERE TenSuKien=N'" + TenSK + "'";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
     }

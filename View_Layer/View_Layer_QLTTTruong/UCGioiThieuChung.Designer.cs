@@ -96,6 +96,7 @@
             // 
             // txtVideoGT
             // 
+            this.txtVideoGT.AutoScroll = true;
             this.txtVideoGT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtVideoGT.DefaultText = "";
             this.txtVideoGT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -115,6 +116,7 @@
             // 
             // txtNganhCN
             // 
+            this.txtNganhCN.AutoScroll = true;
             this.txtNganhCN.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNganhCN.DefaultText = "";
             this.txtNganhCN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -134,6 +136,7 @@
             // 
             // txtNganhThacSi
             // 
+            this.txtNganhThacSi.AutoScroll = true;
             this.txtNganhThacSi.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNganhThacSi.DefaultText = "";
             this.txtNganhThacSi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -153,6 +156,7 @@
             // 
             // txtNganhTS
             // 
+            this.txtNganhTS.AutoScroll = true;
             this.txtNganhTS.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNganhTS.DefaultText = "";
             this.txtNganhTS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -208,6 +212,7 @@
             // 
             // txtTSTS
             // 
+            this.txtTSTS.AutoScroll = true;
             this.txtTSTS.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTSTS.DefaultText = "";
             this.txtTSTS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -227,6 +232,7 @@
             // 
             // txtPGS
             // 
+            this.txtPGS.AutoScroll = true;
             this.txtPGS.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPGS.DefaultText = "";
             this.txtPGS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -246,6 +252,7 @@
             // 
             // txtGS
             // 
+            this.txtGS.AutoScroll = true;
             this.txtGS.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGS.DefaultText = "";
             this.txtGS.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -320,6 +327,7 @@
             // 
             // guna2TextBox1
             // 
+            this.guna2TextBox1.AutoScroll = true;
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox1.DefaultText = "";
             this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -330,6 +338,7 @@
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Location = new System.Drawing.Point(15, 79);
+            this.guna2TextBox1.Multiline = true;
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";

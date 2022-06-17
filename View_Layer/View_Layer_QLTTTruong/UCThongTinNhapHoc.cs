@@ -10,7 +10,7 @@ namespace UI.View_Layer
     {
         DataTable dtThongTinNhapHoc = null;
         BLThongTinNhapHoc dbThongTinNhapHoc = new BLThongTinNhapHoc();
-        private bool checkUC = false;
+        string err = "";
         public UCThongTinNhapHoc()
         {
             InitializeComponent();
@@ -90,7 +90,54 @@ namespace UI.View_Layer
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            foreach (DataGridViewRow dr in dgvTTNhapHoc.Rows)
+            {
+                if (dr.Cells[0].Value != null)
+                {
+                    if (Convert.ToBoolean(dr.Cells[0].Value.ToString()))
+                    {
+                        try
+                        {
+                            dbThongTinNhapHoc.SuaThongTin(dr.Cells[1].Value.ToString(),
+                                dr.Cells[2].Value.ToString(), dr.Cells[3].Value.ToString(), ref err);
+                            LoadData();
+                            MessageBox.Show("Done");
+                        }
+                        catch (SqlException)
+                        {
+                            MessageBox.Show("Không xóa được!");
+                        }
+                    }
+                }
+            }
+        }
 
+        /// <summary>
+        /// Xóa TimeLine
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow dr in dgvTTNhapHoc.Rows)
+            {
+                if (dr.Cells[0].Value != null)
+                {
+                    if (Convert.ToBoolean(dr.Cells[0].Value.ToString()))
+                    {
+                        try
+                        {
+                            dbThongTinNhapHoc.XoaThongTin(ref err, dr.Cells[1].Value.ToString());
+                            LoadData();
+                            MessageBox.Show("Done");
+                        }
+                        catch (SqlException)
+                        {
+                            MessageBox.Show("Không xóa được!");
+                        }
+                    }
+                }
+            }
         }
     }
 }

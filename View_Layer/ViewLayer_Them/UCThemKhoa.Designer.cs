@@ -73,6 +73,7 @@
             // 
             // txtGTKhoa
             // 
+            this.txtGTKhoa.AutoScroll = true;
             this.txtGTKhoa.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGTKhoa.DefaultText = "";
             this.txtGTKhoa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -83,6 +84,7 @@
             this.txtGTKhoa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGTKhoa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtGTKhoa.Location = new System.Drawing.Point(0, 161);
+            this.txtGTKhoa.Multiline = true;
             this.txtGTKhoa.Name = "txtGTKhoa";
             this.txtGTKhoa.PasswordChar = '\0';
             this.txtGTKhoa.PlaceholderText = "";
@@ -103,6 +105,7 @@
             // 
             // txtTenKhoa
             // 
+            this.txtTenKhoa.AutoScroll = true;
             this.txtTenKhoa.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTenKhoa.DefaultText = "";
             this.txtTenKhoa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));

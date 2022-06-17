@@ -42,7 +42,6 @@
             // 
             // pnlContainer
             // 
-            this.pnlContainer.AutoScroll = true;
             this.pnlContainer.Controls.Add(this.txtBuocSo);
             this.pnlContainer.Controls.Add(this.labelBuocSo);
             this.pnlContainer.Controls.Add(this.btnLuu);
@@ -58,6 +57,7 @@
             // 
             // txtBuocSo
             // 
+            this.txtBuocSo.AutoScroll = true;
             this.txtBuocSo.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBuocSo.DefaultText = "";
             this.txtBuocSo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -107,6 +107,7 @@
             // 
             // txtNDTTNhapHoc
             // 
+            this.txtNDTTNhapHoc.AutoScroll = true;
             this.txtNDTTNhapHoc.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNDTTNhapHoc.DefaultText = "";
             this.txtNDTTNhapHoc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -117,6 +118,7 @@
             this.txtNDTTNhapHoc.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNDTTNhapHoc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNDTTNhapHoc.Location = new System.Drawing.Point(0, 264);
+            this.txtNDTTNhapHoc.Multiline = true;
             this.txtNDTTNhapHoc.Name = "txtNDTTNhapHoc";
             this.txtNDTTNhapHoc.PasswordChar = '\0';
             this.txtNDTTNhapHoc.PlaceholderText = "";
@@ -137,6 +139,7 @@
             // 
             // txtTenNDNhapHoc
             // 
+            this.txtTenNDNhapHoc.AutoScroll = true;
             this.txtTenNDNhapHoc.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTenNDNhapHoc.DefaultText = "";
             this.txtTenNDNhapHoc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));

@@ -38,8 +38,6 @@
             this.cbbLoaiCT = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtTenNganh = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtAnh = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnLuu = new Guna.UI2.WinForms.Guna2Button();
             this.txtMoTaNganh = new Guna.UI2.WinForms.Guna2TextBox();
@@ -52,7 +50,6 @@
             // 
             // pnlContainer
             // 
-            this.pnlContainer.AutoScroll = true;
             this.pnlContainer.Controls.Add(this.cbbKhoa);
             this.pnlContainer.Controls.Add(this.guna2HtmlLabel4);
             this.pnlContainer.Controls.Add(this.txtHocPhi);
@@ -62,8 +59,6 @@
             this.pnlContainer.Controls.Add(this.cbbLoaiCT);
             this.pnlContainer.Controls.Add(this.guna2HtmlLabel5);
             this.pnlContainer.Controls.Add(this.txtTenNganh);
-            this.pnlContainer.Controls.Add(this.txtAnh);
-            this.pnlContainer.Controls.Add(this.guna2HtmlLabel7);
             this.pnlContainer.Controls.Add(this.guna2HtmlLabel6);
             this.pnlContainer.Controls.Add(this.btnLuu);
             this.pnlContainer.Controls.Add(this.txtMoTaNganh);
@@ -104,6 +99,7 @@
             // 
             // txtHocPhi
             // 
+            this.txtHocPhi.AutoScroll = true;
             this.txtHocPhi.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtHocPhi.DefaultText = "";
             this.txtHocPhi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -134,6 +130,7 @@
             // 
             // txtChiTieu
             // 
+            this.txtChiTieu.AutoScroll = true;
             this.txtChiTieu.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtChiTieu.DefaultText = "";
             this.txtChiTieu.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -190,6 +187,7 @@
             // 
             // txtTenNganh
             // 
+            this.txtTenNganh.AutoScroll = true;
             this.txtTenNganh.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTenNganh.DefaultText = "";
             this.txtTenNganh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -206,36 +204,6 @@
             this.txtTenNganh.SelectedText = "";
             this.txtTenNganh.Size = new System.Drawing.Size(368, 45);
             this.txtTenNganh.TabIndex = 27;
-            // 
-            // txtAnh
-            // 
-            this.txtAnh.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAnh.DefaultText = "";
-            this.txtAnh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtAnh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtAnh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAnh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAnh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAnh.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAnh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAnh.Location = new System.Drawing.Point(0, 245);
-            this.txtAnh.Name = "txtAnh";
-            this.txtAnh.PasswordChar = '\0';
-            this.txtAnh.PlaceholderText = "";
-            this.txtAnh.SelectedText = "";
-            this.txtAnh.Size = new System.Drawing.Size(1097, 45);
-            this.txtAnh.TabIndex = 26;
-            // 
-            // guna2HtmlLabel7
-            // 
-            this.guna2HtmlLabel7.AutoSize = false;
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(0, 220);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(702, 40);
-            this.guna2HtmlLabel7.TabIndex = 25;
-            this.guna2HtmlLabel7.Text = "Ảnh thumbnail";
             // 
             // guna2HtmlLabel6
             // 
@@ -260,7 +228,7 @@
             this.btnLuu.FillColor = System.Drawing.Color.White;
             this.btnLuu.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnLuu.Location = new System.Drawing.Point(0, 605);
+            this.btnLuu.Location = new System.Drawing.Point(0, 536);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(150, 43);
             this.btnLuu.TabIndex = 20;
@@ -269,6 +237,7 @@
             // 
             // txtMoTaNganh
             // 
+            this.txtMoTaNganh.AutoScroll = true;
             this.txtMoTaNganh.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMoTaNganh.DefaultText = "";
             this.txtMoTaNganh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -278,7 +247,8 @@
             this.txtMoTaNganh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMoTaNganh.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMoTaNganh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMoTaNganh.Location = new System.Drawing.Point(0, 331);
+            this.txtMoTaNganh.Location = new System.Drawing.Point(0, 262);
+            this.txtMoTaNganh.Multiline = true;
             this.txtMoTaNganh.Name = "txtMoTaNganh";
             this.txtMoTaNganh.PasswordChar = '\0';
             this.txtMoTaNganh.PlaceholderText = "";
@@ -291,7 +261,7 @@
             this.guna2HtmlLabel3.AutoSize = false;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(0, 307);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(0, 238);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(388, 40);
             this.guna2HtmlLabel3.TabIndex = 14;
@@ -299,6 +269,7 @@
             // 
             // txtMaNganh
             // 
+            this.txtMaNganh.AutoScroll = true;
             this.txtMaNganh.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMaNganh.DefaultText = "";
             this.txtMaNganh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -353,16 +324,12 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel pnlContainer;
-        private Guna.UI2.WinForms.Guna2TextBox txtAnh;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2ComboBox cbbKhoa;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2Button btnLuu;
         private Guna.UI2.WinForms.Guna2TextBox txtMoTaNganh;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2TextBox txtMaNganh;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2TextBox txtHocPhi;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbhocphi;
@@ -371,5 +338,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox cbbLoaiCT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2TextBox txtTenNganh;
+        private Guna.UI2.WinForms.Guna2TextBox txtMaNganh;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
     }
 }

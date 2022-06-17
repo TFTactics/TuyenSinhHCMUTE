@@ -19,9 +19,15 @@ namespace UI.BS_Layer
             string sqlString = "Insert into ThongTinNguoiDung values (" + "N'" + HoTen + "',N'" + DienThoai + "',N'" + Email + "',N'" + LoaiNGuoiDung + "')";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
-        public bool XoaBangTin(ref string err, string TieuDe, string NoiDung, string NgayDang)
+        public bool XoaNguoiDung(ref string err, string HoTen)
         {
-            string sqlString = "delete from TuyenSinh where TieuDe=N'" + TieuDe + "' and NgayDang='" + NgayDang + "'";
+            string sqlString = "delete from ThongTinNguoiDung where HoTen=N'" + HoTen+ "'";
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
+        }
+        public bool SuaThongTin(ref string err, string HoTen, string DienThoai, string Email, string LoaiNGuoiDung)
+        {
+            string sqlString = "UPDATE ThongTinNguoiDung SET DienThoai=N'" + DienThoai + "',Email=N'"
+                + Email + "',LoaiNguoiDung=N'" + LoaiNGuoiDung + "' Where HoTen=N'"+HoTen+"'";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
     }

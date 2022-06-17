@@ -74,6 +74,7 @@
             // 
             // txtNoiDung
             // 
+            this.txtNoiDung.AutoScroll = true;
             this.txtNoiDung.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNoiDung.DefaultText = "";
             this.txtNoiDung.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -84,6 +85,7 @@
             this.txtNoiDung.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtNoiDung.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNoiDung.Location = new System.Drawing.Point(15, 80);
+            this.txtNoiDung.Multiline = true;
             this.txtNoiDung.Name = "txtNoiDung";
             this.txtNoiDung.PasswordChar = '\0';
             this.txtNoiDung.PlaceholderText = "";

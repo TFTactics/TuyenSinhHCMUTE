@@ -226,3 +226,11 @@ C:\Users\T\OneDrive\Máy tính\Thư mục mới\TuyenSinhHCMUTE\obj\Debug\UI.cs
 C:\Users\T\OneDrive\Máy tính\Thư mục mới\TuyenSinhHCMUTE\obj\Debug\UI.csproj.CopyComplete
 C:\Users\T\OneDrive\Máy tính\Thư mục mới\TuyenSinhHCMUTE\obj\Debug\UI.exe
 C:\Users\T\OneDrive\Máy tính\Thư mục mới\TuyenSinhHCMUTE\obj\Debug\UI.pdb
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLDSNguoiDung.UCThemNguoiDung.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTimeLine.UCThemTimeLine.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.CTDaoTao.UCThemCTDaoTao.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.DSKhoa.UCThemKhoa.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.HDaoTao.UCThemHDaoTao.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.NganhDaoTao.UCNDaoTao.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.TTNhapHoc.UCThemTTNhapHoc.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.ViewLayer_Them.UCThemPTXT.resources

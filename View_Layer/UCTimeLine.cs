@@ -129,8 +129,8 @@ namespace UI.View_Layer
                         try
                         {
                             dbTimeLine.SuaBangTin(ref err, dr.Cells[1].Value.ToString(), 
-                                dr.Cells[5].Value.ToString(), dr.Cells[2].Value.ToString(),
-                                dr.Cells[2].Value.ToString(), dr.Cells[2].Value.ToString());
+                                dr.Cells[2].Value.ToString(), dr.Cells[3].Value.ToString(),
+                                dr.Cells[4].Value.ToString(), dr.Cells[5].Value.ToString());
                             LoadData();
                             MessageBox.Show("Done");
                         }

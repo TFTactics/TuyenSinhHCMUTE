@@ -66,6 +66,7 @@
             // 
             // txtLinkPDF
             // 
+            this.txtLinkPDF.AutoScroll = true;
             this.txtLinkPDF.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLinkPDF.DefaultText = "";
             this.txtLinkPDF.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -168,6 +169,7 @@
             // 
             // txtNoiDungCT
             // 
+            this.txtNoiDungCT.AutoScroll = true;
             this.txtNoiDungCT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNoiDungCT.DefaultText = "";
             this.txtNoiDungCT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -178,6 +180,7 @@
             this.txtNoiDungCT.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNoiDungCT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNoiDungCT.Location = new System.Drawing.Point(0, 331);
+            this.txtNoiDungCT.Multiline = true;
             this.txtNoiDungCT.Name = "txtNoiDungCT";
             this.txtNoiDungCT.PasswordChar = '\0';
             this.txtNoiDungCT.PlaceholderText = "";
@@ -198,6 +201,7 @@
             // 
             // txtTenCT
             // 
+            this.txtTenCT.AutoScroll = true;
             this.txtTenCT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTenCT.DefaultText = "";
             this.txtTenCT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));

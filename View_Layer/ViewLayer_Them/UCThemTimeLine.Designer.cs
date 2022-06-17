@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
-            this.txtHeDaoTao = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cbbHeDaoTao = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtNoiDung = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dtTGKetThuc = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dtTGBatDau = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnThem = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.cbbHeDaoTao = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtTenSK = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -47,15 +47,15 @@
             // 
             // pnlContainer
             // 
-            this.pnlContainer.Controls.Add(this.txtHeDaoTao);
+            this.pnlContainer.Controls.Add(this.cbbHeDaoTao);
+            this.pnlContainer.Controls.Add(this.guna2HtmlLabel4);
+            this.pnlContainer.Controls.Add(this.txtNoiDung);
             this.pnlContainer.Controls.Add(this.guna2HtmlLabel7);
             this.pnlContainer.Controls.Add(this.dtTGKetThuc);
             this.pnlContainer.Controls.Add(this.dtTGBatDau);
             this.pnlContainer.Controls.Add(this.guna2HtmlLabel6);
             this.pnlContainer.Controls.Add(this.btnThem);
             this.pnlContainer.Controls.Add(this.guna2HtmlLabel5);
-            this.pnlContainer.Controls.Add(this.cbbHeDaoTao);
-            this.pnlContainer.Controls.Add(this.guna2HtmlLabel4);
             this.pnlContainer.Controls.Add(this.guna2HtmlLabel3);
             this.pnlContainer.Controls.Add(this.txtTenSK);
             this.pnlContainer.Controls.Add(this.guna2HtmlLabel2);
@@ -65,24 +65,50 @@
             this.pnlContainer.Size = new System.Drawing.Size(1120, 750);
             this.pnlContainer.TabIndex = 12;
             // 
-            // txtHeDaoTao
+            // cbbHeDaoTao
             // 
-            this.txtHeDaoTao.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtHeDaoTao.DefaultText = "";
-            this.txtHeDaoTao.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtHeDaoTao.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtHeDaoTao.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtHeDaoTao.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtHeDaoTao.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtHeDaoTao.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtHeDaoTao.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtHeDaoTao.Location = new System.Drawing.Point(0, 395);
-            this.txtHeDaoTao.Name = "txtHeDaoTao";
-            this.txtHeDaoTao.PasswordChar = '\0';
-            this.txtHeDaoTao.PlaceholderText = "";
-            this.txtHeDaoTao.SelectedText = "";
-            this.txtHeDaoTao.Size = new System.Drawing.Size(1100, 270);
-            this.txtHeDaoTao.TabIndex = 25;
+            this.cbbHeDaoTao.BackColor = System.Drawing.Color.Transparent;
+            this.cbbHeDaoTao.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbHeDaoTao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbHeDaoTao.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbHeDaoTao.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbHeDaoTao.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbbHeDaoTao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbbHeDaoTao.ItemHeight = 30;
+            this.cbbHeDaoTao.Location = new System.Drawing.Point(0, 305);
+            this.cbbHeDaoTao.Name = "cbbHeDaoTao";
+            this.cbbHeDaoTao.Size = new System.Drawing.Size(188, 36);
+            this.cbbHeDaoTao.TabIndex = 17;
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.AutoSize = false;
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(0, 280);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(264, 40);
+            this.guna2HtmlLabel4.TabIndex = 16;
+            this.guna2HtmlLabel4.Text = "Hệ đào tạo";
+            // 
+            // txtNoiDung
+            // 
+            this.txtNoiDung.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNoiDung.DefaultText = "";
+            this.txtNoiDung.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNoiDung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNoiDung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNoiDung.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNoiDung.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNoiDung.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNoiDung.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNoiDung.Location = new System.Drawing.Point(0, 395);
+            this.txtNoiDung.Name = "txtNoiDung";
+            this.txtNoiDung.PasswordChar = '\0';
+            this.txtNoiDung.PlaceholderText = "";
+            this.txtNoiDung.SelectedText = "";
+            this.txtNoiDung.Size = new System.Drawing.Size(1100, 270);
+            this.txtNoiDung.TabIndex = 25;
             // 
             // guna2HtmlLabel7
             // 
@@ -90,7 +116,7 @@
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.Red;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(0, 237);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(0, 241);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(426, 40);
             this.guna2HtmlLabel7.TabIndex = 24;
@@ -105,7 +131,7 @@
             this.dtTGKetThuc.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtTGKetThuc.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtTGKetThuc.Name = "dtTGKetThuc";
-            this.dtTGKetThuc.Size = new System.Drawing.Size(140, 36);
+            this.dtTGKetThuc.Size = new System.Drawing.Size(188, 40);
             this.dtTGKetThuc.TabIndex = 23;
             this.dtTGKetThuc.Value = new System.DateTime(2022, 6, 16, 13, 25, 36, 257);
             // 
@@ -118,7 +144,7 @@
             this.dtTGBatDau.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtTGBatDau.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtTGBatDau.Name = "dtTGBatDau";
-            this.dtTGBatDau.Size = new System.Drawing.Size(140, 36);
+            this.dtTGBatDau.Size = new System.Drawing.Size(188, 40);
             this.dtTGBatDau.TabIndex = 22;
             this.dtTGBatDau.Value = new System.DateTime(2022, 6, 16, 13, 25, 36, 257);
             // 
@@ -162,32 +188,6 @@
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(530, 40);
             this.guna2HtmlLabel5.TabIndex = 18;
             this.guna2HtmlLabel5.Text = "Nội dung sự kiện";
-            // 
-            // cbbHeDaoTao
-            // 
-            this.cbbHeDaoTao.BackColor = System.Drawing.Color.Transparent;
-            this.cbbHeDaoTao.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbbHeDaoTao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbHeDaoTao.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbHeDaoTao.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbHeDaoTao.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbbHeDaoTao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbbHeDaoTao.ItemHeight = 30;
-            this.cbbHeDaoTao.Location = new System.Drawing.Point(0, 305);
-            this.cbbHeDaoTao.Name = "cbbHeDaoTao";
-            this.cbbHeDaoTao.Size = new System.Drawing.Size(140, 36);
-            this.cbbHeDaoTao.TabIndex = 17;
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.AutoSize = false;
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(0, 280);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(264, 40);
-            this.guna2HtmlLabel4.TabIndex = 16;
-            this.guna2HtmlLabel4.Text = "Hệ đào tạo";
             // 
             // guna2HtmlLabel3
             // 
@@ -257,7 +257,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel pnlContainer;
-        private Guna.UI2.WinForms.Guna2TextBox txtHeDaoTao;
+        private Guna.UI2.WinForms.Guna2TextBox txtNoiDung;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtTGKetThuc;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtTGBatDau;

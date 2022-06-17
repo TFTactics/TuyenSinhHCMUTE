@@ -21,7 +21,7 @@ namespace UI.View_Layer
                 dbHPHB.SuaThongTin(txtNoiDung.Text, ref err);
                 MessageBox.Show("Done");
             }
-            catch(SqlException ex)
+            catch
             {
                 MessageBox.Show("Chỉnh sửa thất bại.");
             }

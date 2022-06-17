@@ -20,7 +20,7 @@ namespace UI.View_Layer
                 dbLienHe.SuaLienHe(txtDDLienHe.Text,txtSDT.Text, txtEmail.Text, txtFanpage.Text,txtTenPhongBanLH.Text,txtVanPhong.Text, ref err);
                 MessageBox.Show("Done");
             }
-            catch (SqlException ex)
+            catch
             {
                 MessageBox.Show("Chỉnh sửa thất bại.");
             }

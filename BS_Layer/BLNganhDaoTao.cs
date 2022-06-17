@@ -1,0 +1,34 @@
+﻿using System.Data;
+using UI.BD_Layer;
+
+namespace UI.BS_Layer
+{
+    internal class BLNganhDaoTao
+    {
+        DBMain db = null;
+        public BLNganhDaoTao()
+        {
+            db=new DBMain();
+        }
+        public DataSet LayThongTin()
+        {
+            return db.ExecuteQueryDataSet("select * from ThongTinChuyenNganh", CommandType.Text);
+        }
+        public bool ThemNganhDaoTao(string MaNganh, string TenN, string LoaiCT, string Khoa, int ChiTieu, int HocPhi, string MoTa, ref string err)
+        {
+            string sqlString = "Insert into ThongTinChuyenNganh values (" + "N'" + MaNganh +"',N'"+TenN+ "',N'" + LoaiCT + "',N'" + Khoa + "','" + ChiTieu + "','" + HocPhi + "',N'" + MoTa + "')";
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
+        }
+        public bool XoaNganh(ref string err, string MaNgang)
+        {
+            string sqlString = "delete from ThongTinChuyenNganh where MaNganh=N'" + MaNgang +"'";
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
+        }
+        public bool SuaNganh(ref string err,string MaNganh, string TenN, string LoaiCT, string Khoa, int ChiTieu,int HocPhi, string MoTa)
+        {
+            string sqlString = "Update ThongTinChuyenNganh SET TenNganh = N'" + TenN + "',LoaiChuongTrinh =N'" + LoaiCT + "',Khoa=N'" + Khoa + "',ChiTieu='" + ChiTieu+"',HocPhi='"+HocPhi+"',MoTaNganh=N'"+MoTa
+                + "'WHERE MaNganh = N'" + MaNganh + "'" ;
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
+        }
+    }
+}

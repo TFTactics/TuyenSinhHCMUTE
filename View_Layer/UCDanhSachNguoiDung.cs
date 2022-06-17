@@ -10,7 +10,7 @@ namespace UI.View_Layer
     {
         DataTable dtDanhSachNguoiDung = null;
         BLThongTinNguoiDung dbThongTinNguoiDung = new BLThongTinNguoiDung();
-
+        string err = "";
         public UCDanhSachNguoiDung()
         {
             InitializeComponent();
@@ -89,16 +89,55 @@ namespace UI.View_Layer
             }
         }
 
+        /// <summary>
+        /// Xóa TimeLine
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnDelete_Click(object sender, EventArgs e)
         {
             foreach (DataGridViewRow dr in dgvThongTinNguoiDung.Rows)
             {
-                if (Convert.ToBoolean(dr.Cells[0].Value.ToString()))
+                if (dr.Cells[0].Value != null)
                 {
-                    // dbThongTinNguoiDung.XoaBangTin(ref err, dr.Cells[1].Value.ToString(), dr.Cells[5].Value.ToString(), dr.Cells[2].Value.ToString());
-                    LoadData();
+                    if (Convert.ToBoolean(dr.Cells[0].Value.ToString()))
+                    {
+                        try
+                        {
+                            dbThongTinNguoiDung.XoaNguoiDung(ref err, dr.Cells[1].Value.ToString());
+                            LoadData();
+                            MessageBox.Show("Done");
+                        }
+                        catch (SqlException)
+                        {
+                            MessageBox.Show("Không xóa được!");
+                        }
+                    }
                 }
+            }
+        }
 
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow dr in dgvThongTinNguoiDung.Rows)
+            {
+                if (dr.Cells[0].Value != null)
+                {
+                    if (Convert.ToBoolean(dr.Cells[0].Value.ToString()))
+                    {
+                        try
+                        {
+                            dbThongTinNguoiDung.SuaThongTin(ref err, dr.Cells[1].Value.ToString(),
+                                dr.Cells[2].Value.ToString(), dr.Cells[3].Value.ToString(), dr.Cells[4].Value.ToString());
+                            LoadData();
+                            MessageBox.Show("Done");
+                        }
+                        catch (SqlException)
+                        {
+                            MessageBox.Show("Không xóa được!");
+                        }
+                    }
+                }
             }
         }
     }

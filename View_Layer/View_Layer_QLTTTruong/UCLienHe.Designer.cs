@@ -95,6 +95,7 @@
             // 
             // txtVanPhong
             // 
+            this.txtVanPhong.AutoScroll = true;
             this.txtVanPhong.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtVanPhong.DefaultText = "";
             this.txtVanPhong.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -124,6 +125,7 @@
             // 
             // txtTenPhongBanLH
             // 
+            this.txtTenPhongBanLH.AutoScroll = true;
             this.txtTenPhongBanLH.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTenPhongBanLH.DefaultText = "";
             this.txtTenPhongBanLH.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -153,6 +155,7 @@
             // 
             // txtFanpage
             // 
+            this.txtFanpage.AutoScroll = true;
             this.txtFanpage.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFanpage.DefaultText = "";
             this.txtFanpage.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -182,6 +185,7 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.AutoScroll = true;
             this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.DefaultText = "";
             this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -211,6 +215,7 @@
             // 
             // txtSDT
             // 
+            this.txtSDT.AutoScroll = true;
             this.txtSDT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSDT.DefaultText = "";
             this.txtSDT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -251,6 +256,7 @@
             this.txtDDLienHe.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDDLienHe.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDDLienHe.Location = new System.Drawing.Point(15, 80);
+            this.txtDDLienHe.Multiline = true;
             this.txtDDLienHe.Name = "txtDDLienHe";
             this.txtDDLienHe.PasswordChar = '\0';
             this.txtDDLienHe.PlaceholderText = "";

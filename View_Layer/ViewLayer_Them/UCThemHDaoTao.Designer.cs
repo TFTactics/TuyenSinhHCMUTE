@@ -29,20 +29,19 @@
         private void InitializeComponent()
         {
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtTenHDT = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnLuu = new Guna.UI2.WinForms.Guna2Button();
             this.txtGTHDT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtMaHDT = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtTenHDT = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlContainer
             // 
-            this.pnlContainer.AutoScroll = true;
             this.pnlContainer.Controls.Add(this.txtTenHDT);
             this.pnlContainer.Controls.Add(this.guna2HtmlLabel4);
             this.pnlContainer.Controls.Add(this.btnLuu);
@@ -55,6 +54,37 @@
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(1120, 990);
             this.pnlContainer.TabIndex = 14;
+            // 
+            // txtTenHDT
+            // 
+            this.txtTenHDT.AutoScroll = true;
+            this.txtTenHDT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTenHDT.DefaultText = "";
+            this.txtTenHDT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTenHDT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTenHDT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTenHDT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTenHDT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTenHDT.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenHDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTenHDT.Location = new System.Drawing.Point(0, 167);
+            this.txtTenHDT.Name = "txtTenHDT";
+            this.txtTenHDT.PasswordChar = '\0';
+            this.txtTenHDT.PlaceholderText = "";
+            this.txtTenHDT.SelectedText = "";
+            this.txtTenHDT.Size = new System.Drawing.Size(1100, 45);
+            this.txtTenHDT.TabIndex = 22;
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.AutoSize = false;
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(0, 142);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(388, 40);
+            this.guna2HtmlLabel4.TabIndex = 21;
+            this.guna2HtmlLabel4.Text = "Tên Hệ Đào Tạo";
             // 
             // btnLuu
             // 
@@ -77,6 +107,7 @@
             // 
             // txtGTHDT
             // 
+            this.txtGTHDT.AutoScroll = true;
             this.txtGTHDT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGTHDT.DefaultText = "";
             this.txtGTHDT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -87,6 +118,7 @@
             this.txtGTHDT.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGTHDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtGTHDT.Location = new System.Drawing.Point(0, 257);
+            this.txtGTHDT.Multiline = true;
             this.txtGTHDT.Name = "txtGTHDT";
             this.txtGTHDT.PasswordChar = '\0';
             this.txtGTHDT.PlaceholderText = "";
@@ -107,6 +139,7 @@
             // 
             // txtMaHDT
             // 
+            this.txtMaHDT.AutoScroll = true;
             this.txtMaHDT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMaHDT.DefaultText = "";
             this.txtMaHDT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -145,36 +178,6 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(565, 44);
             this.guna2HtmlLabel1.TabIndex = 11;
             this.guna2HtmlLabel1.Text = "Nhập thông tin Hệ Đào Tạo";
-            // 
-            // txtTenHDT
-            // 
-            this.txtTenHDT.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTenHDT.DefaultText = "";
-            this.txtTenHDT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTenHDT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTenHDT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTenHDT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTenHDT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenHDT.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenHDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenHDT.Location = new System.Drawing.Point(0, 167);
-            this.txtTenHDT.Name = "txtTenHDT";
-            this.txtTenHDT.PasswordChar = '\0';
-            this.txtTenHDT.PlaceholderText = "";
-            this.txtTenHDT.SelectedText = "";
-            this.txtTenHDT.Size = new System.Drawing.Size(1100, 45);
-            this.txtTenHDT.TabIndex = 22;
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.AutoSize = false;
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(0, 142);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(388, 40);
-            this.guna2HtmlLabel4.TabIndex = 21;
-            this.guna2HtmlLabel4.Text = "Tên Hệ Đào Tạo";
             // 
             // UCThemHDaoTao
             // 
