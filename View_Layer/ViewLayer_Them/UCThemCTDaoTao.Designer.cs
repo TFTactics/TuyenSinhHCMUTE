@@ -63,6 +63,7 @@
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(1120, 750);
             this.pnlContainer.TabIndex = 12;
+            this.pnlContainer.Click += new System.EventHandler(this.pnlContainer_Click);
             // 
             // txtLinkPDF
             // 
@@ -249,6 +250,8 @@
             this.Controls.Add(this.pnlContainer);
             this.Name = "UCThemCTDaoTao";
             this.Size = new System.Drawing.Size(1250, 1133);
+            this.Load += new System.EventHandler(this.UCThemCTDaoTao_Load);
+            this.Click += new System.EventHandler(this.UCThemCTDaoTao_Click);
             this.pnlContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 

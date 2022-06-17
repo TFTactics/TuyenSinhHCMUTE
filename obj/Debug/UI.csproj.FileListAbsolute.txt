@@ -234,3 +234,4 @@ D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.HDaoTao.UCThemH
 D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.NganhDaoTao.UCNDaoTao.resources
 D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.TTNhapHoc.UCThemTTNhapHoc.resources
 D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.ViewLayer_Them.UCThemPTXT.resources
+C:\Users\HP\Desktop\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.ViewLayer_Them.UCThemPTXT.resources

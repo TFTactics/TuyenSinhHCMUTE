@@ -3,6 +3,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using UI.BS_Layer;
+using UI.BD_Layer;
 namespace UI.View_Layer
 {
     public partial class UCTimeLine : UserControl

@@ -26,5 +26,10 @@ namespace UI.View_Layer.View_Layer_QLTTTruong.DSKhoa
             txtGTKhoa.Clear();
             txtTenKhoa.Clear();
         }
+
+        private void UCThemKhoa_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

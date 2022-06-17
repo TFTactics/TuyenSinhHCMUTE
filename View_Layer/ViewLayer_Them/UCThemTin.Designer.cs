@@ -58,6 +58,7 @@
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(1120, 595);
             this.pnlContainer.TabIndex = 11;
+            this.pnlContainer.Click += new System.EventHandler(this.pnlContainer_Click);
             // 
             // btnDangBai
             // 
@@ -212,6 +213,8 @@
             this.Controls.Add(this.pnlContainer);
             this.Name = "UCThemTin";
             this.Size = new System.Drawing.Size(1250, 1133);
+            this.Load += new System.EventHandler(this.UCThemTin_Load);
+            this.Click += new System.EventHandler(this.UCThemTin_Click);
             this.pnlContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 

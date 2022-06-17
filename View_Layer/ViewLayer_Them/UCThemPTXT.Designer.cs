@@ -76,6 +76,7 @@
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(1120, 926);
             this.pnlContainer.TabIndex = 13;
+            this.pnlContainer.Click += new System.EventHandler(this.pnlContainer_Click);
             // 
             // txtAnh
             // 
@@ -347,6 +348,8 @@
             this.Controls.Add(this.pnlContainer);
             this.Name = "UCThemPTXT";
             this.Size = new System.Drawing.Size(1250, 1133);
+            this.Load += new System.EventHandler(this.UCThemPTXT_Load);
+            this.Click += new System.EventHandler(this.UCThemPTXT_Click);
             this.pnlContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
