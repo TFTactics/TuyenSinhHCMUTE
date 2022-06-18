@@ -12,9 +12,18 @@ namespace UI.View_Layer.ViewLayer_Them
 {
     public partial class UCThemUngTuyen : UserControl
     {
+        string err;
+
         public UCThemUngTuyen()
         {
             InitializeComponent();
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+           /* BS_Layer.BLDanhSachUngTuyen blDSUT = new BS_Layer.BLDanhSachUngTuyen();
+            blDSUT.ThemDanhSachUngTuyen(txtTenSK.Text, dtTGBatDau.Value, dtTGKetThuc.Value, cbbHeDaoTao.Text, txtNoiDung.Text, ref err);
+            MessageBox.Show(dtTGBatDau.Value.ToString("yyyy-MM-dd"));*/
         }
     }
 }

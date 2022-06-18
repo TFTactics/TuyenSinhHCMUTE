@@ -5,8 +5,8 @@ namespace UI.BD_Layer
 {
     internal class DBMain
     {
-        //public string ConnStr = @"Data Source=LAPTOP-4EFUU78K\SQLEXPRESS01;Initial Catalog=TuyenSinh;Integrated Security=True";
-        public string ConnStr = @"Data Source=TRANNHUYNHTANPH;Initial Catalog=TuyenSinh;Integrated Security=True";
+        public string ConnStr = @"Data Source=LAPTOP-4EFUU78K\SQLEXPRESS01;Initial Catalog=TuyenSinh;Integrated Security=True";
+        // public string ConnStr = @"Data Source=TRANNHUYNHTANPH;Initial Catalog=TuyenSinh;Integrated Security=True";
         //public string ConnStr = @"Data Source=NGUIT;Initial Catalog=TuyenSinh;Integrated Security=True";
         public SqlConnection conn = null;
         public SqlCommand comm = null;

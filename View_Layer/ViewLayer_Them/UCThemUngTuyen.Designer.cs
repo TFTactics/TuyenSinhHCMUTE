@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.cbbTrangThai = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.cbbPhuongThuc = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtBuocSo = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelBuocSo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnLuu = new Guna.UI2.WinForms.Guna2Button();
             this.txtMaHS = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.cbbPhuongThuc = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.cbbTrangThai = new Guna.UI2.WinForms.Guna2ComboBox();
             this.pnlContainer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +58,58 @@
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(1120, 750);
             this.pnlContainer.TabIndex = 15;
+            // 
+            // cbbTrangThai
+            // 
+            this.cbbTrangThai.BackColor = System.Drawing.Color.Transparent;
+            this.cbbTrangThai.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbTrangThai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbTrangThai.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbTrangThai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbTrangThai.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbbTrangThai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbbTrangThai.ItemHeight = 30;
+            this.cbbTrangThai.Location = new System.Drawing.Point(0, 255);
+            this.cbbTrangThai.Name = "cbbTrangThai";
+            this.cbbTrangThai.Size = new System.Drawing.Size(309, 36);
+            this.cbbTrangThai.TabIndex = 35;
+            // 
+            // guna2HtmlLabel5
+            // 
+            this.guna2HtmlLabel5.AutoSize = false;
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(0, 229);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(388, 40);
+            this.guna2HtmlLabel5.TabIndex = 34;
+            this.guna2HtmlLabel5.Text = "Trạng thái";
+            // 
+            // cbbPhuongThuc
+            // 
+            this.cbbPhuongThuc.BackColor = System.Drawing.Color.Transparent;
+            this.cbbPhuongThuc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbPhuongThuc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbPhuongThuc.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbPhuongThuc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbPhuongThuc.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbbPhuongThuc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbbPhuongThuc.ItemHeight = 30;
+            this.cbbPhuongThuc.Location = new System.Drawing.Point(412, 254);
+            this.cbbPhuongThuc.Name = "cbbPhuongThuc";
+            this.cbbPhuongThuc.Size = new System.Drawing.Size(366, 36);
+            this.cbbPhuongThuc.TabIndex = 33;
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.AutoSize = false;
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(412, 229);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(297, 40);
+            this.guna2HtmlLabel4.TabIndex = 32;
+            this.guna2HtmlLabel4.Text = "Phương thức xét tuyển";
             // 
             // txtBuocSo
             // 
@@ -107,6 +159,7 @@
             this.btnLuu.Size = new System.Drawing.Size(150, 43);
             this.btnLuu.TabIndex = 20;
             this.btnLuu.Text = "Lưu thay đổi";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // txtMaHS
             // 
@@ -149,58 +202,6 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(778, 44);
             this.guna2HtmlLabel1.TabIndex = 11;
             this.guna2HtmlLabel1.Text = "Nhập thông tin ứng tuyển";
-            // 
-            // cbbPhuongThuc
-            // 
-            this.cbbPhuongThuc.BackColor = System.Drawing.Color.Transparent;
-            this.cbbPhuongThuc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbbPhuongThuc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbPhuongThuc.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbPhuongThuc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbPhuongThuc.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbbPhuongThuc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbbPhuongThuc.ItemHeight = 30;
-            this.cbbPhuongThuc.Location = new System.Drawing.Point(412, 254);
-            this.cbbPhuongThuc.Name = "cbbPhuongThuc";
-            this.cbbPhuongThuc.Size = new System.Drawing.Size(366, 36);
-            this.cbbPhuongThuc.TabIndex = 33;
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.AutoSize = false;
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(412, 229);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(297, 40);
-            this.guna2HtmlLabel4.TabIndex = 32;
-            this.guna2HtmlLabel4.Text = "Phương thức xét tuyển";
-            // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.AutoSize = false;
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(0, 229);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(388, 40);
-            this.guna2HtmlLabel5.TabIndex = 34;
-            this.guna2HtmlLabel5.Text = "Trạng thái";
-            // 
-            // cbbTrangThai
-            // 
-            this.cbbTrangThai.BackColor = System.Drawing.Color.Transparent;
-            this.cbbTrangThai.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbbTrangThai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbTrangThai.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbTrangThai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbTrangThai.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbbTrangThai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbbTrangThai.ItemHeight = 30;
-            this.cbbTrangThai.Location = new System.Drawing.Point(0, 255);
-            this.cbbTrangThai.Name = "cbbTrangThai";
-            this.cbbTrangThai.Size = new System.Drawing.Size(309, 36);
-            this.cbbTrangThai.TabIndex = 35;
             // 
             // UCThemUngTuyen
             // 
