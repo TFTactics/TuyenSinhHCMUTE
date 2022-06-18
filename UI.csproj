@@ -79,6 +79,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCDangKi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDangKi.Designer.cs">
+      <DependentUpon>UCDangKi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDangNhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDangNhap.Designer.cs">
+      <DependentUpon>UCDangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="View_Layer\ViewLayer_Them\UCThemPTXT.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -239,6 +251,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDangKi.resx">
+      <DependentUpon>UCDangKi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDangNhap.resx">
+      <DependentUpon>UCDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View_Layer\ViewLayer_Them\UCThemPTXT.resx">
       <DependentUpon>UCThemPTXT.cs</DependentUpon>

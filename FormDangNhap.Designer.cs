@@ -30,67 +30,38 @@ namespace UI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap));
-            this.label1 = new System.Windows.Forms.Label();
-            this.username = new Guna.UI2.WinForms.Guna2TextBox();
-            this.password = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pnlContainer = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnSignin = new Guna.UI2.WinForms.Guna2Button();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.lbx = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.ucDangKi1 = new UI.UCDangKi();
+            this.ucDangNhap1 = new UI.UCDangNhap();
+            this.pnlContainer.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // pnlContainer
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.Location = new System.Drawing.Point(56, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 62);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "LOGIN";
+            this.pnlContainer.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pnlContainer.Controls.Add(this.panel2);
+            this.pnlContainer.Controls.Add(this.lbx);
+            this.pnlContainer.Controls.Add(this.ucDangKi1);
+            this.pnlContainer.Controls.Add(this.ucDangNhap1);
+            this.pnlContainer.Location = new System.Drawing.Point(140, 77);
+            this.pnlContainer.Name = "pnlContainer";
+            this.pnlContainer.Size = new System.Drawing.Size(598, 463);
+            this.pnlContainer.TabIndex = 4;
             // 
-            // username
+            // panel2
             // 
-            this.username.BorderColor = System.Drawing.Color.Silver;
-            this.username.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.username.DefaultText = "ADMIN";
-            this.username.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.username.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.username.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.username.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.username.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.username.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.username.Location = new System.Drawing.Point(67, 136);
-            this.username.Name = "username";
-            this.username.PasswordChar = '\0';
-            this.username.PlaceholderText = "";
-            this.username.SelectedText = "";
-            this.username.Size = new System.Drawing.Size(449, 61);
-            this.username.TabIndex = 2;
-            // 
-            // password
-            // 
-            this.password.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.password.DefaultText = "PASSWORD";
-            this.password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.password.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.password.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.password.Location = new System.Drawing.Point(67, 233);
-            this.password.Name = "password";
-            this.password.PasswordChar = '●';
-            this.password.PlaceholderText = "";
-            this.password.SelectedText = "";
-            this.password.Size = new System.Drawing.Size(449, 61);
-            this.password.TabIndex = 3;
-            this.password.UseSystemPasswordChar = true;
+            this.panel2.Controls.Add(this.btnSignin);
+            this.panel2.Controls.Add(this.btnExit);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 403);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(598, 60);
+            this.panel2.TabIndex = 10;
             // 
             // btnSignin
             // 
@@ -103,9 +74,9 @@ namespace UI
             this.btnSignin.ForeColor = System.Drawing.Color.White;
             this.btnSignin.Location = new System.Drawing.Point(308, 0);
             this.btnSignin.Name = "btnSignin";
-            this.btnSignin.Size = new System.Drawing.Size(290, 85);
+            this.btnSignin.Size = new System.Drawing.Size(290, 60);
             this.btnSignin.TabIndex = 0;
-            this.btnSignin.Text = "SIGN IN";
+            this.btnSignin.Text = "SIGN UP";
             this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
             // 
             // btnExit
@@ -120,32 +91,37 @@ namespace UI
             this.btnExit.ForeColor = System.Drawing.Color.Gray;
             this.btnExit.Location = new System.Drawing.Point(0, 0);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(308, 85);
+            this.btnExit.Size = new System.Drawing.Size(308, 60);
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "CLOSE";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // panel1
+            // lbx
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.password);
-            this.panel1.Controls.Add(this.username);
-            this.panel1.Location = new System.Drawing.Point(140, 77);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(598, 463);
-            this.panel1.TabIndex = 4;
+            this.lbx.AutoSize = false;
+            this.lbx.BackColor = System.Drawing.Color.Transparent;
+            this.lbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbx.ForeColor = System.Drawing.Color.Red;
+            this.lbx.Location = new System.Drawing.Point(0, 370);
+            this.lbx.Name = "lbx";
+            this.lbx.Size = new System.Drawing.Size(96, 30);
+            this.lbx.TabIndex = 9;
+            this.lbx.Text = "Register";
+            this.lbx.Click += new System.EventHandler(this.lbx_Click);
             // 
-            // panel2
+            // ucDangKi1
             // 
-            this.panel2.Controls.Add(this.btnSignin);
-            this.panel2.Controls.Add(this.btnExit);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 378);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(598, 85);
-            this.panel2.TabIndex = 4;
+            this.ucDangKi1.Location = new System.Drawing.Point(56, 3);
+            this.ucDangKi1.Name = "ucDangKi1";
+            this.ucDangKi1.Size = new System.Drawing.Size(50, 50);
+            this.ucDangKi1.TabIndex = 1;
+            // 
+            // ucDangNhap1
+            // 
+            this.ucDangNhap1.Location = new System.Drawing.Point(0, 0);
+            this.ucDangNhap1.Name = "ucDangNhap1";
+            this.ucDangNhap1.Size = new System.Drawing.Size(50, 50);
+            this.ucDangNhap1.TabIndex = 0;
             // 
             // FormDangNhap
             // 
@@ -156,27 +132,28 @@ namespace UI
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(881, 667);
             this.ControlBox = false;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlContainer);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
             this.Name = "FormDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDangNhap";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Load += new System.EventHandler(this.FormDangNhap_Load);
+            this.pnlContainer.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox username;
-        private Guna.UI2.WinForms.Guna2Button btnExit;
-        private Guna.UI2.WinForms.Guna2Button btnSignin;
-        private Guna.UI2.WinForms.Guna2TextBox password;
-        private System.Windows.Forms.Panel panel1;
+
+        private System.Windows.Forms.Panel pnlContainer;
+        private UCDangNhap ucDangNhap1;
+        private UCDangKi ucDangKi1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbx;
         private System.Windows.Forms.Panel panel2;
+        private Guna.UI2.WinForms.Guna2Button btnSignin;
+        private Guna.UI2.WinForms.Guna2Button btnExit;
     }
 }

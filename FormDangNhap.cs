@@ -29,5 +29,34 @@ namespace UI
             main.Show();
             this.Hide();
         }
+
+        private void FormDangNhap_Load(object sender, EventArgs e)
+        {
+            ucDangNhap1.BringToFront();
+            ucDangNhap1.Dock=DockStyle.Fill;
+            lbx.Text = "Register";
+            lbx.BringToFront();
+        }
+
+        private void lbx_Click(object sender, EventArgs e)
+        {
+            if (lbx.Text == "Register")
+            {
+                ucDangKi1.BringToFront();
+                ucDangKi1.Dock = DockStyle.Fill;
+                btnSignin.Text = "Register";
+                lbx.Text = "Login";
+                lbx.BringToFront();
+            }
+            else
+            {
+                ucDangNhap1.BringToFront();
+                ucDangNhap1.Dock = DockStyle.Fill;
+                btnSignin.Text = "Sign Up";
+                lbx.Text = "Register";
+                lbx.BringToFront();
+            }
+        }
+
     }
 }
