@@ -25,5 +25,11 @@ namespace UI.View_Layer.ViewLayer_Them
             blDSUT.ThemDanhSachUngTuyen(txtTenSK.Text, dtTGBatDau.Value, dtTGKetThuc.Value, cbbHeDaoTao.Text, txtNoiDung.Text, ref err);
             MessageBox.Show(dtTGBatDau.Value.ToString("yyyy-MM-dd"));*/
         }
+
+        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
