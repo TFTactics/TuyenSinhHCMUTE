@@ -247,3 +247,8 @@ C:\Users\HP\Desktop\TuyenSinhHCMUTE\obj\Debug\UI.FormDangNhap.resources
 C:\Users\HP\Desktop\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.ViewLayer_Them.UCThemUngTuyen.resources
 D:\TuyenSinhHCMUTE\obj\Debug\UI.UCDangKi.resources
 D:\TuyenSinhHCMUTE\obj\Debug\UI.UCDangNhap.resources
+C:\Users\T\OneDrive\Máy tính\Thư mục mới\TuyenSinhHCMUTE\obj\Debug\UI.FormDangNhap.resources
+C:\Users\T\OneDrive\Máy tính\Thư mục mới\TuyenSinhHCMUTE\obj\Debug\UI.UCDangKi.resources
+C:\Users\T\OneDrive\Máy tính\Thư mục mới\TuyenSinhHCMUTE\obj\Debug\UI.UCDangNhap.resources
+C:\Users\T\OneDrive\Máy tính\Thư mục mới\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.ViewLayer_Them.UCThemPTXT.resources
+C:\Users\T\OneDrive\Máy tính\Thư mục mới\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.ViewLayer_Them.UCThemUngTuyen.resources

@@ -81,11 +81,11 @@ namespace UI
             // 
             this.lbx.AutoSize = false;
             this.lbx.BackColor = System.Drawing.Color.Transparent;
-            this.lbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbx.ForeColor = System.Drawing.Color.Red;
-            this.lbx.Location = new System.Drawing.Point(0, 370);
+            this.lbx.Location = new System.Drawing.Point(56, 364);
             this.lbx.Name = "lbx";
-            this.lbx.Size = new System.Drawing.Size(96, 30);
+            this.lbx.Size = new System.Drawing.Size(175, 30);
             this.lbx.TabIndex = 9;
             this.lbx.Text = "Register";
             this.lbx.Click += new System.EventHandler(this.lbx_Click);

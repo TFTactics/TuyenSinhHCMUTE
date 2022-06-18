@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnSignin = new Guna.UI2.WinForms.Guna2Button();
             this.password2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.password = new Guna.UI2.WinForms.Guna2TextBox();
@@ -36,8 +38,6 @@
             this.username = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnSignin = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +57,30 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(598, 463);
             this.panel1.TabIndex = 6;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.btnSignin);
+            this.guna2Panel1.Location = new System.Drawing.Point(308, 400);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(290, 60);
+            this.guna2Panel1.TabIndex = 10;
+            // 
+            // btnSignin
+            // 
+            this.btnSignin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSignin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSignin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSignin.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignin.ForeColor = System.Drawing.Color.White;
+            this.btnSignin.Location = new System.Drawing.Point(0, 0);
+            this.btnSignin.Name = "btnSignin";
+            this.btnSignin.Size = new System.Drawing.Size(290, 60);
+            this.btnSignin.TabIndex = 0;
+            this.btnSignin.Text = "REGISTER";
+            this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
             // 
             // password2
             // 
@@ -158,32 +182,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.label1.Location = new System.Drawing.Point(55, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 60);
+            this.label1.Size = new System.Drawing.Size(247, 62);
             this.label1.TabIndex = 1;
             this.label1.Text = "REGISTER";
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.btnSignin);
-            this.guna2Panel1.Location = new System.Drawing.Point(308, 400);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(290, 60);
-            this.guna2Panel1.TabIndex = 10;
-            // 
-            // btnSignin
-            // 
-            this.btnSignin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSignin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSignin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSignin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSignin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSignin.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignin.ForeColor = System.Drawing.Color.White;
-            this.btnSignin.Location = new System.Drawing.Point(0, 0);
-            this.btnSignin.Name = "btnSignin";
-            this.btnSignin.Size = new System.Drawing.Size(290, 60);
-            this.btnSignin.TabIndex = 0;
-            this.btnSignin.Text = "REGISTER";
             // 
             // UCDangKi
             // 

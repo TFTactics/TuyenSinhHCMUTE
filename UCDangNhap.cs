@@ -16,5 +16,18 @@ namespace UI
         {
             InitializeComponent();
         }
+
+        private void btnSignin_Click(object sender, EventArgs e)
+        {
+            BS_Layer.BLAdmin ad = new BS_Layer.BLAdmin();
+            if (ad.CheckUser(username.Text, password.Text))
+            {
+                Form1 main = new Form1();
+                main.Show();
+                this.Hide();
+            }
+            else
+                MessageBox.Show("Incorrect!!");
+        }
     }
 }
