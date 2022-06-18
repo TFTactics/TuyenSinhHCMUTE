@@ -31,20 +31,24 @@ namespace UI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap));
             this.pnlContainer = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSignin = new Guna.UI2.WinForms.Guna2Button();
+=======
+            this.pnlE = new Guna.UI2.WinForms.Guna2Panel();
+>>>>>>> b85023dcd7a85f3f186de7ebb43fc0c592eec4db
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.lbx = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ucDangKi1 = new UI.UCDangKi();
             this.ucDangNhap1 = new UI.UCDangNhap();
             this.pnlContainer.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pnlE.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlContainer
             // 
             this.pnlContainer.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pnlContainer.Controls.Add(this.panel2);
+            this.pnlContainer.Controls.Add(this.pnlE);
             this.pnlContainer.Controls.Add(this.lbx);
             this.pnlContainer.Controls.Add(this.ucDangKi1);
             this.pnlContainer.Controls.Add(this.ucDangNhap1);
@@ -53,6 +57,7 @@ namespace UI
             this.pnlContainer.Size = new System.Drawing.Size(598, 463);
             this.pnlContainer.TabIndex = 4;
             // 
+<<<<<<< HEAD
             // panel2
             // 
             this.panel2.Controls.Add(this.btnSignin);
@@ -78,6 +83,15 @@ namespace UI
             this.btnSignin.TabIndex = 0;
             this.btnSignin.Text = "SIGN UP";
             this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
+=======
+            // pnlE
+            // 
+            this.pnlE.Controls.Add(this.btnExit);
+            this.pnlE.Location = new System.Drawing.Point(0, 400);
+            this.pnlE.Name = "pnlE";
+            this.pnlE.Size = new System.Drawing.Size(308, 60);
+            this.pnlE.TabIndex = 12;
+>>>>>>> b85023dcd7a85f3f186de7ebb43fc0c592eec4db
             // 
             // btnExit
             // 
@@ -85,9 +99,15 @@ namespace UI
             this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+<<<<<<< HEAD
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+=======
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 18F);
+>>>>>>> b85023dcd7a85f3f186de7ebb43fc0c592eec4db
             this.btnExit.ForeColor = System.Drawing.Color.Gray;
             this.btnExit.Location = new System.Drawing.Point(0, 0);
             this.btnExit.Name = "btnExit";
@@ -100,11 +120,11 @@ namespace UI
             // 
             this.lbx.AutoSize = false;
             this.lbx.BackColor = System.Drawing.Color.Transparent;
-            this.lbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbx.ForeColor = System.Drawing.Color.Red;
-            this.lbx.Location = new System.Drawing.Point(0, 370);
+            this.lbx.Location = new System.Drawing.Point(56, 364);
             this.lbx.Name = "lbx";
-            this.lbx.Size = new System.Drawing.Size(96, 30);
+            this.lbx.Size = new System.Drawing.Size(175, 30);
             this.lbx.TabIndex = 9;
             this.lbx.Text = "Register";
             this.lbx.Click += new System.EventHandler(this.lbx_Click);
@@ -141,7 +161,7 @@ namespace UI
             this.Text = "FormDangNhap";
             this.Load += new System.EventHandler(this.FormDangNhap_Load);
             this.pnlContainer.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.pnlE.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -152,8 +172,7 @@ namespace UI
         private UCDangNhap ucDangNhap1;
         private UCDangKi ucDangKi1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbx;
-        private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2Button btnSignin;
+        private Guna.UI2.WinForms.Guna2Panel pnlE;
         private Guna.UI2.WinForms.Guna2Button btnExit;
     }
 }

@@ -29,9 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSignin = new Guna.UI2.WinForms.Guna2Button();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
+=======
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnSignin = new Guna.UI2.WinForms.Guna2Button();
+>>>>>>> b85023dcd7a85f3f186de7ebb43fc0c592eec4db
             this.password2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.password = new Guna.UI2.WinForms.Guna2TextBox();
@@ -40,13 +45,13 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.guna2Panel1);
             this.panel1.Controls.Add(this.password2);
             this.panel1.Controls.Add(this.guna2HtmlLabel3);
             this.panel1.Controls.Add(this.password);
@@ -59,6 +64,7 @@
             this.panel1.Size = new System.Drawing.Size(598, 463);
             this.panel1.TabIndex = 6;
             // 
+<<<<<<< HEAD
             // panel2
             // 
             this.panel2.Controls.Add(this.btnSignin);
@@ -68,6 +74,15 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(598, 60);
             this.panel2.TabIndex = 9;
+=======
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.btnSignin);
+            this.guna2Panel1.Location = new System.Drawing.Point(308, 400);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(290, 60);
+            this.guna2Panel1.TabIndex = 10;
+>>>>>>> b85023dcd7a85f3f186de7ebb43fc0c592eec4db
             // 
             // btnSignin
             // 
@@ -78,11 +93,16 @@
             this.btnSignin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSignin.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignin.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnSignin.Location = new System.Drawing.Point(308, 0);
+=======
+            this.btnSignin.Location = new System.Drawing.Point(0, 0);
+>>>>>>> b85023dcd7a85f3f186de7ebb43fc0c592eec4db
             this.btnSignin.Name = "btnSignin";
             this.btnSignin.Size = new System.Drawing.Size(290, 60);
             this.btnSignin.TabIndex = 0;
             this.btnSignin.Text = "REGISTER";
+<<<<<<< HEAD
             // 
             // btnExit
             // 
@@ -99,6 +119,9 @@
             this.btnExit.Size = new System.Drawing.Size(308, 60);
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "CLOSE";
+=======
+            this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
+>>>>>>> b85023dcd7a85f3f186de7ebb43fc0c592eec4db
             // 
             // password2
             // 
@@ -213,7 +236,7 @@
             this.Size = new System.Drawing.Size(598, 463);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -228,8 +251,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private System.Windows.Forms.Panel panel2;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button btnSignin;
-        private Guna.UI2.WinForms.Guna2Button btnExit;
     }
 }

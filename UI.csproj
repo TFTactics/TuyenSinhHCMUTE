@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BD_Layer\DBMain.cs" />
+    <Compile Include="BS_Layer\BLAdmin.cs" />
     <Compile Include="BS_Layer\BLDanhSachUngTuyen.cs" />
     <Compile Include="BS_Layer\BLNganhDaoTao.cs" />
     <Compile Include="BS_Layer\BLHeDaoTao.cs" />
