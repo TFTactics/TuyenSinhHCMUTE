@@ -29,8 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSignin = new Guna.UI2.WinForms.Guna2Button();
+            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
+=======
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSignin = new Guna.UI2.WinForms.Guna2Button();
+>>>>>>> b85023dcd7a85f3f186de7ebb43fc0c592eec4db
             this.password2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.password = new Guna.UI2.WinForms.Guna2TextBox();
@@ -58,6 +64,17 @@
             this.panel1.Size = new System.Drawing.Size(598, 463);
             this.panel1.TabIndex = 6;
             // 
+<<<<<<< HEAD
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnSignin);
+            this.panel2.Controls.Add(this.btnExit);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 403);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(598, 60);
+            this.panel2.TabIndex = 9;
+=======
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.btnSignin);
@@ -65,6 +82,7 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(290, 60);
             this.guna2Panel1.TabIndex = 10;
+>>>>>>> b85023dcd7a85f3f186de7ebb43fc0c592eec4db
             // 
             // btnSignin
             // 
@@ -75,12 +93,35 @@
             this.btnSignin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSignin.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignin.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
+            this.btnSignin.Location = new System.Drawing.Point(308, 0);
+=======
             this.btnSignin.Location = new System.Drawing.Point(0, 0);
+>>>>>>> b85023dcd7a85f3f186de7ebb43fc0c592eec4db
             this.btnSignin.Name = "btnSignin";
             this.btnSignin.Size = new System.Drawing.Size(290, 60);
             this.btnSignin.TabIndex = 0;
             this.btnSignin.Text = "REGISTER";
+<<<<<<< HEAD
+            // 
+            // btnExit
+            // 
+            this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.Gray;
+            this.btnExit.Location = new System.Drawing.Point(0, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(308, 60);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.Text = "CLOSE";
+=======
             this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
+>>>>>>> b85023dcd7a85f3f186de7ebb43fc0c592eec4db
             // 
             // password2
             // 
