@@ -90,7 +90,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.label1.Location = new System.Drawing.Point(55, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 60);
+            this.label1.Size = new System.Drawing.Size(180, 62);
             this.label1.TabIndex = 1;
             this.label1.Text = "LOGIN";
             // 
@@ -144,7 +144,7 @@
             this.btnSignin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSignin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSignin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSignin.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnSignin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSignin.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignin.ForeColor = System.Drawing.Color.White;
             this.btnSignin.Location = new System.Drawing.Point(308, 0);
