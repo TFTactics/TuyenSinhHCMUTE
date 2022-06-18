@@ -34,6 +34,7 @@ namespace UI
         {
             ucDangNhap1.BringToFront();
             ucDangNhap1.Dock=DockStyle.Fill;
+            pnlE.BringToFront();
             lbx.Text = "Register";
             lbx.BringToFront();
         }
@@ -44,7 +45,7 @@ namespace UI
             {
                 ucDangKi1.BringToFront();
                 ucDangKi1.Dock = DockStyle.Fill;
-                btnExit.BringToFront();
+                pnlE.BringToFront();
                 lbx.Text = "Login";
                 lbx.BringToFront();
             }
@@ -52,7 +53,7 @@ namespace UI
             {
                 ucDangNhap1.BringToFront();
                 ucDangNhap1.Dock = DockStyle.Fill;
-                btnExit.BringToFront();
+                pnlE.BringToFront();
                 lbx.Text = "Register";
                 lbx.BringToFront();
             }
