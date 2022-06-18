@@ -16,19 +16,19 @@ namespace UI.BS_Layer
         }
         public bool ThemDanhSachUngTuyen(string HoTen, string Email,string SDT, int MaHoSo, int MaNguyenVong, string NganhUngTuyen, string TrangThai, string PhuongThuc, ref string err)
         {
-            string sqlString = "Insert into DanhSachUngTuyen values (" + "N'" + HoTen + "',N'" + Email + "',N'" + SDT + "','" + MaHoSo + "','" + MaNguyenVong + "',N'" + TrangThai + "',N'" + PhuongThuc + "')";
+            string sqlString = "Insert into DanhSachUngTuyen values (" + "N'" + HoTen + "',N'" + Email + "',N'" + SDT + "','" + MaHoSo + "','" + MaNguyenVong + "',N'" + NganhUngTuyen + "',N'" + TrangThai + "',N'" + PhuongThuc + "')";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
-        public bool XoaDanhSachUngTuyen(ref string err, string TieuDe)
+        public bool XoaDanhSachUngTuyen(ref string err, string email)
         {
-            string sqlString = "delete from TinTuyenSinh where TieuDe=N'" + TieuDe +"'";
+            string sqlString = "delete from DanhSachUngTuyen where Email=N'" + email +"'";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
-        public bool SuaDanhSachUngTuyen(ref string err, string TieuDe, string NoiDung, string HeDaoTao, string TrangThai)
+        public bool SuaDanhSachUngTuyen(ref string err, string Hoten, string email, string sdt,int MaHS,int MaNV, string TrangThai, string PT)
         {
-            string sqlString = "Update TinTuyenSinh SET TieuDe=N'" + TieuDe + 
-                "',NoiDung=N'" + NoiDung + "',HeDaoTao=N'" + HeDaoTao + "',TrangThai=N'" + TrangThai
-                + "'WHERE TieuDe = N'" + TieuDe + "'" ;
+            string sqlString = "Update DanhSachUngTuyen SET HoTen=N'" + Hoten + 
+                "',SDT=N'" + sdt +"',MaHoSo='"+MaHS+"',MaNguyenVong='"+MaNV+ "',TrangThai=N'" + TrangThai+"',PhuongThuc=N'"+PT
+                + "'WHERE Email = N'" + email + "'" ;
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
     }

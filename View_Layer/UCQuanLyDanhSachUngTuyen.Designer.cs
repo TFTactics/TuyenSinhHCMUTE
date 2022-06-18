@@ -34,17 +34,17 @@
             this.btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlContainer1 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvDSUngTuyen = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Choose = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ucThemUngTuyen1 = new UI.View_Layer.ViewLayer_Them.UCThemUngTuyen();
+            this.STT = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.pnlContainer.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
+            this.pnlContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSUngTuyen)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
@@ -91,28 +91,28 @@
             // pnlContainer
             // 
             this.pnlContainer.Controls.Add(this.ucThemUngTuyen1);
-            this.pnlContainer.Controls.Add(this.guna2Panel1);
+            this.pnlContainer.Controls.Add(this.pnlContainer1);
             this.pnlContainer.Location = new System.Drawing.Point(205, 136);
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(1250, 750);
             this.pnlContainer.TabIndex = 8;
             // 
-            // guna2Panel1
+            // pnlContainer1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.SystemColors.Control;
-            this.guna2Panel1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.BorderRadius = 15;
-            this.guna2Panel1.BorderThickness = 1;
-            this.guna2Panel1.Controls.Add(this.dgvDSUngTuyen);
-            this.guna2Panel1.Controls.Add(this.guna2Panel2);
-            this.guna2Panel1.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.FillColor = System.Drawing.Color.White;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.BorderRadius = 12;
-            this.guna2Panel1.ShadowDecoration.Color = System.Drawing.Color.DimGray;
-            this.guna2Panel1.Size = new System.Drawing.Size(1250, 750);
-            this.guna2Panel1.TabIndex = 8;
+            this.pnlContainer1.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlContainer1.BorderColor = System.Drawing.Color.Transparent;
+            this.pnlContainer1.BorderRadius = 15;
+            this.pnlContainer1.BorderThickness = 1;
+            this.pnlContainer1.Controls.Add(this.dgvDSUngTuyen);
+            this.pnlContainer1.Controls.Add(this.guna2Panel2);
+            this.pnlContainer1.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.pnlContainer1.FillColor = System.Drawing.Color.White;
+            this.pnlContainer1.Location = new System.Drawing.Point(0, 0);
+            this.pnlContainer1.Name = "pnlContainer1";
+            this.pnlContainer1.ShadowDecoration.BorderRadius = 12;
+            this.pnlContainer1.ShadowDecoration.Color = System.Drawing.Color.DimGray;
+            this.pnlContainer1.Size = new System.Drawing.Size(1250, 750);
+            this.pnlContainer1.TabIndex = 8;
             // 
             // dgvDSUngTuyen
             // 
@@ -134,7 +134,7 @@
             this.dgvDSUngTuyen.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvDSUngTuyen.ColumnHeadersHeight = 27;
             this.dgvDSUngTuyen.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Choose});
+            this.STT});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -176,13 +176,6 @@
             this.dgvDSUngTuyen.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvDSUngTuyen.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvDSUngTuyen.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSUngTuyen_CellContentClick);
-            // 
-            // Choose
-            // 
-            this.Choose.FillWeight = 32.08556F;
-            this.Choose.HeaderText = "";
-            this.Choose.MinimumWidth = 6;
-            this.Choose.Name = "Choose";
             // 
             // guna2Panel2
             // 
@@ -231,6 +224,7 @@
             this.btnDelete.PressedColor = System.Drawing.Color.White;
             this.btnDelete.Size = new System.Drawing.Size(50, 50);
             this.btnDelete.TabIndex = 49;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
@@ -252,6 +246,7 @@
             this.btnEdit.PressedColor = System.Drawing.Color.White;
             this.btnEdit.Size = new System.Drawing.Size(50, 50);
             this.btnEdit.TabIndex = 48;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // guna2HtmlLabel2
             // 
@@ -271,6 +266,13 @@
             this.ucThemUngTuyen1.Size = new System.Drawing.Size(50, 50);
             this.ucThemUngTuyen1.TabIndex = 9;
             // 
+            // STT
+            // 
+            this.STT.FillWeight = 32.08556F;
+            this.STT.HeaderText = "";
+            this.STT.MinimumWidth = 6;
+            this.STT.Name = "STT";
+            // 
             // UCQuanLyDanhSachUngTuyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -285,7 +287,7 @@
             this.Size = new System.Drawing.Size(1500, 1500);
             this.Load += new System.EventHandler(this.UCQuanLyDanhSachUngTuyen_Load);
             this.pnlContainer.ResumeLayout(false);
-            this.guna2Panel1.ResumeLayout(false);
+            this.pnlContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSUngTuyen)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
@@ -298,13 +300,13 @@
         private Guna.UI2.WinForms.Guna2Button btnHome;
         private Guna.UI2.WinForms.Guna2Panel pnlContainer;
         private ViewLayer_Them.UCThemUngTuyen ucThemUngTuyen1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel pnlContainer1;
         private Guna.UI2.WinForms.Guna2DataGridView dgvDSUngTuyen;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Choose;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private Guna.UI2.WinForms.Guna2Button btnEdit;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn STT;
     }
 }

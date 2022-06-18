@@ -112,6 +112,9 @@
             this.cbbTrangThai.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbbTrangThai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbbTrangThai.ItemHeight = 30;
+            this.cbbTrangThai.Items.AddRange(new object[] {
+            "Đã nộp",
+            "Trúng tuyển"});
             this.cbbTrangThai.Location = new System.Drawing.Point(278, 264);
             this.cbbTrangThai.Name = "cbbTrangThai";
             this.cbbTrangThai.Size = new System.Drawing.Size(288, 36);

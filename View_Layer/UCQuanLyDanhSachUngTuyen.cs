@@ -52,7 +52,7 @@ namespace UI.View_Layer
         }
         private void btnHome_Click(object sender, System.EventArgs e)
         {
-            pnlContainer.BringToFront();
+            pnlContainer1.BringToFront();
             LoadData();
         }
 
@@ -83,6 +83,57 @@ namespace UI.View_Layer
                 {
                     //write your code
                     HideBtn(!checkBoxStatus);
+                }
+            }
+        }
+        /// <summary>
+        /// Xóa TimeLine
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow dr in dgvDSUngTuyen.Rows)
+            {
+                if (dr.Cells[0].Value != null)
+                {
+                    if (Convert.ToBoolean(dr.Cells[0].Value.ToString()))
+                    {
+                        try
+                        {
+                            dbDSUT.XoaDanhSachUngTuyen(ref err, dr.Cells[2].Value.ToString());
+                            LoadData();
+                            MessageBox.Show("Done");
+                        }
+                        catch (SqlException)
+                        {
+                            MessageBox.Show("Không xóa được!");
+                        }
+                    }
+                }
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow dr in dgvDSUngTuyen.Rows)
+            {
+                if (dr.Cells[0].Value != null)
+                {
+                    if (Convert.ToBoolean(dr.Cells[0].Value.ToString()))
+                    {
+                        try
+                        {
+                            dbDSUT.SuaDanhSachUngTuyen(ref err, dr.Cells[1].Value.ToString(), dr.Cells[2].Value.ToString(), dr.Cells[3].Value.ToString(),
+                             Convert.ToInt32(dr.Cells[4].Value.ToString()),Convert.ToInt32(dr.Cells[5].Value.ToString()), dr.Cells[6].Value.ToString(), dr.Cells[7].Value.ToString());
+                            LoadData();
+                            MessageBox.Show("Done");
+                        }
+                        catch (SqlException)
+                        {
+                            MessageBox.Show("Không xóa được!");
+                        }
+                    }
                 }
             }
         }
