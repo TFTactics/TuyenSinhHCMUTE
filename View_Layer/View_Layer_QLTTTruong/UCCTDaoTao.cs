@@ -79,7 +79,7 @@ namespace UI.View_Layer
                     {
                         try
                         {
-                            dbCTDT.XoaChuongTrinhDaoTao(ref err, dr.Cells[1].Value.ToString());
+                            dbCTDT.XoaChuongTrinhDaoTao(ref err, dr.Cells[2].Value.ToString());
                             LoadData();
                             MessageBox.Show("Done");
                         }

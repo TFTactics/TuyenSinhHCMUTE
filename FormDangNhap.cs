@@ -24,7 +24,6 @@ namespace UI
 
         private void btnSignin_Click(object sender, EventArgs e)
         {
-            Form1.SignIn = true;
             Form1 main = new Form1();
             main.Show();
             this.Hide();

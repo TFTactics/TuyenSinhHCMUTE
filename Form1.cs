@@ -6,7 +6,6 @@ namespace UI
 {
     public partial class Form1 : Form
     {
-        public static bool SignIn = false;
         public bool mode = true;
         static Form1 _obj;
         public static Form1 Instance
@@ -48,23 +47,6 @@ namespace UI
         /// <summary>
         /// Set menu đăng nhập
         /// </summary>
-        private void MenuPrivate()
-        {
-            if (!SignIn)
-            {
-                msDangXuat.Visible = false;
-                msAdmin.Visible = true;
-                msCustomer.Visible = true;
-                msDangKi.Visible = true;
-            }
-            else
-            {
-                msDangXuat.Visible = true;
-                msAdmin.Visible = false;
-                msCustomer.Visible = false;
-                msDangKi.Visible = false;
-            }
-        }
         #region UserControl
 
         /// <summary>
@@ -170,7 +152,6 @@ namespace UI
 
         private void msPrivate_Click(object sender, EventArgs e)
         {
-            MenuPrivate();
         }
 
         private void aToolStripMenuItem_Click(object sender, EventArgs e)
@@ -180,7 +161,6 @@ namespace UI
 
         private void msDangXuat_Click(object sender, EventArgs e)
         {
-            SignIn = false;
             FormDangNhap dn = new FormDangNhap();
             this.Close();
             dn.Show();

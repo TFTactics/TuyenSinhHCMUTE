@@ -34,15 +34,15 @@
             this.btnAddEvent = new Guna.UI2.WinForms.Guna2Button();
             this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.ucThemUngTuyen1 = new UI.View_Layer.ViewLayer_Them.UCThemUngTuyen();
             this.pnlContainer1 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvDSUngTuyen = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.STT = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.ucThemUngTuyen1 = new UI.View_Layer.ViewLayer_Them.UCThemUngTuyen();
-            this.STT = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.pnlContainer.SuspendLayout();
             this.pnlContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSUngTuyen)).BeginInit();
@@ -96,6 +96,13 @@
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(1250, 750);
             this.pnlContainer.TabIndex = 8;
+            // 
+            // ucThemUngTuyen1
+            // 
+            this.ucThemUngTuyen1.Location = new System.Drawing.Point(3, 756);
+            this.ucThemUngTuyen1.Name = "ucThemUngTuyen1";
+            this.ucThemUngTuyen1.Size = new System.Drawing.Size(50, 50);
+            this.ucThemUngTuyen1.TabIndex = 9;
             // 
             // pnlContainer1
             // 
@@ -176,6 +183,13 @@
             this.dgvDSUngTuyen.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvDSUngTuyen.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvDSUngTuyen.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSUngTuyen_CellContentClick);
+            // 
+            // STT
+            // 
+            this.STT.FillWeight = 32.08556F;
+            this.STT.HeaderText = "";
+            this.STT.MinimumWidth = 6;
+            this.STT.Name = "STT";
             // 
             // guna2Panel2
             // 
@@ -258,20 +272,6 @@
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(803, 40);
             this.guna2HtmlLabel2.TabIndex = 3;
             this.guna2HtmlLabel2.Text = "Danh sách ứng tuyển";
-            // 
-            // ucThemUngTuyen1
-            // 
-            this.ucThemUngTuyen1.Location = new System.Drawing.Point(3, 756);
-            this.ucThemUngTuyen1.Name = "ucThemUngTuyen1";
-            this.ucThemUngTuyen1.Size = new System.Drawing.Size(50, 50);
-            this.ucThemUngTuyen1.TabIndex = 9;
-            // 
-            // STT
-            // 
-            this.STT.FillWeight = 32.08556F;
-            this.STT.HeaderText = "";
-            this.STT.MinimumWidth = 6;
-            this.STT.Name = "STT";
             // 
             // UCQuanLyDanhSachUngTuyen
             // 

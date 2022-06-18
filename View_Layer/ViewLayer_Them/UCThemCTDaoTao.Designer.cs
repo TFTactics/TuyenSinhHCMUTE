@@ -137,6 +137,7 @@
             this.cbbNganhDT.Name = "cbbNganhDT";
             this.cbbNganhDT.Size = new System.Drawing.Size(495, 36);
             this.cbbNganhDT.TabIndex = 22;
+            this.cbbNganhDT.SelectedIndexChanged += new System.EventHandler(this.cbbNganhDT_SelectedIndexChanged);
             // 
             // guna2HtmlLabel6
             // 

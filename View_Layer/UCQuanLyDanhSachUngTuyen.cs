@@ -125,7 +125,7 @@ namespace UI.View_Layer
                         try
                         {
                             dbDSUT.SuaDanhSachUngTuyen(ref err, dr.Cells[1].Value.ToString(), dr.Cells[2].Value.ToString(), dr.Cells[3].Value.ToString(),
-                             Convert.ToInt32(dr.Cells[4].Value.ToString()),Convert.ToInt32(dr.Cells[5].Value.ToString()), dr.Cells[6].Value.ToString(), dr.Cells[7].Value.ToString());
+                            Convert.ToInt32(dr.Cells[4].Value.ToString()),Convert.ToInt32(dr.Cells[5].Value.ToString()), dr.Cells[6].Value.ToString(), dr.Cells[7].Value.ToString());
                             LoadData();
                             MessageBox.Show("Done");
                         }

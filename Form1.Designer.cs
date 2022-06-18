@@ -46,15 +46,12 @@ namespace UI
             this.msMenuPrivate = new System.Windows.Forms.MenuStrip();
             this.msLight = new System.Windows.Forms.ToolStripMenuItem();
             this.msThongBao = new System.Windows.Forms.ToolStripMenuItem();
+            this.aDMINToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msPrivate = new System.Windows.Forms.ToolStripMenuItem();
-            this.msAdmin = new System.Windows.Forms.ToolStripMenuItem();
-            this.msCustomer = new System.Windows.Forms.ToolStripMenuItem();
-            this.msDangKi = new System.Windows.Forms.ToolStripMenuItem();
             this.msDangXuat = new System.Windows.Forms.ToolStripMenuItem();
             this.msExit = new System.Windows.Forms.ToolStripMenuItem();
             this.txbSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.pnlContainer = new System.Windows.Forms.Panel();
-            this.aDMINToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2Panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -337,14 +334,17 @@ namespace UI
             this.msThongBao.Name = "msThongBao";
             this.msThongBao.Size = new System.Drawing.Size(50, 30);
             // 
+            // aDMINToolStripMenuItem
+            // 
+            this.aDMINToolStripMenuItem.Name = "aDMINToolStripMenuItem";
+            this.aDMINToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
+            this.aDMINToolStripMenuItem.Text = "ADMIN";
+            // 
             // msPrivate
             // 
             this.msPrivate.AutoSize = false;
             this.msPrivate.BackColor = System.Drawing.Color.Transparent;
             this.msPrivate.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.msAdmin,
-            this.msCustomer,
-            this.msDangKi,
             this.msDangXuat});
             this.msPrivate.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.msPrivate.Image = global::UI.Properties.Resources.programmer;
@@ -352,24 +352,6 @@ namespace UI
             this.msPrivate.Name = "msPrivate";
             this.msPrivate.Size = new System.Drawing.Size(50, 30);
             this.msPrivate.Click += new System.EventHandler(this.msPrivate_Click);
-            // 
-            // msAdmin
-            // 
-            this.msAdmin.Name = "msAdmin";
-            this.msAdmin.Size = new System.Drawing.Size(224, 26);
-            this.msAdmin.Text = "Admin";
-            // 
-            // msCustomer
-            // 
-            this.msCustomer.Name = "msCustomer";
-            this.msCustomer.Size = new System.Drawing.Size(224, 26);
-            this.msCustomer.Text = "Customer";
-            // 
-            // msDangKi
-            // 
-            this.msDangKi.Name = "msDangKi";
-            this.msDangKi.Size = new System.Drawing.Size(224, 26);
-            this.msDangKi.Text = "Đăng kí";
             // 
             // msDangXuat
             // 
@@ -417,12 +399,6 @@ namespace UI
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(1150, 0);
             this.pnlContainer.TabIndex = 2;
-            // 
-            // aDMINToolStripMenuItem
-            // 
-            this.aDMINToolStripMenuItem.Name = "aDMINToolStripMenuItem";
-            this.aDMINToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.aDMINToolStripMenuItem.Text = "ADMIN";
             // 
             // Form1
             // 
@@ -475,9 +451,6 @@ namespace UI
         private System.Windows.Forms.ToolStripMenuItem msLight;
         private System.Windows.Forms.ToolStripMenuItem msThongBao;
         private System.Windows.Forms.ToolStripMenuItem msPrivate;
-        private System.Windows.Forms.ToolStripMenuItem msAdmin;
-        private System.Windows.Forms.ToolStripMenuItem msCustomer;
-        private System.Windows.Forms.ToolStripMenuItem msDangKi;
         private System.Windows.Forms.ToolStripMenuItem msDangXuat;
         private System.Windows.Forms.ToolStripMenuItem msExit;
         private System.Windows.Forms.ToolStripMenuItem aDMINToolStripMenuItem;

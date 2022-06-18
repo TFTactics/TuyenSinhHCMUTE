@@ -47,7 +47,7 @@ namespace UI.View_Layer.View_Layer_QLTTTruong.CTDaoTao
             var dt1 = new DataTable();
             dt1.Load(dr1);
             dr1.Dispose();
-            cbbNganhDT.DisplayMember = "TenNghanh";
+            cbbNganhDT.DisplayMember = "TenNganh";
             cbbNganhDT.DataSource = dt1;
 
             var dr2 = cmd2.ExecuteReader();
@@ -67,6 +67,11 @@ namespace UI.View_Layer.View_Layer_QLTTTruong.CTDaoTao
         private void UCThemCTDaoTao_Click(object sender, EventArgs e)
         {
             LoadCbb();
+        }
+
+        private void cbbNganhDT_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -21,7 +21,7 @@ namespace UI.BS_Layer
         }
         public bool XoaChuongTrinhDaoTao(ref string err, string TieuDe)
         {
-            string sqlString = "delete from ChuongTrinhDaoTao where TenChuongTrinh=N'" + TieuDe + "'";
+            string sqlString = "delete from ChuongTrinhDaoTao where NganhDaoTao=N'" + TieuDe + "'";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
         public bool SuaChuongTrinh(ref string err, string TCT, string NDT, string HDT, string PDF, string ND)
