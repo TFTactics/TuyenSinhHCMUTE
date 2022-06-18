@@ -36,12 +36,12 @@
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvTimeLine = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.STT = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.STT = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.ucThemTimeLine1 = new UI.View_Layer.View_Layer_QLTimeLine.UCThemTimeLine();
             this.pnlContainer.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -175,13 +175,6 @@
             this.dgvTimeLine.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvTimeLine.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTimeLine_CellContentClick);
             // 
-            // STT
-            // 
-            this.STT.FillWeight = 26.73796F;
-            this.STT.HeaderText = "";
-            this.STT.MinimumWidth = 6;
-            this.STT.Name = "STT";
-            // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
@@ -263,6 +256,13 @@
             this.guna2HtmlLabel2.TabIndex = 3;
             this.guna2HtmlLabel2.Text = "Danh sách các mốc sự kiện";
             // 
+            // STT
+            // 
+            this.STT.FillWeight = 26.73796F;
+            this.STT.HeaderText = "";
+            this.STT.MinimumWidth = 6;
+            this.STT.Name = "STT";
+            // 
             // ucThemTimeLine1
             // 
             this.ucThemTimeLine1.AutoScroll = true;
@@ -304,9 +304,9 @@
         private Guna.UI2.WinForms.Guna2DataGridView dgvTimeLine;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn STT;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2Button btnEdit;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn STT;
     }
 }

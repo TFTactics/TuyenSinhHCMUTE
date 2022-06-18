@@ -10,5 +10,9 @@ namespace UI.View_Layer
             InitializeComponent();
         }
 
+        private void btnHome_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

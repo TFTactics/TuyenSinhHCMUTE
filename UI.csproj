@@ -132,6 +132,12 @@
     <Compile Include="View_Layer\ViewLayer_Them\UCThemTTNhapHoc.Designer.cs">
       <DependentUpon>UCThemTTNhapHoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="View_Layer\ViewLayer_Them\UCThemUngTuyen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View_Layer\ViewLayer_Them\UCThemUngTuyen.Designer.cs">
+      <DependentUpon>UCThemUngTuyen.cs</DependentUpon>
+    </Compile>
     <Compile Include="View_Layer\View_Layer_QLTTTruong\UCCTDaoTao.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -259,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View_Layer\ViewLayer_Them\UCThemTTNhapHoc.resx">
       <DependentUpon>UCThemTTNhapHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Layer\ViewLayer_Them\UCThemUngTuyen.resx">
+      <DependentUpon>UCThemUngTuyen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View_Layer\View_Layer_QLTTTruong\UCCTDaoTao.resx">
       <DependentUpon>UCCTDaoTao.cs</DependentUpon>

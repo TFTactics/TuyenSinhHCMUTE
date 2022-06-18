@@ -45,7 +45,7 @@ namespace UI.View_Layer
 
                 DataSet ds = dbTimeLine.LayTimeLine();
                 dtTimeLine = ds.Tables[0];
-                dgvTimeLine.DataSource = dtTimeLine;
+                dgvTimeLine.DataSource= dtTimeLine;
 
                 dgvTimeLine.AutoResizeColumns();
                 HideBtn(true);

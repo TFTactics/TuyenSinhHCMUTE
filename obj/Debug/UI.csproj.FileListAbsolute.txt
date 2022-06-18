@@ -241,3 +241,5 @@ C:\Users\T\OneDrive\Máy tính\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Laye
 C:\Users\T\OneDrive\Máy tính\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.NganhDaoTao.UCNDaoTao.resources
 C:\Users\T\OneDrive\Máy tính\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.View_Layer_QLTTTruong.TTNhapHoc.UCThemTTNhapHoc.resources
 C:\Users\T\OneDrive\Máy tính\TuyenSinhHCMUTE\obj\Debug\UI.FormDangNhap.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.FormDangNhap.resources
+D:\TuyenSinhHCMUTE\obj\Debug\UI.View_Layer.ViewLayer_Them.UCThemUngTuyen.resources
