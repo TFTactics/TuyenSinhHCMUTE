@@ -31,12 +31,11 @@ namespace UI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap));
             this.pnlContainer = new System.Windows.Forms.Panel();
-<<<<<<< HEAD
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnSignin = new Guna.UI2.WinForms.Guna2Button();
-=======
+
+            
+
             this.pnlE = new Guna.UI2.WinForms.Guna2Panel();
->>>>>>> b85023dcd7a85f3f186de7ebb43fc0c592eec4db
+
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.lbx = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ucDangKi1 = new UI.UCDangKi();
@@ -56,34 +55,9 @@ namespace UI
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(598, 463);
             this.pnlContainer.TabIndex = 4;
-            // 
-<<<<<<< HEAD
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnSignin);
-            this.panel2.Controls.Add(this.btnExit);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 403);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(598, 60);
-            this.panel2.TabIndex = 10;
-            // 
-            // btnSignin
-            // 
-            this.btnSignin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSignin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSignin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSignin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSignin.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnSignin.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignin.ForeColor = System.Drawing.Color.White;
-            this.btnSignin.Location = new System.Drawing.Point(308, 0);
-            this.btnSignin.Name = "btnSignin";
-            this.btnSignin.Size = new System.Drawing.Size(290, 60);
-            this.btnSignin.TabIndex = 0;
-            this.btnSignin.Text = "SIGN UP";
-            this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
-=======
+            
+            
+
             // pnlE
             // 
             this.pnlE.Controls.Add(this.btnExit);
@@ -91,7 +65,7 @@ namespace UI
             this.pnlE.Name = "pnlE";
             this.pnlE.Size = new System.Drawing.Size(308, 60);
             this.pnlE.TabIndex = 12;
->>>>>>> b85023dcd7a85f3f186de7ebb43fc0c592eec4db
+
             // 
             // btnExit
             // 
@@ -99,15 +73,15 @@ namespace UI
             this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-<<<<<<< HEAD
+
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-=======
+
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 18F);
->>>>>>> b85023dcd7a85f3f186de7ebb43fc0c592eec4db
+
             this.btnExit.ForeColor = System.Drawing.Color.Gray;
             this.btnExit.Location = new System.Drawing.Point(0, 0);
             this.btnExit.Name = "btnExit";

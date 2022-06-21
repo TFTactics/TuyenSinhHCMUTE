@@ -150,17 +150,7 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(198, 34);
             this.guna2HtmlLabel1.TabIndex = 6;
             this.guna2HtmlLabel1.Text = "Tên đăng nhập";
-            // 
-<<<<<<< HEAD
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnSignin);
-            this.panel2.Controls.Add(this.btnExit);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 403);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(598, 60);
-            this.panel2.TabIndex = 4;
+            
             // 
             // btnSignin
             // 
@@ -176,25 +166,8 @@
             this.btnSignin.Size = new System.Drawing.Size(290, 60);
             this.btnSignin.TabIndex = 0;
             this.btnSignin.Text = "SIGN IN";
+            
             // 
-            // btnExit
-            // 
-            this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnExit.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.Gray;
-            this.btnExit.Location = new System.Drawing.Point(0, 0);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(308, 60);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "CLOSE";
-            // 
-=======
->>>>>>> b85023dcd7a85f3f186de7ebb43fc0c592eec4db
             // UCDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
